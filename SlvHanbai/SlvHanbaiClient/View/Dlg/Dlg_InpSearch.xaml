@@ -1,0 +1,43 @@
+﻿<custom:ExChildWindow x:Class="SlvHanbaiClient.View.Dlg.Dlg_InpSearch"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:layoutToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
+           xmlns:system="clr-namespace:System;assembly=mscorlib"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:Utl="clr-namespace:SlvHanbaiClient.View.UserControl"
+           xmlns:UtlInput="clr-namespace:SlvHanbaiClient.View.UserControl.Input.Sales"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.View.Dlg.Theme"
+           Width="1000" 
+           Height="700" 
+           Title="   [ 受注一覧 ]" 
+           Loaded="ExChildWindow_Loaded" 
+           FontSize="14" 
+           FontWeight="Normal" 
+           KeyUp="ExChildWindow_KeyUp" 
+           HasCloseButton="False"
+           Unloaded="ExChildWindow_Unloaded" IsTabDefualMove="False">
+    <!--HasCloseButton="False"-->
+
+    <Grid x:Name="LayoutRoot" Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Width="10" />
+            <UtlCustom:Utl_FunctionKey Margin="7" Height="58" HorizontalAlignment="Left" x:Name="utlFunctionKey" VerticalAlignment="Top" />
+        </StackPanel>
+
+        <Grid x:Name="GridMain" Grid.Row="1">
+            <UtlInput:Utl_InpSearchOrder x:Name="utlInpSearchOrder"></UtlInput:Utl_InpSearchOrder>
+        </Grid>
+
+        <theme:Dlg_ThemeShinyBlue x:Name="dlgThemeShinyBlue" />
+        <theme:Dlg_ThemeTwilightBlue x:Name="dlgThemeTwilightBlue" />
+
+    </Grid>
+</custom:ExChildWindow>

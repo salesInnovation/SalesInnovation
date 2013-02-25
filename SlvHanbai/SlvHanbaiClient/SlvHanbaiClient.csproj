@@ -1,0 +1,1901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C071B745-DECE-466F-B2E0-31C9B2C0FBBE}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SlvHanbaiClient</RootNamespace>
+    <AssemblyName>SlvHanbaiClient</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>ja</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SlvHanbaiClient.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SlvHanbaiClient.App</SilverlightAppEntry>
+    <TestPageFileName>SlvHanbaiClientTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>true</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>..\SlvHanbai.Web\SlvHanbai.Web.csproj</LinkedServerProject>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>13E40F6F808EBF3C94DD4E104178AB8C652AD7C7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SlvHanbaiClient_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Client.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.Web.Extensions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.DataForm.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Theming.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Converter\NumberConverter.cs" />
+    <Compile Include="Class\Data\MeiNameList.cs" />
+    <Compile Include="Class\Data\MstData.cs" />
+    <Compile Include="Class\Data\DataPgLock.cs" />
+    <Compile Include="Class\Data\DataReport.cs" />
+    <Compile Include="Class\Data\DataDetail.cs" />
+    <Compile Include="Class\Data\DataInitWhere.cs" />
+    <Compile Include="Class\Data\DataAuthority.cs" />
+    <Compile Include="Class\Entity\EntityDataFormOrderD.cs" />
+    <Compile Include="Class\Data\DataPgEvidence.cs" />
+    <Compile Include="Class\Entity\EntityDataFormReceiptD.cs" />
+    <Compile Include="Class\Entity\EntityDatePicker.cs" />
+    <Compile Include="Class\Entity\EntityBase.cs" />
+    <Compile Include="Class\Entity\EntitySearch.cs" />
+    <Compile Include="Class\Provider\breakdownProviderNoReturn.cs" />
+    <Compile Include="Class\Provider\unitProvider.cs" />
+    <Compile Include="Class\Provider\taxDivisionProvider.cs" />
+    <Compile Include="Class\Provider\displayDivisionProvider.cs" />
+    <Compile Include="Class\Provider\idFigure.cs" />
+    <Compile Include="Class\Provider\breakdownProvider.cs" />
+    <Compile Include="Class\Provider\deliverDivisionProvider.cs" />
+    <Compile Include="Class\UI\ExCheckBox.cs" />
+    <Compile Include="Class\UI\ExComboBox.cs" />
+    <Compile Include="Class\Utility\ExBackgroundWorker.cs" />
+    <Compile Include="Class\UI\ExChildWindow.cs" />
+    <Compile Include="Class\UI\ExGridLayoutRoot.cs" />
+    <Compile Include="Class\UI\ExHyperlinkButton.cs" />
+    <Compile Include="Class\UI\ExUserControl.cs" />
+    <Compile Include="Class\UI\ExDatePicker.cs" />
+    <Compile Include="Class\UI\ExButton.cs" />
+    <Compile Include="Class\UI\ExLabel.cs" />
+    <Compile Include="Class\UI\ExDataForm.cs" />
+    <Compile Include="Class\UI\ExLabelHeader.cs" />
+    <Compile Include="Class\Utility\ExEscape.cs" />
+    <Compile Include="Class\Utility\ExMath.cs" />
+    <Compile Include="Class\UI\ExDataGrid.cs" />
+    <Compile Include="Class\UI\ExTextBox.cs" />
+    <Compile Include="Class\Utility\ExSjisEncoding.cs" />
+    <Compile Include="Class\Utility\ExString.cs" />
+    <Compile Include="Class\Utility\ExWebClient.cs" />
+    <Compile Include="Class\Utility\ExEncoding.cs" />
+    <Compile Include="Class\WebService\ExWebService.cs" />
+    <Compile Include="Class\Common.cs" />
+    <Compile Include="Class\Utility\ExCast.cs" />
+    <Compile Include="Class\UI\ExMessageBox.cs" />
+    <Compile Include="Class\UI\ExVisualTreeHelper.cs" />
+    <Compile Include="Class\UI\ExPage.cs" />
+    <Compile Include="Class\WebService\ExWebServiceMst.cs" />
+    <Compile Include="NaviPage.xaml.cs">
+      <DependentUpon>NaviPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\svcAuthority\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcClass\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcCommodity\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcCompanyGroup\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcCompany\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcCondition\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcCopying\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcCustomer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcDuties\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcEstimate\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcInOutDelivery\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcInquiry\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcInvoiceBalance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcInvoiceClose\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcMstData\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcOrder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPaymentBalance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPaymentCash\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPaymentClose\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPaymentCreditBalance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPerson\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPgEvidence\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPgLock\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPurchaseMst\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPurchaseOrder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcPurchase\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcReceipt\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcReport\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcSalesCreditBalance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcSales\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcStockInventory\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcSupplier\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcSysLogin\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcSysName\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcSystemInf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcUser\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\MargedResourceDictionary.cs" />
+    <Compile Include="View\Dlg\ChildWindow1.xaml.cs">
+      <DependentUpon>ChildWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_Login.xaml.cs">
+      <DependentUpon>Dlg_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_MeiSearch.xaml.cs">
+      <DependentUpon>Dlg_MeiSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_InpSearch.xaml.cs">
+      <DependentUpon>Dlg_InpSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Duties\Dlg_DutiesHistory.xaml.cs">
+      <DependentUpon>Dlg_DutiesHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Duties\Dlg_DutiesRegist.xaml.cs">
+      <DependentUpon>Dlg_DutiesRegist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Duties\Dlg_DutiesList.xaml.cs">
+      <DependentUpon>Dlg_DutiesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Report\Dlg_ReportSetting.xaml.cs">
+      <DependentUpon>Dlg_ReportSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Support\Dlg_Help.xaml.cs">
+      <DependentUpon>Dlg_Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Support\Dlg_Manual.xaml.cs">
+      <DependentUpon>Dlg_Manual.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\SystemInf\Dlg_SystemInfList.xaml.cs">
+      <DependentUpon>Dlg_SystemInfList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Theme\Dlg_ThemeChange.xaml.cs">
+      <DependentUpon>Dlg_ThemeChange.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_Calender.xaml.cs">
+      <DependentUpon>Dlg_Calender.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_DataForm.xaml.cs">
+      <DependentUpon>Dlg_DataForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_MstSearch.xaml.cs">
+      <DependentUpon>Dlg_MstSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_InpMaster.xaml.cs">
+      <DependentUpon>Dlg_InpMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_Copying.xaml.cs">
+      <DependentUpon>Dlg_Copying.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Report\Dlg_Report.xaml.cs">
+      <DependentUpon>Dlg_Report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Report\Dlg_ReportView.xaml.cs">
+      <DependentUpon>Dlg_ReportView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\MessageBox\IModalDialogService.cs" />
+    <Compile Include="View\Dlg\MessageBox\Dlg_MessagBox.xaml.cs">
+      <DependentUpon>Dlg_MessagBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\MessageBox\IModalWindow.cs" />
+    <Compile Include="View\Dlg\MessageBox\ModalDialogService.cs" />
+    <Compile Include="View\Dlg\Theme\Dlg_ThemeShinyBlue.xaml.cs">
+      <DependentUpon>Dlg_ThemeShinyBlue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Theme\Dlg_ThemeTwilightBlue.xaml.cs">
+      <DependentUpon>Dlg_ThemeTwilightBlue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_UnitPriceSetting.xaml.cs">
+      <DependentUpon>Dlg_UnitPriceSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Support\Dlg_SupportHistory.xaml.cs">
+      <DependentUpon>Dlg_SupportHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Support\Dlg_SupportRegist.xaml.cs">
+      <DependentUpon>Dlg_SupportRegist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Support\Dlg_SupportReturn.xaml.cs">
+      <DependentUpon>Dlg_SupportReturn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_Progress.xaml.cs">
+      <DependentUpon>Dlg_Progress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_MstSearchBank.xaml.cs">
+      <DependentUpon>Dlg_MstSearchBank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dlg\Dlg_MstSearchGroup.xaml.cs">
+      <DependentUpon>Dlg_MstSearchGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UA_Main.xaml.cs">
+      <DependentUpon>UA_Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Custom\Utl_FooterBar.xaml.cs">
+      <DependentUpon>Utl_FooterBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Custom\Utl_FunctionKey.xaml.cs">
+      <DependentUpon>Utl_FunctionKey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Custom\Utl_MeiText.xaml.cs">
+      <DependentUpon>Utl_MeiText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Custom\Utl_InpNoText.xaml.cs">
+      <DependentUpon>Utl_InpNoText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Custom\Utl_MstText.xaml.cs">
+      <DependentUpon>Utl_MstText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Custom\Utl_Mode.xaml.cs">
+      <DependentUpon>Utl_Mode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Custom\Utl_Zip.xaml.cs">
+      <DependentUpon>Utl_Zip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\DataForm\Purchase\Utl_DataFormPurchaseOrder.xaml.cs">
+      <DependentUpon>Utl_DataFormPurchaseOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\DataForm\Purchase\Utl_DataFormPurchase.xaml.cs">
+      <DependentUpon>Utl_DataFormPurchase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\DataForm\Purchase\Utl_DataFormPaymentCash.xaml.cs">
+      <DependentUpon>Utl_DataFormPaymentCash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Inventory\Utl_InpInOutDelivery.xaml.cs">
+      <DependentUpon>Utl_InpInOutDelivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Inventory\Utl_InpSearchInventory.xaml.cs">
+      <DependentUpon>Utl_InpSearchInventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Inventory\Utl_InpStockInventory.xaml.cs">
+      <DependentUpon>Utl_InpStockInventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Inventory\Utl_InpSearchInOutDelivery.xaml.cs">
+      <DependentUpon>Utl_InpSearchInOutDelivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpPaymentBalance.xaml.cs">
+      <DependentUpon>Utl_InpPaymentBalance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpPaymentPrint.xaml.cs">
+      <DependentUpon>Utl_InpPaymentPrint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpPaymentCreditBalance.xaml.cs">
+      <DependentUpon>Utl_InpPaymentCreditBalance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpSearchPaymentCash.xaml.cs">
+      <DependentUpon>Utl_InpSearchPaymentCash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpPaymentClose.xaml.cs">
+      <DependentUpon>Utl_InpPaymentClose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpPurchaseOrder.xaml.cs">
+      <DependentUpon>Utl_InpPurchaseOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpPurchase.xaml.cs">
+      <DependentUpon>Utl_InpPurchase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpPaymentCash.xaml.cs">
+      <DependentUpon>Utl_InpPaymentCash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpSearchPurchaseOrder.xaml.cs">
+      <DependentUpon>Utl_InpSearchPurchaseOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Purchase\Utl_InpSearchPurchase.xaml.cs">
+      <DependentUpon>Utl_InpSearchPurchase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpInvoicePrint.xaml.cs">
+      <DependentUpon>Utl_InpInvoicePrint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpSalesCreditBalance.xaml.cs">
+      <DependentUpon>Utl_InpSalesCreditBalance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpInvoiceBalance.xaml.cs">
+      <DependentUpon>Utl_InpInvoiceBalance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpSearchSales.xaml.cs">
+      <DependentUpon>Utl_InpSearchSales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpSearchPlan.xaml.cs">
+      <DependentUpon>Utl_InpSearchPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Utl_State.xaml.cs">
+      <DependentUpon>Utl_State.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\DataForm\Sales\Utl_DataFormOrder.xaml.cs">
+      <DependentUpon>Utl_DataFormOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\DataForm\Sales\Utl_DataFormEstimate.xaml.cs">
+      <DependentUpon>Utl_DataFormEstimate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\DataForm\Sales\Utl_DataFormSales.xaml.cs">
+      <DependentUpon>Utl_DataFormSales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\DataForm\Sales\Utl_DataFormReceipt.xaml.cs">
+      <DependentUpon>Utl_DataFormReceipt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpSearchEstimate.xaml.cs">
+      <DependentUpon>Utl_InpSearchEstimate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpSales.xaml.cs">
+      <DependentUpon>Utl_InpSales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpInvoiceClose.xaml.cs">
+      <DependentUpon>Utl_InpInvoiceClose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpReceipt.xaml.cs">
+      <DependentUpon>Utl_InpReceipt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpSearchReceipt.xaml.cs">
+      <DependentUpon>Utl_InpSearchReceipt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstCompanyGroup.xaml.cs">
+      <DependentUpon>Utl_MstCompanyGroup.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstPerson.xaml.cs">
+      <DependentUpon>Utl_MstPerson.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstCustomer.xaml.cs">
+      <DependentUpon>Utl_MstCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstCommodity.xaml.cs">
+      <DependentUpon>Utl_MstCommodity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstCondition.xaml.cs">
+      <DependentUpon>Utl_MstCondition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstClass.xaml.cs">
+      <DependentUpon>Utl_MstClass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstSupplier.xaml.cs">
+      <DependentUpon>Utl_MstSupplier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstAuthority.xaml.cs">
+      <DependentUpon>Utl_MstAuthority.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstCompany.xaml.cs">
+      <DependentUpon>Utl_MstCompany.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstUser.xaml.cs">
+      <DependentUpon>Utl_MstUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstPurchase.xaml.cs">
+      <DependentUpon>Utl_MstPurchase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Master\Utl_MstSetCommodity.xaml.cs">
+      <DependentUpon>Utl_MstSetCommodity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Report\Utl_Report.xaml.cs">
+      <DependentUpon>Utl_Report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Report\Utl_ReportView.xaml.cs">
+      <DependentUpon>Utl_ReportView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpOrder.xaml.cs">
+      <DependentUpon>Utl_InpOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\SilverlightControl1.xaml.cs">
+      <DependentUpon>SilverlightControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Utl_Menu.xaml.cs">
+      <DependentUpon>Utl_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpSearchOrder.xaml.cs">
+      <DependentUpon>Utl_InpSearchOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Utl_Login.xaml.cs">
+      <DependentUpon>Utl_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Utl_Install.xaml.cs">
+      <DependentUpon>Utl_Install.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Utl_InpMain.xaml.cs">
+      <DependentUpon>Utl_InpMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Utl_LoginMain.xaml.cs">
+      <DependentUpon>Utl_LoginMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Utl_Copying.xaml.cs">
+      <DependentUpon>Utl_Copying.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\Input\Sales\Utl_InpEstimate.xaml.cs">
+      <DependentUpon>Utl_InpEstimate.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="NaviPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ShinyBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\TwilightBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\ChildWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Dlg\Dlg_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Dlg\Dlg_MeiSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Dlg\Dlg_InpSearch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Duties\Dlg_DutiesHistory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Duties\Dlg_DutiesRegist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Duties\Dlg_DutiesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Report\Dlg_ReportSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Support\Dlg_Help.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Support\Dlg_Manual.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\SystemInf\Dlg_SystemInfList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Theme\Dlg_ThemeChange.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_Calender.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_DataForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_MstSearch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_InpMaster.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_Copying.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Report\Dlg_Report.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Report\Dlg_ReportView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\MessageBox\Dlg_MessagBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Theme\Dlg_ThemeShinyBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Theme\Dlg_ThemeTwilightBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_UnitPriceSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Support\Dlg_SupportHistory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Support\Dlg_SupportRegist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Support\Dlg_SupportReturn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_Progress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Dlg\Dlg_MstSearchBank.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Dlg\Dlg_MstSearchGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UA_Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControl\Custom\Utl_FooterBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControl\Custom\Utl_FunctionKey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControl\Custom\Utl_MeiText.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControl\Custom\Utl_InpNoText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Custom\Utl_MstText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Custom\Utl_Mode.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Custom\Utl_Zip.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\DataForm\Purchase\Utl_DataFormPurchaseOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\DataForm\Purchase\Utl_DataFormPurchase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\DataForm\Purchase\Utl_DataFormPaymentCash.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Inventory\Utl_InpInOutDelivery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Inventory\Utl_InpSearchInventory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Inventory\Utl_InpStockInventory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Inventory\Utl_InpSearchInOutDelivery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpPaymentBalance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpPaymentPrint.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpPaymentCreditBalance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpSearchPaymentCash.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpPaymentClose.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpPurchaseOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpPurchase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpPaymentCash.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpSearchPurchaseOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Purchase\Utl_InpSearchPurchase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpInvoicePrint.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpSalesCreditBalance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpInvoiceBalance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpSearchSales.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpSearchPlan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Utl_State.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\DataForm\Sales\Utl_DataFormOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\DataForm\Sales\Utl_DataFormEstimate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\DataForm\Sales\Utl_DataFormSales.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\DataForm\Sales\Utl_DataFormReceipt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpSearchEstimate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpSales.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpInvoiceClose.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpReceipt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpSearchReceipt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstCompanyGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstPerson.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstCustomer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstCommodity.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstCondition.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstClass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstSupplier.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstAuthority.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstCompany.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstPurchase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Master\Utl_MstSetCommodity.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Report\Utl_Report.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Report\Utl_ReportView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\SilverlightControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControl\Utl_Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpSearchOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Utl_Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Utl_Install.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Utl_InpMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Utl_LoginMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Utl_Copying.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\Input\Sales\Utl_InpEstimate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\svcAuthority\SlvHanbaiClient.svcAuthority.EntityAuthority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcAuthority\svcAuthority.wsdl" />
+    <None Include="Service References\svcAuthority\svcAuthority.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcAuthority\svcAuthority1.wsdl" />
+    <None Include="Service References\svcAuthority\svcAuthority1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcAuthority\svcAuthority2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCompanyGroup\SlvHanbaiClient.svcCompanyGroup.EntityCompanyGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcCompanyGroup\svcCompanyGroup.wsdl" />
+    <None Include="Service References\svcCompanyGroup\svcCompanyGroup.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCompanyGroup\svcCompanyGroup1.wsdl" />
+    <None Include="Service References\svcCompanyGroup\svcCompanyGroup1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCompanyGroup\svcCompanyGroup2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCompany\SlvHanbaiClient.svcCompany.EntityCompany.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcCompany\svcCompany.wsdl" />
+    <None Include="Service References\svcCompany\svcCompany.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCompany\svcCompany1.wsdl" />
+    <None Include="Service References\svcCompany\svcCompany1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCompany\svcCompany2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcDuties\SlvHanbaiClient.svcDuties.EntityDuties.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcDuties\svcDuties.wsdl" />
+    <None Include="Service References\svcDuties\svcDuties.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcDuties\svcDuties1.wsdl" />
+    <None Include="Service References\svcDuties\svcDuties1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcDuties\svcDuties2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInOutDelivery\SlvHanbaiClient.svcInOutDelivery.EntityInOutDelivery.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcInOutDelivery\SlvHanbaiClient.svcInOutDelivery.EntityInOutDeliveryD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcInOutDelivery\SlvHanbaiClient.svcInOutDelivery.EntityInOutDeliveryH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcInOutDelivery\svcInOutDelivery.wsdl" />
+    <None Include="Service References\svcInOutDelivery\svcInOutDelivery.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInOutDelivery\svcInOutDelivery1.wsdl" />
+    <None Include="Service References\svcInOutDelivery\svcInOutDelivery1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInOutDelivery\svcInOutDelivery2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInquiry\SlvHanbaiClient.svcInquiry.EntityInquiry.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcInquiry\svcInquiry.wsdl" />
+    <None Include="Service References\svcInquiry\svcInquiry.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInquiry\svcInquiry1.wsdl" />
+    <None Include="Service References\svcInquiry\svcInquiry1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInquiry\svcInquiry2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInvoiceBalance\SlvHanbaiClient.svcInvoiceBalance.EntityInvoiceBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcInvoiceBalance\svcInvoiceBalance.wsdl" />
+    <None Include="Service References\svcInvoiceBalance\svcInvoiceBalance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInvoiceBalance\svcInvoiceBalance1.wsdl" />
+    <None Include="Service References\svcInvoiceBalance\svcInvoiceBalance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInvoiceBalance\svcInvoiceBalance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInvoiceClose\SlvHanbaiClient.svcInvoiceClose.EntityInvoiceReceipt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentBalance\SlvHanbaiClient.svcPaymentBalance.EntityPaymentBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentBalance\svcPaymentBalance.wsdl" />
+    <None Include="Service References\svcPaymentBalance\svcPaymentBalance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentBalance\svcPaymentBalance1.wsdl" />
+    <None Include="Service References\svcPaymentBalance\svcPaymentBalance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentBalance\svcPaymentBalance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentCash\SlvHanbaiClient.svcPaymentCash.EntityPaymentCash.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentCash\SlvHanbaiClient.svcPaymentCash.EntityPaymentCashD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentCash\SlvHanbaiClient.svcPaymentCash.EntityPaymentCashH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentCash\svcPaymentCash.wsdl" />
+    <None Include="Service References\svcPaymentCash\svcPaymentCash.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentCash\svcPaymentCash1.wsdl" />
+    <None Include="Service References\svcPaymentCash\svcPaymentCash1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentCash\svcPaymentCash2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentClose\SlvHanbaiClient.svcPaymentClose.EntityPaymentCashOut.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentClose\SlvHanbaiClient.svcPaymentClose.EntityPaymentClose.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentClose\svcPaymentClose.wsdl" />
+    <None Include="Service References\svcPaymentClose\svcPaymentClose.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentClose\svcPaymentClose1.wsdl" />
+    <None Include="Service References\svcPaymentClose\svcPaymentClose1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentClose\svcPaymentClose2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentCreditBalance\SlvHanbaiClient.svcPaymentCreditBalance.EntityPaymentCreditBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPaymentCreditBalance\svcPaymentCreditBalance.wsdl" />
+    <None Include="Service References\svcPaymentCreditBalance\svcPaymentCreditBalance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentCreditBalance\svcPaymentCreditBalance1.wsdl" />
+    <None Include="Service References\svcPaymentCreditBalance\svcPaymentCreditBalance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPaymentCreditBalance\svcPaymentCreditBalance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchaseMst\SlvHanbaiClient.svcPurchaseMst.EntityPurchaseMst.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPurchaseMst\svcPurchaseMst.wsdl" />
+    <None Include="Service References\svcPurchaseMst\svcPurchaseMst.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchaseMst\svcPurchaseMst1.wsdl" />
+    <None Include="Service References\svcPurchaseMst\svcPurchaseMst1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchaseMst\svcPurchaseMst2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchaseOrder\SlvHanbaiClient.svcPurchaseOrder.EntityPurchaseOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPurchaseOrder\SlvHanbaiClient.svcPurchaseOrder.EntityPurchaseOrderD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPurchaseOrder\SlvHanbaiClient.svcPurchaseOrder.EntityPurchaseOrderH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPurchaseOrder\svcPurchaseOrder.wsdl" />
+    <None Include="Service References\svcPurchaseOrder\svcPurchaseOrder.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchaseOrder\svcPurchaseOrder1.wsdl" />
+    <None Include="Service References\svcPurchaseOrder\svcPurchaseOrder1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchaseOrder\svcPurchaseOrder2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchase\SlvHanbaiClient.svcPurchase.EntityPurchase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPurchase\SlvHanbaiClient.svcPurchase.EntityPurchaseD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPurchase\SlvHanbaiClient.svcPurchase.EntityPurchaseH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPurchase\svcPurchase.wsdl" />
+    <None Include="Service References\svcPurchase\svcPurchase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchase\svcPurchase1.wsdl" />
+    <None Include="Service References\svcPurchase\svcPurchase1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPurchase\svcPurchase2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcReport\SlvHanbaiClient.svcReport.EntityReportSetting.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSalesCreditBalance\SlvHanbaiClient.svcSalesCreditBalance.EntitySalesCreditBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSalesCreditBalance\svcSalesCreditBalance.wsdl" />
+    <None Include="Service References\svcSalesCreditBalance\svcSalesCreditBalance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSalesCreditBalance\svcSalesCreditBalance1.wsdl" />
+    <None Include="Service References\svcSalesCreditBalance\svcSalesCreditBalance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSalesCreditBalance\svcSalesCreditBalance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcStockInventory\SlvHanbaiClient.svcStockInventory.EntityStockInventory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcStockInventory\svcStockInventory.wsdl" />
+    <None Include="Service References\svcStockInventory\svcStockInventory.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcStockInventory\svcStockInventory1.wsdl" />
+    <None Include="Service References\svcStockInventory\svcStockInventory1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcStockInventory\svcStockInventory2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSysLogin\svcSysLogin.wsdl" />
+    <None Include="Service References\svcSysLogin\svcSysLogin.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSysLogin\svcSysLogin1.wsdl" />
+    <None Include="Service References\svcSysLogin\svcSysLogin1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSysLogin\svcSysLogin2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSysName\svcSysName2.wsdl" />
+    <None Include="Service References\svcSysName\svcSysName21.wsdl" />
+    <None Include="Service References\svcSysName\svcSysName3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSysName\svcSysName31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSysName\svcSysName32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSystemInf\SlvHanbaiClient.svcSystemInf.EntityDuties.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSystemInf\svcSystemInf.wsdl" />
+    <None Include="Service References\svcSystemInf\svcSystemInf.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSystemInf\svcSystemInf1.wsdl" />
+    <None Include="Service References\svcSystemInf\svcSystemInf1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSystemInf\svcSystemInf2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcUser\SlvHanbaiClient.svcUser.EntityUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcUser\svcUser.wsdl" />
+    <None Include="Service References\svcUser\svcUser.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcUser\svcUser1.wsdl" />
+    <None Include="Service References\svcUser\svcUser1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcUser\svcUser2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="View\Dlg\MessageBox\img\aero bg.png" />
+    <Resource Include="View\Dlg\MessageBox\img\error.png" />
+    <Resource Include="View\Dlg\MessageBox\img\info.png" />
+    <Resource Include="View\Dlg\MessageBox\img\question.png" />
+    <Resource Include="View\Dlg\MessageBox\img\warning.png" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\svcClass\SlvHanbaiClient.svcClass.EntityClass.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcClass\svcClass2.wsdl" />
+    <None Include="Service References\svcClass\svcClass21.wsdl" />
+    <None Include="Service References\svcClass\svcClass3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcClass\svcClass31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcClass\svcClass32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCommodity\SlvHanbaiClient.svcCommodity.EntityCommodity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcCommodity\svcCommodity.wsdl" />
+    <None Include="Service References\svcCommodity\svcCommodity.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCommodity\svcCommodity1.wsdl" />
+    <None Include="Service References\svcCommodity\svcCommodity1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCommodity\svcCommodity2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCondition\SlvHanbaiClient.svcCondition.EntityCondition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcCondition\svcCondition2.wsdl" />
+    <None Include="Service References\svcCondition\svcCondition21.wsdl" />
+    <None Include="Service References\svcCondition\svcCondition3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCondition\svcCondition31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCondition\svcCondition32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCopying\SlvHanbaiClient.svcCopying.EntityCopying.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcCopying\svcCopying2.wsdl" />
+    <None Include="Service References\svcCopying\svcCopying21.wsdl" />
+    <None Include="Service References\svcCopying\svcCopying3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCopying\svcCopying31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCopying\svcCopying32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCustomer\SlvHanbaiClient.svcCustomer.EntityCustomer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcCustomer\svcCustomer.wsdl" />
+    <None Include="Service References\svcCustomer\svcCustomer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCustomer\svcCustomer1.wsdl" />
+    <None Include="Service References\svcCustomer\svcCustomer1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcCustomer\svcCustomer2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcEstimate\SlvHanbaiClient.svcEstimate.EntityEstimate.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcEstimate\SlvHanbaiClient.svcEstimate.EntityEstimateD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcEstimate\SlvHanbaiClient.svcEstimate.EntityEstimateH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcEstimate\svcEstimate2.wsdl" />
+    <None Include="Service References\svcEstimate\svcEstimate21.wsdl" />
+    <None Include="Service References\svcEstimate\svcEstimate3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcEstimate\svcEstimate31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcEstimate\svcEstimate32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInvoiceClose\SlvHanbaiClient.svcInvoiceClose.EntityInvoiceClose.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcInvoiceClose\svcInvoiceClose2.wsdl" />
+    <None Include="Service References\svcInvoiceClose\svcInvoiceClose21.wsdl" />
+    <None Include="Service References\svcInvoiceClose\svcInvoiceClose3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInvoiceClose\svcInvoiceClose31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcInvoiceClose\svcInvoiceClose32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcMstData\SlvHanbaiClient.svcMstData.EntityMstData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcMstData\SlvHanbaiClient.svcMstData.EntityMstList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcMstData\svcMstData.wsdl" />
+    <None Include="Service References\svcMstData\svcMstData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcMstData\svcMstData1.wsdl" />
+    <None Include="Service References\svcMstData\svcMstData1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcMstData\svcMstData2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOrder\service.wsdl" />
+    <None Include="Service References\svcOrder\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOrder\service1.wsdl" />
+    <None Include="Service References\svcOrder\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOrder\SlvHanbai.Web.Class.Entity.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOrder\SlvHanbaiClient.svcOrder.EntityOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOrder\SlvHanbaiClient.svcOrder.EntityOrderD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOrder\SlvHanbaiClient.svcOrder.EntityOrderH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPerson\SlvHanbaiClient.svcPerson.EntityPerson.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcPerson\svcPerson.wsdl" />
+    <None Include="Service References\svcPerson\svcPerson.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPerson\svcPerson1.wsdl" />
+    <None Include="Service References\svcPerson\svcPerson1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPerson\svcPerson2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPgEvidence\svcPgEvidence.wsdl" />
+    <None Include="Service References\svcPgEvidence\svcPgEvidence.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPgEvidence\svcPgEvidence1.wsdl" />
+    <None Include="Service References\svcPgEvidence\svcPgEvidence1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPgLock\svcPgLock.wsdl" />
+    <None Include="Service References\svcPgLock\svcPgLock.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcPgLock\svcPgLock1.wsdl" />
+    <None Include="Service References\svcPgLock\svcPgLock1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcReceipt\SlvHanbaiClient.svcReceipt.EntityReceipt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcReceipt\SlvHanbaiClient.svcReceipt.EntityReceiptD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcReceipt\SlvHanbaiClient.svcReceipt.EntityReceiptH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcReceipt\svcReceipt2.wsdl" />
+    <None Include="Service References\svcReceipt\svcReceipt21.wsdl" />
+    <None Include="Service References\svcReceipt\svcReceipt3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcReceipt\svcReceipt31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcReceipt\svcReceipt32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcReport\SlvHanbaiClient.svcReport.EntityReport.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcReport\svcReport2.wsdl" />
+    <None Include="Service References\svcReport\svcReport21.wsdl" />
+    <None Include="Service References\svcReport\svcReport3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcReport\svcReport31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcReport\svcReport32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSales\SlvHanbaiClient.svcSales.EntitySales.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSales\SlvHanbaiClient.svcSales.EntitySalesD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSales\SlvHanbaiClient.svcSales.EntitySalesH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSales\svcSales2.wsdl" />
+    <None Include="Service References\svcSales\svcSales21.wsdl" />
+    <None Include="Service References\svcSales\svcSales3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSales\svcSales31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSales\svcSales32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSupplier\SlvHanbaiClient.svcSupplier.EntitySupplier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSupplier\svcSupplier2.wsdl" />
+    <None Include="Service References\svcSupplier\svcSupplier21.wsdl" />
+    <None Include="Service References\svcSupplier\svcSupplier3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSupplier\svcSupplier31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSupplier\svcSupplier32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcSysLogin\SlvHanbaiClient.svcSysLogin.EntitySysLogin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcSysName\SlvHanbaiClient.svcSysName.EntityName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Resource Include="Image\bikkuri.png" />
+    <Resource Include="Image\Calender.png" />
+    <Resource Include="Image\minus.png" />
+    <Resource Include="Image\pen.png" />
+    <Resource Include="Image\plus.png" />
+    <Resource Include="Image\ques01.png" />
+    <None Include="Properties\OutOfBrowserSettings.xml" />
+    <Resource Include="Image\Theme\bubbleCreme.png" />
+    <Resource Include="Image\Theme\bureauBlack.png" />
+    <Resource Include="Image\Theme\bureauBlue.png" />
+    <Resource Include="Image\Theme\default.png" />
+    <Resource Include="Image\Theme\expressionDark.png" />
+    <Resource Include="Image\Theme\expressionLight.png" />
+    <Resource Include="Image\Theme\rainerOrange.png" />
+    <Resource Include="Image\Theme\rainerPurple.png" />
+    <Resource Include="Image\Theme\shinyBlue.png" />
+    <Resource Include="Image\Theme\shinyRed.png" />
+    <Resource Include="Image\Theme\twilightBlue.png" />
+    <Resource Include="Image\Theme\whistlerBlue.png" />
+    <None Include="Service References\svcOrder\configuration91.svcinfo" />
+    <None Include="Service References\svcOrder\configuration.svcinfo" />
+    <None Include="Service References\svcOrder\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcMstData\configuration91.svcinfo" />
+    <None Include="Service References\svcMstData\configuration.svcinfo" />
+    <None Include="Service References\svcMstData\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPgEvidence\configuration91.svcinfo" />
+    <None Include="Service References\svcPgEvidence\configuration.svcinfo" />
+    <None Include="Service References\svcPgEvidence\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPerson\configuration91.svcinfo" />
+    <None Include="Service References\svcPerson\configuration.svcinfo" />
+    <None Include="Service References\svcPerson\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcCustomer\configuration91.svcinfo" />
+    <None Include="Service References\svcCustomer\configuration.svcinfo" />
+    <None Include="Service References\svcCustomer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPgLock\configuration91.svcinfo" />
+    <None Include="Service References\svcPgLock\configuration.svcinfo" />
+    <None Include="Service References\svcPgLock\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcSysLogin\configuration91.svcinfo" />
+    <None Include="Service References\svcSysLogin\configuration.svcinfo" />
+    <None Include="Service References\svcSysLogin\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcSysName\configuration91.svcinfo" />
+    <None Include="Service References\svcSysName\configuration.svcinfo" />
+    <None Include="Service References\svcSysName\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcCopying\configuration91.svcinfo" />
+    <None Include="Service References\svcCopying\configuration.svcinfo" />
+    <None Include="Service References\svcCopying\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcReport\configuration91.svcinfo" />
+    <None Include="Service References\svcReport\configuration.svcinfo" />
+    <None Include="Service References\svcReport\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcCommodity\configuration91.svcinfo" />
+    <None Include="Service References\svcCommodity\configuration.svcinfo" />
+    <None Include="Service References\svcCommodity\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcCondition\configuration91.svcinfo" />
+    <None Include="Service References\svcCondition\configuration.svcinfo" />
+    <None Include="Service References\svcCondition\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcClass\configuration91.svcinfo" />
+    <None Include="Service References\svcClass\configuration.svcinfo" />
+    <None Include="Service References\svcClass\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcSupplier\configuration91.svcinfo" />
+    <None Include="Service References\svcSupplier\configuration.svcinfo" />
+    <None Include="Service References\svcSupplier\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcEstimate\configuration91.svcinfo" />
+    <None Include="Service References\svcEstimate\configuration.svcinfo" />
+    <None Include="Service References\svcEstimate\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcSales\configuration91.svcinfo" />
+    <None Include="Service References\svcSales\configuration.svcinfo" />
+    <None Include="Service References\svcSales\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcInvoiceClose\configuration91.svcinfo" />
+    <None Include="Service References\svcInvoiceClose\configuration.svcinfo" />
+    <None Include="Service References\svcInvoiceClose\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcReceipt\configuration91.svcinfo" />
+    <None Include="Service References\svcReceipt\configuration.svcinfo" />
+    <None Include="Service References\svcReceipt\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcClass\svcClass1.disco" />
+    <None Include="Service References\svcCommodity\svcCommodity.disco" />
+    <None Include="Service References\svcCondition\svcCondition1.disco" />
+    <None Include="Service References\svcCopying\svcCopying1.disco" />
+    <None Include="Service References\svcCustomer\svcCustomer.disco" />
+    <None Include="Service References\svcEstimate\svcEstimate1.disco" />
+    <None Include="Service References\svcInvoiceClose\svcInvoiceClose1.disco" />
+    <None Include="Service References\svcMstData\svcMstData.disco" />
+    <None Include="Service References\svcPerson\svcPerson.disco" />
+    <None Include="Service References\svcPgEvidence\svcPgEvidence.disco" />
+    <None Include="Service References\svcPgLock\svcPgLock.disco" />
+    <None Include="Service References\svcReceipt\svcReceipt1.disco" />
+    <None Include="Service References\svcReport\svcReport1.disco" />
+    <None Include="Service References\svcSales\svcSales1.disco" />
+    <None Include="Service References\svcSupplier\svcSupplier1.disco" />
+    <None Include="Service References\svcSysName\svcSysName1.disco" />
+    <None Include="Service References\svcInquiry\svcInquiry.disco" />
+    <None Include="Service References\svcInquiry\configuration91.svcinfo" />
+    <None Include="Service References\svcInquiry\configuration.svcinfo" />
+    <None Include="Service References\svcInquiry\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcAuthority\svcAuthority.disco" />
+    <None Include="Service References\svcAuthority\configuration91.svcinfo" />
+    <None Include="Service References\svcAuthority\configuration.svcinfo" />
+    <None Include="Service References\svcAuthority\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcCompany\svcCompany.disco" />
+    <None Include="Service References\svcCompany\configuration91.svcinfo" />
+    <None Include="Service References\svcCompany\configuration.svcinfo" />
+    <None Include="Service References\svcCompany\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcCompanyGroup\svcCompanyGroup.disco" />
+    <None Include="Service References\svcCompanyGroup\configuration91.svcinfo" />
+    <None Include="Service References\svcCompanyGroup\configuration.svcinfo" />
+    <None Include="Service References\svcCompanyGroup\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcUser\svcUser.disco" />
+    <None Include="Service References\svcUser\configuration91.svcinfo" />
+    <None Include="Service References\svcUser\configuration.svcinfo" />
+    <None Include="Service References\svcUser\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcDuties\svcDuties.disco" />
+    <None Include="Service References\svcDuties\configuration91.svcinfo" />
+    <None Include="Service References\svcDuties\configuration.svcinfo" />
+    <None Include="Service References\svcDuties\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcSystemInf\svcSystemInf.disco" />
+    <None Include="Service References\svcSystemInf\configuration91.svcinfo" />
+    <None Include="Service References\svcSystemInf\configuration.svcinfo" />
+    <None Include="Service References\svcSystemInf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcSalesCreditBalance\svcSalesCreditBalance.disco" />
+    <None Include="Service References\svcSalesCreditBalance\configuration91.svcinfo" />
+    <None Include="Service References\svcSalesCreditBalance\configuration.svcinfo" />
+    <None Include="Service References\svcSalesCreditBalance\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcInvoiceBalance\svcInvoiceBalance.disco" />
+    <None Include="Service References\svcInvoiceBalance\configuration91.svcinfo" />
+    <None Include="Service References\svcInvoiceBalance\configuration.svcinfo" />
+    <None Include="Service References\svcInvoiceBalance\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPurchaseOrder\svcPurchaseOrder.disco" />
+    <None Include="Service References\svcPurchaseOrder\configuration91.svcinfo" />
+    <None Include="Service References\svcPurchaseOrder\configuration.svcinfo" />
+    <None Include="Service References\svcPurchaseOrder\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPurchaseMst\svcPurchaseMst.disco" />
+    <None Include="Service References\svcPurchaseMst\configuration91.svcinfo" />
+    <None Include="Service References\svcPurchaseMst\configuration.svcinfo" />
+    <None Include="Service References\svcPurchaseMst\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPurchase\svcPurchase.disco" />
+    <None Include="Service References\svcPurchase\configuration91.svcinfo" />
+    <None Include="Service References\svcPurchase\configuration.svcinfo" />
+    <None Include="Service References\svcPurchase\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPaymentClose\svcPaymentClose.disco" />
+    <None Include="Service References\svcPaymentClose\configuration91.svcinfo" />
+    <None Include="Service References\svcPaymentClose\configuration.svcinfo" />
+    <None Include="Service References\svcPaymentClose\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPaymentCash\svcPaymentCash.disco" />
+    <None Include="Service References\svcPaymentCash\configuration91.svcinfo" />
+    <None Include="Service References\svcPaymentCash\configuration.svcinfo" />
+    <None Include="Service References\svcPaymentCash\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPaymentCreditBalance\svcPaymentCreditBalance.disco" />
+    <None Include="Service References\svcPaymentCreditBalance\configuration91.svcinfo" />
+    <None Include="Service References\svcPaymentCreditBalance\configuration.svcinfo" />
+    <None Include="Service References\svcPaymentCreditBalance\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcPaymentBalance\svcPaymentBalance.disco" />
+    <None Include="Service References\svcPaymentBalance\configuration91.svcinfo" />
+    <None Include="Service References\svcPaymentBalance\configuration.svcinfo" />
+    <None Include="Service References\svcPaymentBalance\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcInOutDelivery\svcInOutDelivery.disco" />
+    <None Include="Service References\svcInOutDelivery\configuration91.svcinfo" />
+    <None Include="Service References\svcInOutDelivery\configuration.svcinfo" />
+    <None Include="Service References\svcInOutDelivery\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcStockInventory\svcStockInventory.disco" />
+    <None Include="Service References\svcStockInventory\configuration91.svcinfo" />
+    <None Include="Service References\svcStockInventory\configuration.svcinfo" />
+    <None Include="Service References\svcStockInventory\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcSysLogin\svcSysLogin.disco" />
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\svcAuthority\" />
+    <WCFMetadataStorage Include="Service References\svcClass\" />
+    <WCFMetadataStorage Include="Service References\svcCommodity\" />
+    <WCFMetadataStorage Include="Service References\svcCompanyGroup\" />
+    <WCFMetadataStorage Include="Service References\svcCompany\" />
+    <WCFMetadataStorage Include="Service References\svcCondition\" />
+    <WCFMetadataStorage Include="Service References\svcCopying\" />
+    <WCFMetadataStorage Include="Service References\svcCustomer\" />
+    <WCFMetadataStorage Include="Service References\svcDuties\" />
+    <WCFMetadataStorage Include="Service References\svcEstimate\" />
+    <WCFMetadataStorage Include="Service References\svcInOutDelivery\" />
+    <WCFMetadataStorage Include="Service References\svcInquiry\" />
+    <WCFMetadataStorage Include="Service References\svcInvoiceBalance\" />
+    <WCFMetadataStorage Include="Service References\svcInvoiceClose\" />
+    <WCFMetadataStorage Include="Service References\svcMstData\" />
+    <WCFMetadataStorage Include="Service References\svcOrder\" />
+    <WCFMetadataStorage Include="Service References\svcPaymentBalance\" />
+    <WCFMetadataStorage Include="Service References\svcPaymentCash\" />
+    <WCFMetadataStorage Include="Service References\svcPaymentClose\" />
+    <WCFMetadataStorage Include="Service References\svcPaymentCreditBalance\" />
+    <WCFMetadataStorage Include="Service References\svcPerson\" />
+    <WCFMetadataStorage Include="Service References\svcPgEvidence\" />
+    <WCFMetadataStorage Include="Service References\svcPgLock\" />
+    <WCFMetadataStorage Include="Service References\svcPurchaseMst\" />
+    <WCFMetadataStorage Include="Service References\svcPurchaseOrder\" />
+    <WCFMetadataStorage Include="Service References\svcPurchase\" />
+    <WCFMetadataStorage Include="Service References\svcReceipt\" />
+    <WCFMetadataStorage Include="Service References\svcReport\" />
+    <WCFMetadataStorage Include="Service References\svcSalesCreditBalance\" />
+    <WCFMetadataStorage Include="Service References\svcSales\" />
+    <WCFMetadataStorage Include="Service References\svcStockInventory\" />
+    <WCFMetadataStorage Include="Service References\svcSupplier\" />
+    <WCFMetadataStorage Include="Service References\svcSysLogin\" />
+    <WCFMetadataStorage Include="Service References\svcSysName\" />
+    <WCFMetadataStorage Include="Service References\svcSystemInf\" />
+    <WCFMetadataStorage Include="Service References\svcUser\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

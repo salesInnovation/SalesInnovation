@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="LockPg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pgId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lockId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LockPgResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

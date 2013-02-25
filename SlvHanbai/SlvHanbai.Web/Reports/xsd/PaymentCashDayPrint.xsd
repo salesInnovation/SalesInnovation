@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PaymentCashDayPrint" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PaymentCashDayPrint" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="_PaymentCashDayPrint" msprop:Generator_UserDSName="PaymentCashDayPrint">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PaymentCashDayPrint" msprop:Generator_TableClassName="PaymentCashDayPrintDataTable" msprop:Generator_TableVarName="tablePaymentCashDayPrint" msprop:Generator_TablePropName="PaymentCashDayPrint" msprop:Generator_RowDeletingName="PaymentCashDayPrintRowDeleting" msprop:Generator_UserTableName="PaymentCashDayPrint" msprop:Generator_RowChangingName="PaymentCashDayPrintRowChanging" msprop:Generator_RowEvHandlerName="PaymentCashDayPrintRowChangeEventHandler" msprop:Generator_RowDeletedName="PaymentCashDayPrintRowDeleted" msprop:Generator_RowEvArgName="PaymentCashDayPrintRowChangeEvent" msprop:Generator_RowChangedName="PaymentCashDayPrintRowChanged" msprop:Generator_RowClassName="PaymentCashDayPrintRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GROUP_ID" msprop:Generator_ColumnVarNameInTable="columnGROUP_ID" msprop:Generator_ColumnPropNameInRow="GROUP_ID" msprop:Generator_ColumnPropNameInTable="GROUP_IDColumn" msprop:Generator_UserColumnName="GROUP_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="GROUP_NAME" msprop:Generator_ColumnVarNameInTable="columnGROUP_NAME" msprop:Generator_ColumnPropNameInRow="GROUP_NAME" msprop:Generator_ColumnPropNameInTable="GROUP_NAMEColumn" msprop:Generator_UserColumnName="GROUP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="GROUP_RANGE" msprop:Generator_ColumnVarNameInTable="columnGROUP_RANGE" msprop:Generator_ColumnPropNameInRow="GROUP_RANGE" msprop:Generator_ColumnPropNameInTable="GROUP_RANGEColumn" msprop:Generator_UserColumnName="GROUP_RANGE" type="xs:string" minOccurs="0" />
+              <xs:element name="TITEL_NM" msprop:Generator_ColumnVarNameInTable="columnTITEL_NM" msprop:Generator_ColumnPropNameInRow="TITEL_NM" msprop:Generator_ColumnPropNameInTable="TITEL_NMColumn" msprop:Generator_UserColumnName="TITEL_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="GROUP_SUM" msprop:Generator_ColumnVarNameInTable="columnGROUP_SUM" msprop:Generator_ColumnPropNameInRow="GROUP_SUM" msprop:Generator_ColumnPropNameInTable="GROUP_SUMColumn" msprop:Generator_UserColumnName="GROUP_SUM" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_KBN" msprop:Generator_ColumnVarNameInTable="columnTOTAL_KBN" msprop:Generator_ColumnPropNameInRow="TOTAL_KBN" msprop:Generator_ColumnPropNameInTable="TOTAL_KBNColumn" msprop:Generator_UserColumnName="TOTAL_KBN" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_KBN_NM" msprop:Generator_ColumnVarNameInTable="columnTOTAL_KBN_NM" msprop:Generator_ColumnPropNameInRow="TOTAL_KBN_NM" msprop:Generator_ColumnPropNameInTable="TOTAL_KBN_NMColumn" msprop:Generator_UserColumnName="TOTAL_KBN_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_KBN_SUM_NM" msprop:Generator_ColumnVarNameInTable="columnTOTAL_KBN_SUM_NM" msprop:Generator_ColumnPropNameInRow="TOTAL_KBN_SUM_NM" msprop:Generator_ColumnPropNameInTable="TOTAL_KBN_SUM_NMColumn" msprop:Generator_UserColumnName="TOTAL_KBN_SUM_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_PRICE" msprop:Generator_ColumnVarNameInTable="columnCASH_PRICE" msprop:Generator_ColumnPropNameInRow="CASH_PRICE" msprop:Generator_ColumnPropNameInTable="CASH_PRICEColumn" msprop:Generator_UserColumnName="CASH_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="CHECK_PRICE" msprop:Generator_ColumnVarNameInTable="columnCHECK_PRICE" msprop:Generator_ColumnPropNameInRow="CHECK_PRICE" msprop:Generator_ColumnPropNameInTable="CHECK_PRICEColumn" msprop:Generator_UserColumnName="CHECK_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="BANK_ACCOUNT_PRICE" msprop:Generator_ColumnVarNameInTable="columnBANK_ACCOUNT_PRICE" msprop:Generator_ColumnPropNameInRow="BANK_ACCOUNT_PRICE" msprop:Generator_ColumnPropNameInTable="BANK_ACCOUNT_PRICEColumn" msprop:Generator_UserColumnName="BANK_ACCOUNT_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="COMMISSION_PRICE" msprop:Generator_ColumnVarNameInTable="columnCOMMISSION_PRICE" msprop:Generator_ColumnPropNameInRow="COMMISSION_PRICE" msprop:Generator_ColumnPropNameInTable="COMMISSION_PRICEColumn" msprop:Generator_UserColumnName="COMMISSION_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="BILL_PRICE" msprop:Generator_ColumnVarNameInTable="columnBILL_PRICE" msprop:Generator_ColumnPropNameInRow="BILL_PRICE" msprop:Generator_ColumnPropNameInTable="BILL_PRICEColumn" msprop:Generator_UserColumnName="BILL_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="ANOTHER_PRICE" msprop:Generator_ColumnVarNameInTable="columnANOTHER_PRICE" msprop:Generator_ColumnPropNameInRow="ANOTHER_PRICE" msprop:Generator_ColumnPropNameInTable="ANOTHER_PRICEColumn" msprop:Generator_UserColumnName="ANOTHER_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnSUM_PRICE" msprop:Generator_ColumnPropNameInRow="SUM_PRICE" msprop:Generator_ColumnPropNameInTable="SUM_PRICEColumn" msprop:Generator_UserColumnName="SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="STRING_WHERE1" msprop:Generator_ColumnVarNameInTable="columnSTRING_WHERE1" msprop:Generator_ColumnPropNameInRow="STRING_WHERE1" msprop:Generator_ColumnPropNameInTable="STRING_WHERE1Column" msprop:Generator_UserColumnName="STRING_WHERE1" type="xs:string" minOccurs="0" />
+              <xs:element name="STRING_WHERE2" msprop:Generator_ColumnVarNameInTable="columnSTRING_WHERE2" msprop:Generator_ColumnPropNameInRow="STRING_WHERE2" msprop:Generator_ColumnPropNameInTable="STRING_WHERE2Column" msprop:Generator_UserColumnName="STRING_WHERE2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,40 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Custom.Utl_Zip"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+    mc:Ignorable="d"
+    Tag="TabSearchOn"
+    GotFocus="ExUserControl_GotFocus" 
+    Loaded="ExUserControl_Loaded">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblZipNo" Content="郵便番号" VerticalAlignment="Center"  />
+                <custom:ExTextBox FontSize="12" InputMethod.PreferredImeState="Off" Height="0" Width="0" x:Name="txtZipNo" Text="" TextAlignment="Right" InputMode="Alphanumeric" IsEnabled="False" IsTabStop="False" IsReadOnly="True" />
+                <custom:ExTextBox FontSize="12" InputMethod.PreferredImeState="Off" Height="26" Margin="0" x:Name="txtZipNo1" Width="40" Text="999" TextAlignment="Right" InputMode="Number" MaxNumber="999" MaxLength="3" FormatString="000" LostFocus="txtZipNo1_LostFocus" MouseDoubleClick="txtZipNo1_MouseDoubleClick" TextChanged="txtZipNo1_TextChanged" />
+                <sdk:Label Content="－" FontSize="12" HorizontalAlignment="Center" Width="20" />
+                <custom:ExTextBox FontSize="12" InputMethod.PreferredImeState="Off" Height="26" Margin="0" x:Name="txtZipNo2" Width="50" Text="9999" TextAlignment="Right" InputMode="Number" MaxNumber="9999" MaxLength="4" FormatString="0000" MouseDoubleClick="txtZipNo2_MouseDoubleClick" LostFocus="txtZipNo2_LostFocus" TextChanged="txtZipNo2_TextChanged" />
+                <TextBlock Width="10" />
+                <Button FontSize="11" Name="btnZip" Margin="0" Content=" 〒:検索 " Height="20" Click="btnZip_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+                <TextBlock x:Name="tbkMessage" FontSize="11" Text="  ※入力郵便番号は存在しません" Foreground="Red" TextAlignment="Left" VerticalAlignment="Center" />
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblAdress1" Content="住所１" VerticalAlignment="Center"  />
+                <custom:ExTextBox FontSize="12" Height="26" Margin="0" MaxLengthB="40" x:Name="txtAdress1" Width="350" Text="" TextAlignment="Left" InputMode="FullShapeNative" TextChanged="txtAdress1_TextChanged" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblAdress2" Content="住所２" VerticalAlignment="Center"  />
+                <custom:ExTextBox FontSize="12" Height="26" Margin="0" MaxLengthB="40" x:Name="txtAdress2" Width="350" Text="" TextAlignment="Left" InputMode="FullShapeNative" TextChanged="txtAdress2_TextChanged" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</custom:ExUserControl>

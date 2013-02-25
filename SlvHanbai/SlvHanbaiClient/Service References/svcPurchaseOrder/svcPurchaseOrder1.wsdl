@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPurchaseOrder.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPurchaseOrder.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPurchaseOrder.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcPurchaseOrder_GetPurchaseOrderH_InputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseOrderH" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_GetPurchaseOrderH_OutputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseOrderHResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_GetPurchaseOrderListD_InputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseOrderListD" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_GetPurchaseOrderListD_OutputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseOrderListDResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_GetPurchaseOrderList_InputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseOrderList" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_GetPurchaseOrderList_OutputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_UpdatePurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="UpdatePurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_UpdatePurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="UpdatePurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_UpdatePurchaseOrderPrint_InputMessage">
+    <wsdl:part name="parameters" element="UpdatePurchaseOrderPrint" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseOrder_UpdatePurchaseOrderPrint_OutputMessage">
+    <wsdl:part name="parameters" element="UpdatePurchaseOrderPrintResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcPurchaseOrder">
+    <wsdl:operation name="GetPurchaseOrderH">
+      <wsdl:input wsaw:Action="urn:svcPurchaseOrder/GetPurchaseOrderH" message="svcPurchaseOrder_GetPurchaseOrderH_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPurchaseOrder/GetPurchaseOrderHResponse" message="svcPurchaseOrder_GetPurchaseOrderH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseOrderListD">
+      <wsdl:input wsaw:Action="urn:svcPurchaseOrder/GetPurchaseOrderListD" message="svcPurchaseOrder_GetPurchaseOrderListD_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPurchaseOrder/GetPurchaseOrderListDResponse" message="svcPurchaseOrder_GetPurchaseOrderListD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseOrderList">
+      <wsdl:input wsaw:Action="urn:svcPurchaseOrder/GetPurchaseOrderList" message="svcPurchaseOrder_GetPurchaseOrderList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPurchaseOrder/GetPurchaseOrderListResponse" message="svcPurchaseOrder_GetPurchaseOrderList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchaseOrder">
+      <wsdl:input wsaw:Action="urn:svcPurchaseOrder/UpdatePurchaseOrder" message="svcPurchaseOrder_UpdatePurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPurchaseOrder/UpdatePurchaseOrderResponse" message="svcPurchaseOrder_UpdatePurchaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchaseOrderPrint">
+      <wsdl:input wsaw:Action="urn:svcPurchaseOrder/UpdatePurchaseOrderPrint" message="svcPurchaseOrder_UpdatePurchaseOrderPrint_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPurchaseOrder/UpdatePurchaseOrderPrintResponse" message="svcPurchaseOrder_UpdatePurchaseOrderPrint_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

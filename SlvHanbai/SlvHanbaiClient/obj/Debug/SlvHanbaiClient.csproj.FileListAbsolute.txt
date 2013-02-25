@@ -1,0 +1,756 @@
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClient.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClient.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\AppManifest.xaml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClient.xap
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClientTestPage.html
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Input.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Data.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Toolkit.Internals.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.DataForm.Toolkit.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.DataForm.Toolkit.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Input.Toolkit.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Input.Toolkit.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Layout.Toolkit.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Layout.Toolkit.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Theming.Toolkit.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Theming.Toolkit.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Toolkit.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Toolkit.xml
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Input.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\App.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\NaviPage.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\ChildWindow1.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Login.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MeiSearch.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_InpSearch.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Duties\Dlg_DutiesHistory.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Duties\Dlg_DutiesRegist.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Duties\Dlg_DutiesList.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Report\Dlg_ReportSetting.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_Help.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_Manual.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\SystemInf\Dlg_SystemInfList.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Theme\Dlg_ThemeChange.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Calender.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_DataForm.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MstSearch.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_InpMaster.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Copying.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Report\Dlg_Report.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Report\Dlg_ReportView.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\MessageBox\Dlg_MessagBox.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Theme\Dlg_ThemeShinyBlue.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Theme\Dlg_ThemeTwilightBlue.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_UnitPriceSetting.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_SupportHistory.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_SupportRegist.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_SupportReturn.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Progress.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MstSearchBank.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MstSearchGroup.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UA_Main.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_FooterBar.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_FunctionKey.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_MeiText.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_InpNoText.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_MstText.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_Mode.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_Zip.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Purchase\Utl_DataFormPurchaseOrder.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Purchase\Utl_DataFormPurchase.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Purchase\Utl_DataFormPaymentCash.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpInOutDelivery.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpSearchInventory.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpStockInventory.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpSearchInOutDelivery.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentBalance.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentPrint.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentCreditBalance.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpSearchPaymentCash.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentClose.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPurchaseOrder.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPurchase.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentCash.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpSearchPurchaseOrder.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpSearchPurchase.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpInvoicePrint.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSalesCreditBalance.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpInvoiceBalance.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchSales.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchPlan.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Utl_State.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormOrder.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormEstimate.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormSales.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormReceipt.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchEstimate.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSales.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpInvoiceClose.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpReceipt.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchReceipt.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCompanyGroup.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstPerson.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCustomer.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCommodity.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCondition.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstClass.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstSupplier.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstAuthority.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCompany.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstUser.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstPurchase.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstSetCommodity.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Report\Utl_Report.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Report\Utl_ReportView.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpOrder.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\SilverlightControl1.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Menu.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchOrder.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Login.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Install.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_InpMain.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_LoginMain.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Copying.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpEstimate.g.i.cs
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\SlvHanbaiClient.g.resources
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\SlvHanbaiClient.dll
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\SlvHanbaiClient.pdb
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient\obj\Debug\XapCacheFile.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\SlvHanbaiClient.csprojResolveAssemblyReference.cache
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\App.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\NaviPage.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\ChildWindow1.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Login.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MeiSearch.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_InpSearch.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Duties\Dlg_DutiesHistory.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Duties\Dlg_DutiesRegist.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Duties\Dlg_DutiesList.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Report\Dlg_ReportSetting.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_Help.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_Manual.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\SystemInf\Dlg_SystemInfList.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Theme\Dlg_ThemeChange.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Calender.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_DataForm.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MstSearch.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_InpMaster.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Copying.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Report\Dlg_Report.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Report\Dlg_ReportView.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\MessageBox\Dlg_MessagBox.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Theme\Dlg_ThemeShinyBlue.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Theme\Dlg_ThemeTwilightBlue.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_UnitPriceSetting.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_SupportHistory.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_SupportRegist.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Support\Dlg_SupportReturn.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_Progress.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MstSearchBank.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\Dlg\Dlg_MstSearchGroup.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UA_Main.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_FooterBar.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_FunctionKey.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_MeiText.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_InpNoText.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_MstText.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_Mode.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Custom\Utl_Zip.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Purchase\Utl_DataFormPurchaseOrder.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Purchase\Utl_DataFormPurchase.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Purchase\Utl_DataFormPaymentCash.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpInOutDelivery.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpSearchInventory.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpStockInventory.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Inventory\Utl_InpSearchInOutDelivery.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentBalance.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentPrint.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentCreditBalance.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpSearchPaymentCash.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentClose.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPurchaseOrder.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPurchase.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpPaymentCash.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpSearchPurchaseOrder.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Purchase\Utl_InpSearchPurchase.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpInvoicePrint.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSalesCreditBalance.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpInvoiceBalance.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchSales.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchPlan.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Utl_State.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormOrder.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormEstimate.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormSales.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\DataForm\Sales\Utl_DataFormReceipt.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchEstimate.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSales.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpInvoiceClose.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpReceipt.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchReceipt.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCompanyGroup.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstPerson.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCustomer.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCommodity.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCondition.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstClass.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstSupplier.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstAuthority.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstCompany.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstUser.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstPurchase.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Master\Utl_MstSetCommodity.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Report\Utl_Report.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Report\Utl_ReportView.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpOrder.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\SilverlightControl1.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Menu.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpSearchOrder.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Login.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Install.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_InpMain.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_LoginMain.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Utl_Copying.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\View\UserControl\Input\Sales\Utl_InpEstimate.g.i.cs
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\SlvHanbaiClient.g.resources
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\SlvHanbaiClient.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\SlvHanbaiClient.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClient.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClient.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\AppManifest.xaml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClient.xap
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\SlvHanbaiClientTestPage.html
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.DataForm.Toolkit.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Input.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Theming.Toolkit.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Toolkit.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Data.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Toolkit.Internals.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.DataForm.Toolkit.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Data.DataForm.Toolkit.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Input.Toolkit.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Input.Toolkit.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Layout.Toolkit.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Layout.Toolkit.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Theming.Toolkit.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Theming.Toolkit.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Toolkit.pdb
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\System.Windows.Controls.Toolkit.xml
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ar\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\bg\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ca\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\cs\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\da\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\el\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\et\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\eu\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fi\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\he\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hr\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\hu\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\id\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lt\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\lv\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ms\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\nl\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\no\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pl\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\pt-BR\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ro\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sk\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sl\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sr-Latn-CS\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\sv\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\th\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\tr\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\uk\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\vi\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Input.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\ru\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient\obj\Debug\XapCacheFile.xml

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityReceiptH">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_before_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_before_receipt_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_collect_plan_day" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_invoice_close_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_invoice_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_invoice_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="_invoice_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_invoice_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_invoice_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_invoice_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_invoice_yyyymmdd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_person_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_receipt_division_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_receipt_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_receipt_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_sum_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_summing_up_day" type="xs:int" />
+          <xs:element minOccurs="0" name="_summing_up_group_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_summing_up_group_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_date" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityReceiptH" nillable="true" type="tns:EntityReceiptH" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="ArrayOfEntityReceiptD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityReceiptD" nillable="true" type="tns:EntityReceiptD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityReceiptD" nillable="true" type="tns:ArrayOfEntityReceiptD" />
+  <xs:complexType name="EntityReceiptD">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_bill_site_day" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="_receipt_division_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_receipt_division_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityReceiptD" nillable="true" type="tns:EntityReceiptD" />
+  <xs:complexType name="ArrayOfEntityReceipt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityReceipt" nillable="true" type="tns:EntityReceipt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityReceipt" nillable="true" type="tns:ArrayOfEntityReceipt" />
+  <xs:complexType name="EntityReceipt">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bill_site_day" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="d_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="input_person" type="xs:int" />
+          <xs:element minOccurs="0" name="input_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoice_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoice_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="no" type="xs:long" />
+          <xs:element minOccurs="0" name="price" type="xs:double" />
+          <xs:element minOccurs="0" name="rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="receipt_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="receipt_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="receipt_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sum_price" type="xs:double" />
+          <xs:element minOccurs="0" name="update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="update_person_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityReceipt" nillable="true" type="tns:EntityReceipt" />
+</xs:schema>

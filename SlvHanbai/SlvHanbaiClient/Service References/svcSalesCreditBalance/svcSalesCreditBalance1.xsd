@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcSalesCreditBalance.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+  <xs:element name="GetSalesCreditBalanaceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strWhereSql" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strOrderBySql" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalesCreditBalanaceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetSalesCreditBalanaceListResult" nillable="true" type="q1:ArrayOfEntitySalesCreditBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSalesCreditBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="entity" nillable="true" type="q2:ArrayOfEntitySalesCreditBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSalesCreditBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSalesCreditBalanceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

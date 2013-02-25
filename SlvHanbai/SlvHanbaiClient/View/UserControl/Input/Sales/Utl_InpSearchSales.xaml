@@ -1,0 +1,359 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Input.Sales.Utl_InpSearchSales" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           d:DesignHeight="600" 
+           d:DesignWidth="1024"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:src="clr-namespace:SlvHanbaiClient.View.UserControl"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           xmlns:inputToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+           xmlns:layoutToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
+           xmlns:system="clr-namespace:System;assembly=mscorlib"
+           HorizontalContentAlignment="Left" 
+           VerticalContentAlignment="Top" 
+           Loaded="ExUserControl_Loaded" Unloaded="ExUserControl_Unloaded">
+
+    <Grid x:Name="LayoutRoot" Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" />
+
+        <Border Grid.Row="0" Grid.Column="1" BorderThickness="1" BorderBrush="Gray" >
+            <Grid Margin="7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="32" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <!-- 受注日 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblSalesYmd" Content="売上日" VerticalAlignment="Center" />
+                    <custom:ExDatePicker x:Name="datSalesYmd_F" Height="26" Width="128" FontSize="12" GotFocus="txt_GotFocus" />
+                    <TextBlock Width="22" Text="～" FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                    <custom:ExDatePicker x:Name="datSalesYmd_T" Height="26" Width="128" FontSize="12" GotFocus="txt_GotFocus" />
+                    <TextBlock Width="12" />
+                    <!-- 売上番号 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblSalesNo" Content="売上番号" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_InpNoText Height="26" Width="130" x:Name="utlSalesNo_F" GotFocus="txt_GotFocus" IsDobleClick="False" InpSearchKbn="Sales" />
+                    <TextBlock Width="20" Text="～" FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_InpNoText Height="26" Width="130" x:Name="utlSalesNo_T" GotFocus="txt_GotFocus" IsDobleClick="False" InpSearchKbn="Sales" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <!-- 納入指定日 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblNokiYmd" Content="納入指定日" VerticalAlignment="Center" />
+                    <custom:ExDatePicker x:Name="datNokiYmd_F" Height="26" Width="128" FontSize="12" GotFocus="txt_GotFocus" />
+                    <TextBlock Width="22" Text="～" FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                    <custom:ExDatePicker x:Name="datNokiYmd_T" Height="26" Width="128" FontSize="12" GotFocus="txt_GotFocus" />
+                    <TextBlock Width="12" />
+                    <!-- 受注番号 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblOrderNo" Content="受注番号" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_InpNoText Height="26" Width="130" x:Name="utlOrderNo_F" GotFocus="txt_GotFocus"  IsDobleClick="True" />
+                    <TextBlock Width="20" Text="～" FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_InpNoText Height="26" Width="130" x:Name="utlOrderNo_T" GotFocus="txt_GotFocus" IsDobleClick="True" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <!-- 入力担当者 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblInpPerson" Content="入力担当者" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_MstText Height="26" MstKbn="Person_F" x:Name="utlPerson_F" Width="130" id_Width="30" nm_Width="100" GotFocus="txt_GotFocus" id_InputMode="Number" id_FormatString="000" id_MinNumber="1" id_MaxNumber="999"/>
+                    <TextBlock Width="20" Text="～" FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_MstText Height="26" MstKbn="Person_T" x:Name="utlPerson_T" Width="130" id_Width="30" nm_Width="100" GotFocus="txt_GotFocus" id_InputMode="Number" id_FormatString="000" id_MinNumber="1" id_MaxNumber="999"/>
+                    <TextBlock Width="10" />
+                    <!-- 見積番号 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblEstimateNo" Content="見積番号" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_InpNoText Height="26" Width="130" x:Name="utlEstimateNo_F" GotFocus="txt_GotFocus" InpSearchKbn="Estimate" />
+                    <TextBlock Width="20" Text="～" FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_InpNoText Height="26" Width="130" x:Name="utlEstimateNo_T" GotFocus="txt_GotFocus" InpSearchKbn="Estimate" />
+                    <TextBlock Width="10" />
+                </StackPanel>
+                <StackPanel Grid.Row="4" Orientation="Horizontal">
+                    <!-- 得意先 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblCustomer" Content="得意先" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_MstText Height="26" x:Name="utlCustomer" MstKbn="Customer" nm_Width="150" GotFocus="txt_GotFocus" />
+                    <TextBlock Width="10" />
+                    <!-- 納入先 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblSupply" Content="納入先" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_MstText Height="26" x:Name="utlSupply" MstKbn="Supplier" nm_Width="150" GotFocus="txt_GotFocus" />
+                </StackPanel>
+                <StackPanel Grid.Row="5" Orientation="Horizontal">
+                    <!-- 商品 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblCommodity" Content="商品コード" VerticalAlignment="Center" />
+                    <UtlCustom:Utl_MstText Height="26" x:Name="utlCommodity" MstKbn="Commodity" nm_Width="150" GotFocus="txt_GotFocus" />
+                    <TextBlock Width="10" />
+                    <!-- 出力発行日 -->
+                    <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblIssueYmd" Content="出力発行日" VerticalAlignment="Center" />
+                    <custom:ExDatePicker x:Name="datIssueYmd" Height="26" Width="128" FontSize="12" GotFocus="txt_GotFocus" />
+                </StackPanel>
+                
+                <StackPanel Grid.Row="7" Orientation="Horizontal">
+                    <!-- 取引区分 -->
+                    <Border BorderThickness="1" BorderBrush="Gray">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="  取引区分  " FontSize="12" VerticalAlignment="Center" Width="Auto" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkKake" Content="掛売上" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkCash" Content="現金" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                        </StackPanel>
+                    </Border>
+                    <TextBlock Width="10" />
+                    <Border BorderThickness="1" BorderBrush="Gray">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="  完納区分  " FontSize="12" VerticalAlignment="Center" Width="Auto" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkUnDelivary" Content="未納" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkPartDelivary" Content="分納" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkFullDelivary" Content="完納" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkTorikeshi" Content="取消" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                        </StackPanel>
+                    </Border>
+                    <TextBlock Width="10" />
+                    <Border BorderThickness="1" BorderBrush="Gray">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text=" 請求 未/済 " FontSize="12" VerticalAlignment="Center" Width="Auto" />
+                            <TextBlock Width="5" />
+                            <RadioButton Content="未" FontSize="12" Name="rdoInvoiceNo" Margin="5" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                            <RadioButton Content="済" FontSize="12" Name="rdoInvoiceYes" Margin="5" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                            <RadioButton Content="指定無し" FontSize="12" Name="rdoInvoiceNothing" Margin="5" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                        </StackPanel>
+                    </Border>
+                    <TextBlock Width="10" />
+                    <Border BorderThickness="1" BorderBrush="Gray" x:Name="borPrint">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text=" 納品書発行 " FontSize="12" VerticalAlignment="Center" Width="Auto" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkPrintNo" Content="未" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                            <custom:ExCheckBox x:Name="chkPrintYes" Content="済" FontSize="12" VerticalAlignment="Center" GotFocus="txt_GotFocus" />
+                            <TextBlock Width="5" />
+                        </StackPanel>
+                    </Border>
+                    <Grid></Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <Grid x:Name="GridDetail" Grid.Row="2" Grid.Column="1" >
+            <Border Grid.Row="2" Grid.Column="1" BorderThickness="1" BorderBrush="Gray" >
+                <custom:ExDataGrid Margin="7" 
+                               AutoGenerateColumns="False" 
+                               FontSize="12" 
+                               Height="357" 
+                               HorizontalAlignment="Left" 
+                               VerticalAlignment="Top" 
+                               x:Name="dg" 
+                               RowBackground="White" 
+                               Width="894" 
+                               enterKeyDown="Off" 
+                               GotFocus="txt_GotFocus" 
+                               DoubleClick="dg_DoubleClick" 
+                               KeyUp="dg_KeyUp"
+                               VerticalScrollBarVisibility="Visible">
+                    <custom:ExDataGrid.Columns>
+                        <sdk:DataGridTextColumn Binding="{Binding str_no}" FontSize="12" Header="売上番号" IsReadOnly="True" Width="100">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding sales_ymd}" FontSize="12" Header="売上日" IsReadOnly="True" Width="80">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding str_estimate_no}" FontSize="12" Header="見積番号" IsReadOnly="True" Width="100">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding str_order_no}" FontSize="12" Header="受注番号" IsReadOnly="True" Width="100">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding customer_nm}" FontSize="12" Header="得意先名" IsReadOnly="True" Width="165">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding supplier_nm}" FontSize="12" Header="納入先名" IsReadOnly="True" Width="150">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding supply_ymd}" FontSize="12" Header="納入指定日" IsReadOnly="True" Width="80">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding business_division_nm}" FontSize="12" Header="取引区分" IsReadOnly="True" Width="100">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                        <sdk:DataGridTextColumn Binding="{Binding deliver_division_nm}" FontSize="12" Header="完納区分" IsReadOnly="True" Width="78" Visibility="Collapsed">
+                            <sdk:DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                </Style>
+                            </sdk:DataGridTextColumn.ElementStyle>
+                        </sdk:DataGridTextColumn>
+                    </custom:ExDataGrid.Columns>
+                </custom:ExDataGrid>
+            </Border>
+        </Grid>
+
+        <Grid x:Name="GridDetailSelect" Grid.Row="2" Grid.Column="1">
+            <Border Grid.Row="2" Grid.Column="1" BorderThickness="1" BorderBrush="Gray" >
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Height="7" />
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="10" />
+                        <Button FontSize="11" Name="btnSelectAll" Margin="0" Content=" すべて選択 " HorizontalAlignment="Left" Height="20" Width="70" Click="btnSelectAll_Click">
+                            <Button.Effect>
+                                <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                            </Button.Effect>
+                        </Button>
+                        <TextBlock Width="10" />
+                        <Button FontSize="11" Name="btnNoSelectAll" Margin="0" Content=" すべて解除 " HorizontalAlignment="Left" Height="20" Width="70" Click="btnNoSelectAll_Click">
+                            <Button.Effect>
+                                <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                            </Button.Effect>
+                        </Button>
+                    </StackPanel>
+
+                    <custom:ExDataGrid Margin="7" 
+                                   AutoGenerateColumns="False" 
+                                   FontSize="12" 
+                                   Height="337" 
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top" 
+                                   x:Name="dgSelect" 
+                                   RowBackground="White" 
+                                   Width="938" 
+                                   enterKeyDown="Off" 
+                                   GotFocus="txt_GotFocus" 
+                                   DoubleClick="dg_DoubleClick" 
+                                   KeyUp="dg_KeyUp"
+                                   VerticalScrollBarVisibility="Visible">
+                        <custom:ExDataGrid.Columns>
+                            <data:DataGridCheckBoxColumn x:Name="dataG_HeaderSelect" Header="対象" Binding="{Binding exec_flg,Mode=TwoWay}" CanUserResize="False" CanUserSort="False" IsReadOnly="False">
+                            </data:DataGridCheckBoxColumn>
+
+                            <sdk:DataGridTextColumn Binding="{Binding str_no}" FontSize="12" Header="売上番号" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding sales_ymd}" FontSize="12" Header="売上日" IsReadOnly="True" Width="80">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding str_estimate_no}" FontSize="12" Header="見積番号" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding str_order_no}" FontSize="12" Header="受注番号" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding customer_nm}" FontSize="12" Header="得意先名" IsReadOnly="True" Width="165">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding supplier_nm}" FontSize="12" Header="納入先名" IsReadOnly="True" Width="150">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding supply_ymd}" FontSize="12" Header="納入指定日" IsReadOnly="True" Width="80">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding business_division_nm}" FontSize="12" Header="取引区分" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding deliver_division_nm}" FontSize="12" Header="完納区分" IsReadOnly="True" Width="78" Visibility="Collapsed">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                        </custom:ExDataGrid.Columns>
+                    </custom:ExDataGrid>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+    </Grid>
+</custom:ExUserControl>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ConditionMst" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ConditionMst" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="_ConditionMst" msprop:Generator_UserDSName="ConditionMst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConditionMst" msprop:Generator_TableClassName="ConditionMstDataTable" msprop:Generator_TableVarName="tableConditionMst" msprop:Generator_TablePropName="ConditionMst" msprop:Generator_RowDeletingName="ConditionMstRowDeleting" msprop:Generator_UserTableName="ConditionMst" msprop:Generator_RowChangingName="ConditionMstRowChanging" msprop:Generator_RowEvHandlerName="ConditionMstRowChangeEventHandler" msprop:Generator_RowDeletedName="ConditionMstRowDeleted" msprop:Generator_RowEvArgName="ConditionMstRowChangeEvent" msprop:Generator_RowChangedName="ConditionMstRowChanged" msprop:Generator_RowClassName="ConditionMstRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" msprop:Generator_ColumnVarNameInTable="columnMEMO" msprop:Generator_ColumnPropNameInRow="MEMO" msprop:Generator_ColumnPropNameInTable="MEMOColumn" msprop:Generator_UserColumnName="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="DISPLAY_FLG" msprop:Generator_ColumnVarNameInTable="columnDISPLAY_FLG" msprop:Generator_ColumnPropNameInRow="DISPLAY_FLG" msprop:Generator_ColumnPropNameInTable="DISPLAY_FLGColumn" msprop:Generator_UserColumnName="DISPLAY_FLG" type="xs:byte" minOccurs="0" />
+              <xs:element name="DISPLAY_DIVISION_NAME" msprop:Generator_ColumnVarNameInTable="columnDISPLAY_DIVISION_NAME" msprop:Generator_ColumnPropNameInRow="DISPLAY_DIVISION_NAME" msprop:Generator_ColumnPropNameInTable="DISPLAY_DIVISION_NAMEColumn" msprop:Generator_UserColumnName="DISPLAY_DIVISION_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

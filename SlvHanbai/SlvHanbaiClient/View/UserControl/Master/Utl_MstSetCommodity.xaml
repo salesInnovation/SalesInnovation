@@ -1,0 +1,241 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Master.Utl_MstSetCommodity" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           Height="700" 
+           Width="700"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:provider="clr-namespace:SlvHanbaiClient.Class.Provider"
+           xmlns:converter="clr-namespace:SlvHanbaiClient.Class.Converter"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           HorizontalContentAlignment="Left" 
+           VerticalContentAlignment="Top" 
+           Unloaded="ExUserControl_Unloaded" 
+           Loaded="ExUserControl_Loaded">
+
+    <custom:ExUserControl.Resources>
+        <provider:displayDivisionProvider x:Key="displayDivisionProvider"/>
+        <converter:NumberConverter x:Key="numberConverter" FormatString="000"  />
+    </custom:ExUserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="34" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="200*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" IsTabStop="False" />
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <UtlCustom:Utl_FunctionKey x:Name="utlFunctionKey" 
+                                       btnF1_Content="     F1     &#x0d;   登  録" 
+                                       btnF2_Content="     F2     &#x0d;  クリア" 
+                                       btnF3_Content="     F3     &#x0d;  行挿入" 
+                                       btnF4_Content="     F4     &#x0d;  行削除" 
+                                       btnF5_Content="     F5     &#x0d;   参  照" 
+                                       btnF11_Content="    F11    &#x0d; レポート" 
+                                       btnF12_Content="    F12    &#x0d; クローズ"
+                                       btnF6_Visibility="Collapsed"
+                                       btnF7_Visibility="Collapsed"
+                                       btnF8_Visibility="Collapsed"
+                                       btnF9_Visibility="Collapsed"
+                                       IsDataForm="False" />
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+            <!-- タイトル -->
+            <Border>
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" ShadowDepth="5" />
+                </Border.Effect>
+                <custom:ExLabel FontSize="14" Width="500" Height="30" Margin="1" HorizontalAlignment="Left" x:Name="lblTitle" Content="   [セ　ッ　ト　商　品　登　録]" VerticalAlignment="Center" />
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <!-- セット商品 -->
+                        <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" Content="セット商品" VerticalAlignment="Center"  />
+                        <UtlCustom:Utl_MstText Height="26" x:Name="utlCommodity" MstKbn="Commodity" nm_Width="150" GotFocus="txt_GotFocus" />
+                        <TextBlock Width="10" />
+                        <UtlCustom:Utl_Mode x:Name="utlMode" HorizontalAlignment="Left" VerticalAlignment="Center" Tag="Mode" Mode="New" IsAutoNumMode="False" />
+                    </StackPanel>
+                    <TextBlock Height="10" />
+                    <custom:ExDataGrid  AutoGenerateColumns="False" 
+                                        Height="530" 
+                                        x:Name="dg" 
+                                        FontSize="12" 
+                                        Width="650" 
+                                        RowBackground="White" 
+                                        HorizontalAlignment="Left" 
+                                        GotFocus="dg_GotFocus" 
+                                        CellEditEnded="dg_CellEditEnded" 
+                                        SelectionChanged="dg_SelectionChanged" 
+                                        BeginningEdit="dg_BeginningEdit" 
+                                        HorizontalScrollBarVisibility="Disabled" 
+                                        ComboBoxColumnIndex="2"
+                                        VerticalScrollBarVisibility="Auto" 
+                                        LayoutUpdated="dg_LayoutUpdated">
+                        <custom:ExDataGrid.Columns>
+                            <!-- ID -->
+                            <sdk:DataGridTemplateColumn Width="120" Header="商品コード">
+                                <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <custom:ExTextBox x:Name="txtGoodsID" 
+                                                  Width="120" 
+                                                  TextAlignment="Left" 
+                                                  InputMethod.PreferredImeState="Off" 
+                                                  BorderThickness="1" 
+                                                  BorderBrush="#FF617584" 
+                                                  Background="White" 
+                                                  Text="{Binding _commodity_id,Mode=TwoWay}" 
+                                                  MaxLength="15" 
+                                                  GotFocus="txt_GotFocus" 
+                                                  MouseDoubleClick="txtGoodsID_MouseDoubleClick" 
+                                                  HorizontalAlignment="Left" 
+                                                  VerticalAlignment="Center" 
+                                                  InputMode="ID" 
+                                                  DataGridRecNo="{Binding _rec_no,Mode=TwoWay}" 
+                                                  IsSelectAll="True"
+                                                  IsDataGridSelectCell="True"
+                                                  DataGridSelectedColumnIndex="0"
+                                                  IdFigureType="Commodity" />
+                                    </DataTemplate>
+                                </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            </sdk:DataGridTemplateColumn>
+                        
+                            <!-- 名称 -->
+                            <sdk:DataGridTemplateColumn Width="256" Header="商品名">
+                                <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <custom:ExTextBox x:Name="txtGoodsName" 
+                                                  TextAlignment="Left" 
+                                                  InputMethod.PreferredImeState="On" 
+                                                  BorderThickness="1" 
+                                                  BorderBrush="#FF617584" 
+                                                  InputMethod.PreferredImeConversionMode="CharCode" 
+                                                  Background="White" 
+                                                  Text="{Binding _commodity_name,Mode=TwoWay}" 
+                                                  InputMode="FullShapeNative" 
+                                                  DataGridRecNo="{Binding _rec_no,Mode=TwoWay}" 
+                                                  IsSelectAll="True"
+                                                  IsDataGridSelectCell="True"
+                                                  DataGridSelectedColumnIndex="1"
+                                                  MaxLength="40" 
+                                                  GotFocus="txt_GotFocus" />
+                                    </DataTemplate>
+                                </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            </sdk:DataGridTemplateColumn>
+
+                            <!-- 入数 -->
+                            <sdk:DataGridTemplateColumn Width="82" Header="入数">
+                                <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <custom:ExTextBox x:Name="txtEnterNum" 
+                                                  TextAlignment="Right" 
+                                                  InputMethod.PreferredImeState="Off" 
+                                                  BorderThickness="1" 
+                                                  BorderBrush="#FF617584" 
+                                                  Background="White" 
+                                                  Text="{Binding _enter_number, Converter={StaticResource numberConverter} ,Mode=TwoWay}" 
+                                                  DataGridRecNo="{Binding _rec_no,Mode=TwoWay}" 
+                                                  IsSelectAll="False"
+                                                  IsDataGridSelectCell="False"
+                                                  IsEnabled="False"
+                                                  DataGridSelectedColumnIndex="2"
+                                                  InputMode="Number" 
+                                                  GotFocus="txt_GotFocus" 
+                                                  ZeroToNull="False" 
+                                                  MaxNumber="9999" />
+                                    </DataTemplate>
+                                </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            </sdk:DataGridTemplateColumn>
+
+                            <!-- ケース数 -->
+                            <sdk:DataGridTemplateColumn Width="82" Header="ケース数">
+                                <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <custom:ExTextBox x:Name="txtCaseNum" 
+                                                  TextAlignment="Right" 
+                                                  InputMethod.PreferredImeState="Off" 
+                                                  BorderThickness="1" 
+                                                  BorderBrush="#FF617584" 
+                                                  Background="White" 
+                                                  Text="{Binding _case_number, Converter={StaticResource numberConverter}, Mode=TwoWay}" 
+                                                  DataGridRecNo="{Binding _rec_no,Mode=TwoWay}" 
+                                                  IsSelectAll="True"
+                                                  IsDataGridSelectCell="True"
+                                                  DataGridSelectedColumnIndex="3"
+                                                  InputMode="Number" 
+                                                  GotFocus="txt_GotFocus" 
+                                                  ZeroToNull="False" 
+                                                  MaxNumber="9999" 
+                                                  MinNumber="-9999" />
+                                    </DataTemplate>
+                                </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            </sdk:DataGridTemplateColumn>
+
+                            <!-- 数量 -->
+                            <sdk:DataGridTemplateColumn Width="90" Header="数量">
+                                <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <custom:ExTextBox x:Name="txtNumber" 
+                                                  TextAlignment="Right" 
+                                                  InputMethod.PreferredImeState="Off" 
+                                                  BorderThickness="1" 
+                                                  BorderBrush="#FF617584" 
+                                                  Background="White" 
+                                                  Text="{Binding _number, Converter={StaticResource numberConverter2}, Mode=TwoWay}" 
+                                                  DecimalNum="{Binding _number_decimal_digit, Mode=OneWay}" 
+                                                  DataGridRecNo="{Binding _rec_no,Mode=TwoWay}" 
+                                                  IsSelectAll="False"
+                                                  IsDataGridSelectCell="False"
+                                                  IsEnabled="False"
+                                                  DataGridSelectedColumnIndex="4"
+                                                  InputMode="Number" 
+                                                  MaxNumber="99999999" 
+                                                  MinNumber="-99999999" 
+                                                  ZeroToNull="False" 
+                                                  GotFocus="txt_GotFocus" />
+                                    </DataTemplate>
+                                </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            </sdk:DataGridTemplateColumn>
+                            
+                            <data:DataGridTemplateColumn Header="" Width="0" >
+                                <data:DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <custom:ExComboBox Width="0" />
+                                    </DataTemplate>
+                                </data:DataGridTemplateColumn.CellTemplate>
+                            </data:DataGridTemplateColumn>
+
+                        </custom:ExDataGrid.Columns>
+                    </custom:ExDataGrid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+    </custom:ExUserControl>
+

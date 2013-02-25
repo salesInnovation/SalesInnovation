@@ -1,0 +1,166 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Master.Utl_MstCondition" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           Height="700" 
+           Width="520"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:provider="clr-namespace:SlvHanbaiClient.Class.Provider"
+           xmlns:converter="clr-namespace:SlvHanbaiClient.Class.Converter"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           HorizontalContentAlignment="Left" 
+           VerticalContentAlignment="Top" 
+           Unloaded="ExUserControl_Unloaded" 
+           Loaded="ExUserControl_Loaded">
+
+    <custom:ExUserControl.Resources>
+        <provider:displayDivisionProvider x:Key="displayDivisionProvider"/>
+        <converter:NumberConverter x:Key="numberConverter" FormatString="00"  />
+    </custom:ExUserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="34" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="200*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" IsTabStop="False" />
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <UtlCustom:Utl_FunctionKey x:Name="utlFunctionKey" 
+                                       btnF1_Content="     F1     &#x0d;   登  録" 
+                                       btnF2_Content="     F2     &#x0d;  クリア" 
+                                       btnF3_Content="     F3     &#x0d;  行挿入" 
+                                       btnF4_Content="     F4     &#x0d;  行削除" 
+                                       btnF5_Content="     F5     &#x0d;   参  照" 
+                                       btnF11_Content="    F11    &#x0d; レポート" 
+                                       btnF12_Content="    F12    &#x0d; クローズ"
+                                       btnF6_Visibility="Collapsed"
+                                       btnF7_Visibility="Collapsed"
+                                       btnF8_Visibility="Collapsed"
+                                       btnF9_Visibility="Collapsed"
+                                       IsDataForm="False" />
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+            <!-- タイトル -->
+            <Border>
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" ShadowDepth="5" />
+                </Border.Effect>
+                <custom:ExLabel FontSize="14" Width="500" Height="30" Margin="1" HorizontalAlignment="Left" x:Name="lblTitle" Content="   [締　区　分　登　録]" VerticalAlignment="Center" />
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical">
+                    <UtlCustom:Utl_Mode x:Name="utlMode" HorizontalAlignment="Left" VerticalAlignment="Center" Tag="Mode" Mode="New" />
+                    <TextBlock Height="10" />
+                    <custom:ExDataGrid  AutoGenerateColumns="False" 
+                                        Height="360" 
+                                        x:Name="dg" 
+                                        FontSize="12" 
+                                        Width="308" 
+                                        RowBackground="White" 
+                                        HorizontalAlignment="Left" 
+                                        GotFocus="dg_GotFocus" 
+                                        CellEditEnded="dg_CellEditEnded" 
+                                        SelectionChanged="dg_SelectionChanged" 
+                                        BeginningEdit="dg_BeginningEdit" 
+                                        HorizontalScrollBarVisibility="Disabled" 
+                                        ComboBoxColumnIndex="2"
+                                        VerticalScrollBarVisibility="Auto" 
+                                        LayoutUpdated="dg_LayoutUpdated">
+                        <custom:ExDataGrid.Columns>
+                            <!-- ID -->
+                            <sdk:DataGridTemplateColumn Width="50" Header="ID">
+                                <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <custom:ExTextBox x:Name="txtID" 
+                                                          FormatString="00" 
+                                                          InputMode="Number" 
+                                                          MaxNumber="99" 
+                                                          MinNumber="1" 
+                                                          TextAlignment="Right" 
+                                                          InputMethod.PreferredImeState="Off" 
+                                                          BorderThickness="1" 
+                                                          BorderBrush="#FF617584" 
+                                                          Background="White" 
+                                                          Text="{Binding _id, Converter={StaticResource numberConverter} ,Mode=TwoWay}" 
+                                                          DataGridRecNo="{Binding _rec_no,Mode=TwoWay}" 
+                                                          IsSelectAll="True"
+                                                          IsDataGridSelectCell="True"
+                                                          DataGridSelectedColumnIndex="0" />
+                                    </DataTemplate>
+                                </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            </sdk:DataGridTemplateColumn>
+                        
+                            <!-- 名称 -->
+                            <sdk:DataGridTemplateColumn Width="136" Header="名称">
+                                <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <custom:ExTextBox x:Name="txtName" 
+                                                          TextAlignment="Left" 
+                                                          InputMethod.PreferredImeState="On" 
+                                                          BorderThickness="1" 
+                                                          BorderBrush="#FF617584" 
+                                                          InputMethod.PreferredImeConversionMode="CharCode" 
+                                                          Background="White" 
+                                                          Text="{Binding _name,Mode=TwoWay}" 
+                                                          InputMode="FullShapeNative" 
+                                                          MaxLengthB="20" 
+                                                          DataGridRecNo="{Binding _rec_no,Mode=TwoWay}" 
+                                                          IsSelectAll="True"
+                                                          IsDataGridSelectCell="True"
+                                                          DataGridSelectedColumnIndex="1"/>
+                                    </DataTemplate>
+                                </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            </sdk:DataGridTemplateColumn>
+
+                            <!-- 表示区分 -->
+                            <data:DataGridTemplateColumn Header="表示区分" Width="100">
+                                <data:DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <custom:ExComboBox x:Name="cboDisplayDivision" 
+                                                           SelectedItem="{Binding _display_division_nm, Mode=TwoWay}" 
+                                                           ItemsSource="{Binding DisplayDivisionList, Source={StaticResource displayDivisionProvider}}" />
+                                    </DataTemplate>
+                                </data:DataGridTemplateColumn.CellTemplate>
+                            </data:DataGridTemplateColumn>
+
+                            <data:DataGridTemplateColumn Header="" Width="0" >
+                                <data:DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <custom:ExComboBox Width="0" />
+                                    </DataTemplate>
+                                </data:DataGridTemplateColumn.CellTemplate>
+                            </data:DataGridTemplateColumn>
+                        </custom:ExDataGrid.Columns>
+                    </custom:ExDataGrid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+    </custom:ExUserControl>
+

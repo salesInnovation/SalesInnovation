@@ -1,0 +1,17 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Custom.Utl_InpNoText"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+    mc:Ignorable="d"
+    Height="26"
+    Tag="TabSearchOn"
+    Width="Auto" GotFocus="ExUserControl_GotFocus" Loaded="ExUserControl_Loaded">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <StackPanel Orientation="Horizontal">
+            <custom:ExTextBox FontSize="12" InputMethod.PreferredImeState="Off" Height="26" Margin="0" x:Name="txtID" Width="130" Text="9999999999" TextAlignment="Right" InputMode="Number" MaxNumber="9999999999" FormatString="0000000000" MouseDoubleClick="txtNo_MouseDoubleClick" TextChanged="txtID_TextChanged" ZeroToNull="True" />
+        </StackPanel>
+    </Grid>
+</custom:ExUserControl>

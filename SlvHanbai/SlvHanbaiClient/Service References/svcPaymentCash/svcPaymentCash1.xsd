@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+  <xs:element name="GetPaymentCashH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="payment_cash_no" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentCashHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPaymentCashHResult" nillable="true" type="q1:EntityPaymentCashH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentCashD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="payment_cash_id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentCashDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPaymentCashDResult" nillable="true" type="q2:ArrayOfEntityPaymentCashD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentCashList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strWhereSql" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strOrderBySql" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentCashListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPaymentCashListResult" nillable="true" type="q3:ArrayOfEntityPaymentCash" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePaymentCash">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element minOccurs="0" name="PaymentCashNo" type="xs:long" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="entityH" nillable="true" type="q4:EntityPaymentCashH" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="entityD" nillable="true" type="q5:ArrayOfEntityPaymentCashD" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="before_entityH" nillable="true" type="q6:EntityPaymentCashH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePaymentCashResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePaymentCashResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

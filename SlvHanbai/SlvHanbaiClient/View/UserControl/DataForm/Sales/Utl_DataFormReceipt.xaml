@@ -1,0 +1,143 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.DataForm.Sales.Utl_DataFormReceipt" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           Height="590" 
+           Width="530" 
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:dataform="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.DataForm.Toolkit"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           xmlns:provider="clr-namespace:SlvHanbaiClient.Class.Provider"
+           xmlns:converter="clr-namespace:SlvHanbaiClient.Class.Converter"
+           xmlns:inputToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+           xmlns:layoutToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
+           xmlns:system="clr-namespace:System;assembly=mscorlib"
+           HorizontalContentAlignment="Left" 
+           VerticalContentAlignment="Top" 
+           Loaded="ExUserControl_Loaded">
+
+    <custom:ExUserControl.Resources>
+        <provider:breakdownProvider x:Key="breakdownProvider"/>
+        <provider:unitProvider x:Key="unitProvider"/>
+        <provider:taxDivisionProvider x:Key="taxDivisionProvider"/>
+        <converter:NumberConverter x:Key="numberConverter" />
+        <converter:NumberConverter x:Key="numberConverter2" DecimalPlaces="2" />
+    </custom:ExUserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <custom:ExDataForm Height="590" HorizontalAlignment="Left" x:Name="DataForm" VerticalAlignment="Top" Width="530" Header="入金明細" FontSize="16" 
+                          CommandButtonsVisibility="Add, Delete, Navigation" AutoGenerateFields="False" ContentLoaded="DataForm_ContentLoaded" AutoCommit="True" AutoEdit="True" AddingNewItem="DataForm_AddingNewItem" DeletingItem="DataForm_DeletingItem">
+            <custom:ExDataForm.EditTemplate>
+                <DataTemplate>
+                    <StackPanel x:Name="stpDataForm">
+                        <dataform:DataField Label="No" FontSize="12" Name="lblNo">
+                            <custom:ExTextBox x:Name="txtNo" 
+                                              Width="50" 
+                                              HorizontalAlignment="Left" 
+                                              FontSize="12" 
+                                              Text="{Binding _rec_no,Mode=TwoWay}" 
+                                              InputMode="Number"
+                                              IsEnabled="False" 
+                                              IsReadOnly="True" 
+                                              GotFocus="txt_GotFocus" 
+                                              KeyDown="txt_KeyDown" 
+                                              KeyUp="txt_KeyUp" />
+                        </dataform:DataField>
+                        <dataform:DataField Label="入金区分" FontSize="12" Name="lblGoodsId">
+                            <custom:ExTextBox x:Name="txtReceiptDivisionId" 
+                                              Width="50" 
+                                              HorizontalAlignment="Left" 
+                                              FontSize="12" 
+                                              Text="{Binding _receipt_division_id,Mode=TwoWay}" 
+                                              InputMode="Number"
+                                              FormatString="000" 
+                                              MaxNumber="999" 
+                                              MinNumber="1"
+                                              GotFocus="txt_GotFocus" 
+                                              LostFocus="txt_LostFocus" 
+                                              MouseDoubleClick="txtReceiptDivisionId_MouseDoubleClick" 
+                                              KeyDown="txt_KeyDown" 
+                                              KeyUp="txt_KeyUp" />
+                        </dataform:DataField>
+                        <dataform:DataField Label="入金内容" FontSize="12" Name="lblGoodsNm">
+                            <custom:ExTextBox x:Name="txtReceiptDivisionNm" 
+                                              Width="320" 
+                                              HorizontalAlignment="Left" 
+                                              FontSize="12" 
+                                              Text="{Binding _receipt_division_nm,Mode=TwoWay}" 
+                                              InputMode="FullShapeNative" 
+                                              MaxLengthB="40" 
+                                              GotFocus="txt_GotFocus" 
+                                              KeyDown="txt_KeyDown" 
+                                              KeyUp="txt_KeyUp" />
+                        </dataform:DataField>
+                        <dataform:DataField Label="金額" FontSize="12" Name="lblPrice">
+                            <custom:ExTextBox x:Name="txtPrice" 
+                                              Width="130" 
+                                              HorizontalAlignment="Left" 
+                                              FontSize="12" 
+                                              Text="{Binding _price, Converter={StaticResource numberConverter}, Mode=TwoWay}" 
+                                              InputMode="Number" 
+                                              MaxNumber="99999999999" 
+                                              MinNumber="-99999999999" 
+                                              GotFocus="txt_GotFocus" 
+                                              LostFocus="txt_LostFocus" 
+                                              KeyDown="txt_KeyDown" 
+                                              KeyUp="txt_KeyUp" />
+                        </dataform:DataField>
+                        <dataform:DataField Label="手形期日" FontSize="12" Name="lblEnterNum">
+                            <custom:ExDatePicker x:Name="txtBillSiteDay" 
+                                                  Width="130" 
+                                                  InputMethod.IsInputMethodEnabled="False"
+                                                  InputMethod.PreferredImeState="Off" 
+                                                  BorderThickness="1" 
+                                                  BorderBrush="#FF617584" 
+                                                  Background="White" 
+                                                  Text="{Binding _bill_site_day,Mode=TwoWay}" 
+                                                  GotFocus="txt_GotFocus" 
+                                                  HorizontalAlignment="Left" 
+                                                  VerticalAlignment="Center"
+                                                  KeyDown="txt_KeyDown" 
+                                                  KeyUp="txt_KeyUp" />
+                        </dataform:DataField>
+                        <dataform:DataField Label="備考" FontSize="12" Name="lblDetailMemo">
+                            <custom:ExTextBox x:Name="txtDetailMemo" 
+                                              Width="130" 
+                                              HorizontalAlignment="Left" 
+                                              FontSize="12" 
+                                              Text="{Binding _memo,Mode=TwoWay}" 
+                                              InputMode="FullShapeNative" 
+                                              MaxLengthB="20"
+                                              GotFocus="txt_GotFocus" 
+                                              KeyDown="txt_KeyDown" 
+                                              KeyUp="txt_KeyUp" />
+                        </dataform:DataField>
+                    </StackPanel>
+                </DataTemplate>
+            </custom:ExDataForm.EditTemplate>
+        </custom:ExDataForm>
+        <UtlCustom:Utl_FunctionKey Height="58" HorizontalAlignment="Center" Margin="0,512,0,0" x:Name="utlFunctionKey" VerticalAlignment="Top"  
+                                   btnF1_Content="     F1     &#x0d;    O K" 
+                                   btnF2_Content="     F2     &#x0d;   追  加" 
+                                   btnF3_Content="     F3     &#x0d;   削  除" 
+                                   btnF4_Content="     F4     &#x0d;  クリア" 
+                                   btnF5_Content="     F5     &#x0d;   参  照" 
+                                   btnF6_Content="     F6     &#x0d;   保  存" 
+                                   btnF12_Content="    F12    &#x0d;キャンセル" 
+                                   btnF7_Visibility="Collapsed"
+                                   btnF8_Visibility="Collapsed"
+                                   btnF9_Visibility="Collapsed"
+                                   btnF11_Visibility="Collapsed" IsDataForm="True" />
+        <TextBlock x:Name="txtBefore" Height="23" HorizontalAlignment="Left" Margin="371,30,0,0" Text="(F7:前へ)" VerticalAlignment="Top" Width="50" Foreground="DarkGray" FontSize="11" />
+        <TextBlock x:Name="txtNext" Height="23" HorizontalAlignment="Left" Margin="424,30,0,0" Text="(F8:次へ)" VerticalAlignment="Top" Width="50" Foreground="DarkGray" FontSize="11" />
+        <Rectangle x:Name="recAdd" Visibility="Collapsed" Height="19" HorizontalAlignment="Left" Margin="477,6,0,0" Stroke="Transparent" Fill="#FFF3F9F9"  StrokeThickness="0" VerticalAlignment="Top" Width="42" />
+    </Grid>
+</custom:ExUserControl>
+

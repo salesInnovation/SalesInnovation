@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrderPrint">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NO" type="xs:string" minOccurs="0" />
+              <xs:element name="SUM_PRICE_TITLE" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="SUM_TAX" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_NO_TAX_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="TAX_CHANGE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="COMPANY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="GROUP_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" type="xs:long" minOccurs="0" />
+              <xs:element name="ESTIMATENO" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDER_YMD" type="xs:string" minOccurs="0" />
+              <xs:element name="INPUT_PERSON" type="xs:int" minOccurs="0" />
+              <xs:element name="INPUT_PERSON_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_PERSON_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TITLE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_NM_TITLE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_PERSON_NM_TITLE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TAX_CHANGE_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="BUSINESS_DIVISION_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="BISNESS_DIVISON_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLIER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLIER_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLY_YMD" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATE_PERSON_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_ZIP_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_ADRESS1" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_ADRESS2" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_FAX" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_MAIL_ADRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY_URL" type="xs:string" minOccurs="0" />
+              <xs:element name="SUM_ENTER_NUMBER" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_CASE_NUMBER" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_NUMBER" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_UNIT_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_SALES_COST" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="SUM_PROFITS" type="xs:double" minOccurs="0" />
+              <xs:element name="PROFITS_PERCENT" type="xs:double" minOccurs="0" />
+              <xs:element name="UPDATE_PERSON_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="REC_NO" type="xs:short" minOccurs="0" />
+              <xs:element name="BREAKDOWN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="BREAKDOWN_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="DELIVER_DIVISION_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DELIVER_DIVISION_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="COMMODITY_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="COMMODITY_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="UNIT_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="ENTER_NUMBER" type="xs:double" minOccurs="0" />
+              <xs:element name="CASE_NUMBER" type="xs:double" minOccurs="0" />
+              <xs:element name="ENTER_NUMBER_PRINT" type="xs:string" minOccurs="0" />
+              <xs:element name="CASE_NUMBER_PRINT" type="xs:string" minOccurs="0" />
+              <xs:element name="NUMBER" type="xs:double" minOccurs="0" />
+              <xs:element name="UNIT_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="TAX" type="xs:double" minOccurs="0" />
+              <xs:element name="NO_TAX_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="PROFITS" type="xs:double" minOccurs="0" />
+              <xs:element name="D_PROFITS_PERCENT" type="xs:double" minOccurs="0" />
+              <xs:element name="TAX_DIVISION_ID" type="xs:byte" minOccurs="0" />
+              <xs:element name="TAX_DIVISION_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="D_MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="STRING_WHERE1" type="xs:string" minOccurs="0" />
+              <xs:element name="STRING_WHERE2" type="xs:string" minOccurs="0" />
+              <xs:element name="GROUP_RANGE" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

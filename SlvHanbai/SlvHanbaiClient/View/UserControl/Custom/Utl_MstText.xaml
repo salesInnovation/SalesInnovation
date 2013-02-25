@@ -1,0 +1,19 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Custom.Utl_MstText"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+    mc:Ignorable="d"
+    Tag="TabSearchOn"
+    Height="26"
+    Width="Auto" Loaded="ExUserControl_Loaded" GotFocus="ExUserControl_GotFocus">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <StackPanel Orientation="Horizontal">
+            <custom:ExTextBox FontSize="12" InputMethod.PreferredImeState="Off" Height="26" Margin="0" x:Name="txtID" Width="130" Text="" TextAlignment="Left" InputMode="Alphanumeric" MouseDoubleClick="txtID_MouseDoubleClick" MaxLength="14" TextChanged="txtID_TextChanged" LostFocus="txtID_LostFocus" GotFocus="txtID_GotFocus" />
+            <custom:ExTextBox FontSize="12" InputMethod.PreferredImeState="Off" Height="26" Margin="0" x:Name="txtNm" Width="252" Text="" TextAlignment="Left" IsReadOnly="True" InputMode="FullShapeNative" IsTabStop="False" FormatString="" />
+            <custom:ExTextBox FontSize="12" InputMethod.PreferredImeState="Off" Height="0" Margin="0" x:Name="txtID2" Width="0" Text="" TextAlignment="Left" InputMode="Alphanumeric" IsEnabled="False" IsReadOnly="True" IsTabStop="False" />
+        </StackPanel>
+    </Grid>
+</custom:ExUserControl>

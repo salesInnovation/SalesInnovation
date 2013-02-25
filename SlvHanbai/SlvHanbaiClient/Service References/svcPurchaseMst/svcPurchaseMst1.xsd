@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityPurchaseMst">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_about_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_adress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_adress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_adress_city" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_adress_town" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_bill_site" type="xs:int" />
+          <xs:element minOccurs="0" name="_business_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_business_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_city_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_credit_rate" type="xs:int" />
+          <xs:element minOccurs="0" name="_display_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_display_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_fax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group1_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group1_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group2_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group2_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group3_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group3_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_kana" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_mail_adress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_mobile_adress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_mobile_tel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_payment_cycle_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_payment_cycle_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_day" type="xs:int" />
+          <xs:element minOccurs="0" name="_payment_division_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_person_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_post_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_prefecture_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_price_fraction_proc_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_price_fraction_proc_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_station_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_summing_up_group_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_summing_up_group_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_change_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_tax_change_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_fraction_proc_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_tax_fraction_proc_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_title_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_title_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_town_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_kind_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_kind_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_url" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_zip_code_from" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_zip_code_to" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityPurchaseMst" nillable="true" type="tns:EntityPurchaseMst" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+</xs:schema>

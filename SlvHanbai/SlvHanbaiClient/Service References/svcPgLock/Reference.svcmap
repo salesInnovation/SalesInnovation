@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="00a88e14-9b03-4f16-94fe-d5c538c52056" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcPgLock.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcPgLock.wsdl" MetadataType="Wsdl" ID="439960a5-74f3-4817-88df-f2e8693792b9" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPgLock.svc?wsdl" />
+    <MetadataFile FileName="svcPgLock.xsd" MetadataType="Schema" ID="f78549a8-6614-41e7-88ef-c861fc599d20" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPgLock.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcPgLock1.xsd" MetadataType="Schema" ID="e6e3d31e-0c0f-4646-83b4-f9902ad26b91" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPgLock.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcPgLock.disco" MetadataType="Disco" ID="cad8596c-3547-40b8-b3b9-977f90987c77" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPgLock.svc?disco" />
+    <MetadataFile FileName="svcPgLock1.wsdl" MetadataType="Wsdl" ID="a9da8d25-e61f-4ff9-b435-4c6923bb1ae2" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPgLock.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

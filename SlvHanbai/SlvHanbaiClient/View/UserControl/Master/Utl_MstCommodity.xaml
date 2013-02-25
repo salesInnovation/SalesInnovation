@@ -1,0 +1,273 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Master.Utl_MstCommodity" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           Height="700" 
+           Width="920"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:provider="clr-namespace:SlvHanbaiClient.Class.Provider"
+           xmlns:converter="clr-namespace:SlvHanbaiClient.Class.Converter"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           HorizontalContentAlignment="Left" 
+           VerticalContentAlignment="Top" 
+           Unloaded="ExUserControl_Unloaded" 
+           Loaded="ExUserControl_Loaded">
+
+    <custom:ExUserControl.Resources>
+        <provider:breakdownProvider x:Key="breakdownProvider"/>
+        <provider:unitProvider x:Key="unitProvider"/>
+        <provider:taxDivisionProvider x:Key="taxDivisionProvider"/>
+        <converter:NumberConverter x:Key="numberConverter"/>
+    </custom:ExUserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="34" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="200*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" IsTabStop="False" />
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <UtlCustom:Utl_FunctionKey x:Name="utlFunctionKey" 
+                                       btnF1_Content="     F1     &#x0d;   保  存" 
+                                       btnF2_Content="     F2     &#x0d;   追  加" 
+                                       btnF3_Content="     F3     &#x0d;   削  除" 
+                                       btnF4_Content="     F4     &#x0d;  クリア" 
+                                       btnF5_Content="     F5     &#x0d;   参  照" 
+                                       btnF11_Content="    F11    &#x0d;   印  刷" 
+                                       btnF12_Content="    F12    &#x0d; クローズ" 
+                                       IsDataForm="False" />
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+            <!-- タイトル -->
+            <Border>
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" ShadowDepth="5" />
+                </Border.Effect>
+                <custom:ExLabel FontSize="14" Width="805" Height="30" Margin="1" HorizontalAlignment="Left" x:Name="lblTitle" Content="   [商　品　登　録]" VerticalAlignment="Center" />
+            </Border>
+        </Grid>
+
+        <!-- 左側1 -->
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical">
+                    <!-- 1段目 -->
+                    <StackPanel Orientation="Horizontal">
+                        <!-- 1段目 左 -->
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal" Width="470">
+                                <!-- ID -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblId" Content="ID" VerticalAlignment="Center"  />
+                                <UtlCustom:Utl_MstText FontSize="12" Height="Auto" Margin="0" x:Name="utlID" Width="130" Tag="TabSearchOn" id_InputMode="Number" id_Width="130" nm_Width="0" MstKbn="Commodity" GotFocus="txt_GotFocus" LostFocus="utlID_LostFocus" />
+                                <TextBlock Width="10" />
+                                <UtlCustom:Utl_Mode x:Name="utlMode" HorizontalAlignment="Right" VerticalAlignment="Center" Tag="Mode" Mode="New" />
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <TextBlock Height="10" />
+                    
+                    <!-- 2段目 -->
+                    <StackPanel Orientation="Horizontal">
+                        <!-- 2段目 左 -->
+                        <StackPanel Orientation="Vertical">
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 名称 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblName" Content="名称" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtName" Width="350" Text="あいうえおかきくけこ" MaxLengthB="40" Tag="TabSearchOn" FormatString="" GotFocus="txt_GotFocus" InputMode="FullShapeNative" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- カナ -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblKana" Content="カナ" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtKana" Width="350" Text="1234567890123456789012345678901234567890" MaxLengthB="40" Tag="TabSearchOn" FormatString="" InputMode="HalfKana" GotFocus="txt_GotFocus" InputMethod.IsInputMethodEnabled="True" />
+                            </StackPanel>
+
+                            <TextBlock Height="10" />
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 単位 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblUnit" Content="単位" VerticalAlignment="Center"  />
+                                <UtlCustom:Utl_MeiText Height="26" x:Name="utlUnit" id_Width="40" NameKbn="UNIT_ID" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                                <!-- 入数 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblEnterNumver" Content="入数" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtEnterNumver" Width="113" Text="9999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999" GotFocus="txt_GotFocus" NullToZero="True" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 数量入力桁 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblNumverDecimalDigit" Content="数量小数桁" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtNumverDecimalDigit" Width="40" Text="9" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="2" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <TextBlock Text="  桁（0～2）" FontSize="12" VerticalAlignment="Center" TextAlignment="Left" Width="105" />
+                                <!-- 単価小数桁 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblUnitDecimalDigit" Content="単価小数桁" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtUnitDecimalDigit" Width="40" Text="9" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="2" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <TextBlock Text="  桁（0～2）" FontSize="12" VerticalAlignment="Center" TextAlignment="Left" Width="105" />
+                            </StackPanel>
+                            
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 課税区分 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblTaxationDivisionID" Content="課税区分" VerticalAlignment="Center"  />
+                                <UtlCustom:Utl_MeiText Height="26" x:Name="utlTaxationDivisionID" id_Width="40" NameKbn="TAX_DIVISION_ID" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                            </StackPanel>
+
+                            <TextBlock Height="10" />
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 在庫管理区分 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblInventoryDivisionId" Content="在庫管理区分" VerticalAlignment="Center"  />
+                                <UtlCustom:Utl_MeiText Height="26" x:Name="utlInventoryDivisionId" id_Width="40" NameKbn="INVENTORY_DIVISION_ID" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                                <!-- 発注ロット -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblPurchaseLot" Content="発注ロット" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtPurchaseLot" Width="113" Text="99999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="99999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 適正在庫数 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblJustInventoryNumber" Content="適正在庫数" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtJustInventoryNumber" Width="145" Text="9999999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <!-- 適正在庫数 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblInventoryNumber" Content="現在庫数" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtInventoryNumber" Width="113" Text="9999999999" TextAlignment="Right" InputMode="Number" MaxNumber="9999999999" GotFocus="txt_GotFocus" IsReadOnly="True" />
+                                <TextBlock Width="5" />
+                                <Button FontSize="11" Name="btnInventory" Width="110" HorizontalAlignment="Left" Margin="0" Content=" グループ別現在庫 " Height="20" Click="btnInventory_Click">
+                                    <Button.Effect>
+                                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                                    </Button.Effect>
+                                </Button>
+                                <TextBlock Width="5" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 在庫評価区分 
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblInventoryEvaluationId" Content="在庫評価区分" VerticalAlignment="Center"  />
+                                <UtlCustom:Utl_MeiText Height="26" x:Name="utlInventoryEvaluationId" id_Width="40" NameKbn="INVENTORY_DIVISION_ID" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                                -->
+                                <!-- 主仕入先 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblMainPurchaseId" Content="主仕入先" VerticalAlignment="Center"  />
+                                <UtlCustom:Utl_MstText Height="26" x:Name="utlMainPurchaseId" MstKbn="Purchase" id_InputMode="Number" id_Width="130" nm_Width="220" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- リードタイム -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblLeadTime" Content="リードタイム" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtLeadTime" Width="40" Text="999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="365" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <TextBlock Text="  日" FontSize="12" VerticalAlignment="Center" TextAlignment="Left" Width="105" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                            </StackPanel>                            
+                            <TextBlock Width="480" />
+                        </StackPanel>
+
+                        <!-- 2段目 右 -->
+                        <StackPanel Orientation="Vertical">
+
+                            <TextBlock Height="66" />
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 単価 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblUnitPrice" Content="単価" VerticalAlignment="Center"  />
+                                <custom:ExLabel FontSize="12" Width="113" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblSkipTax" Content="税抜" VerticalAlignment="Center"  />
+                                <custom:ExLabel FontSize="12" Width="113" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblBeforeTax" Content="税込" VerticalAlignment="Center"  />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 上代 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblRetailPrice" Content="上代" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtRetailPriceSkipTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtRetailPriceBeforeTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 売上単価 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblSalesUnit" Content="売上単価" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtSalesUnitSkipTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtSalesUnitBeforeTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 売上原価 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblSalesCost" Content="売上原価" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtSalesCostSkipTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtSalesCostBeforeTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 仕入単価 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblPurchaseUnit" Content="仕入単価" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtPurchaseUnitSkipTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtPurchaseUnitBeforeTax" Width="113" Text="9999999" TextAlignment="Right" Tag="TabSearchOn" InputMode="Number" MaxNumber="9999999" GotFocus="txt_GotFocus" NullToZero="True" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <TextBlock Height="10" />
+
+                    <!-- 4段目 -->
+                    <StackPanel Orientation="Horizontal">
+                        <!-- 4段目 左 -->
+                        <StackPanel Orientation="Vertical" Width="470">
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 商品分類 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblGroup1" Content="商品分類" VerticalAlignment="Center" Tag="TabSearchOn" />
+                                <UtlCustom:Utl_MstText Height="26" x:Name="utlGroup1" MstKbn="Group" id_InputMode="Number" id_MaxNumber="999" id_FormatString="000" id_Width="40" nm_Width="105" Tag="TabSearchOn" MstGroupKbn="CommodityGrouop1" GotFocus="txt_GotFocus" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 表示区分 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblDisplay" Content="表示区分" VerticalAlignment="Center" />
+                                <UtlCustom:Utl_MeiText Height="26" x:Name="utlDisplay" id_Width="40" nm_Width="105"  NameKbn="DISPLAY_DIVISION_ID" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- 備考 -->
+                                <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblRemark" Content="備考" VerticalAlignment="Center"  />
+                                <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtMemo" Width="380" Text="あいうえお" TextAlignment="Left" MaxLengthB="60" Tag="TabSearchOn" GotFocus="txt_GotFocus" InputMode="FullShapeNative" />
+                            </StackPanel>
+
+                        </StackPanel>
+
+                        <!-- 4段目 右 -->
+                        <StackPanel Orientation="Vertical" Width="330">
+
+                        </StackPanel>
+                        
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+    </custom:ExUserControl>
+

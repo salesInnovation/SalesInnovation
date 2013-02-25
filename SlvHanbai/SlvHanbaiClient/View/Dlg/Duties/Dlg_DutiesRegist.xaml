@@ -1,0 +1,82 @@
+﻿<custom:ExChildWindow x:Class="SlvHanbaiClient.View.Dlg.Duties.Dlg_DutiesRegist"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:wintheme="clr-namespace:SlvHanbaiClient.View.Dlg.Theme"
+           xmlns:Utl="clr-namespace:SlvHanbaiClient.View.UserControl.Master"
+           Width="748" 
+           Height="470" 
+           Title="業務連絡登録" 
+           Loaded="ExChildWindow_Loaded" 
+           HasCloseButton="False"
+           FontSize="13" 
+           FontWeight="Normal" Closed="ExChildWindow_Closed">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" />
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="件名 "  Width="110" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                    <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtTitle" Width="380" Text="" MaxLengthB="60" TextAlignment="Left" InputMode="FullShapeNative" Tag="TabSearchOn" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="公開グループ " x:Name="tbkGroup" Width="110" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                    <custom:ExComboBox x:Name="cmbGroup" FontSize="12" Width="150" Height="26" Margin="1" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="TabSearchOn" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="担当 "  Width="110" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                    <custom:ExComboBox x:Name="cmbPerson" FontSize="12" Width="150" Height="26" Margin="1" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="TabSearchOn" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="重要度 "  Width="110" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                    <custom:ExComboBox x:Name="cmbLevel" FontSize="12" Width="150" Height="26" Margin="1" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="TabSearchOn" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="表示区分 "  Width="110" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                    <custom:ExComboBox x:Name="cmbState" FontSize="12" Width="150" Height="26" Margin="1" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="TabSearchOn" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="添付ファイル "  Width="110" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                    <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtPath" Width="150" Text="" TextAlignment="Left" Tag="TabSearchOn" IsReadOnly="True" IsTabStop="False" Background="White" />
+                    <TextBlock Width="10" />
+                    <Button FontSize="12" Name="btnSearch" Margin="0" Content=" 参照 " Click="btnSearch_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                        </Button.Effect>
+                    </Button>
+                    <TextBlock Width="10" />
+                    <TextBlock x:Name="tblUpload" Width="300" Text="" TextAlignment="Left" VerticalAlignment="Center" Foreground="Red" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10">
+                <TextBlock Text="[業務連絡内容]" />
+                <TextBox x:Name="txtContent" Height="170" Width="700" HorizontalAlignment="Left" VerticalScrollBarVisibility="Visible" MaxLength="1000" AcceptsReturn="True" Tag="TabSearchOn" InputMethod.PreferredImeConversionMode="CharCode" />
+            </StackPanel>
+            <TextBlock Height="10" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="tblbtnF1" Width="500" />
+                <Button Name="btnF1" Width="70" FontSize="11" Margin="3" Content="     F1     &#x0d;   登 録" Click="btnF1_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+                <TextBlock Width="40" />
+                <Button Name="btnF12" Width="70" Margin="3" FontSize="11" Content="    F12   &#x0d;キャンセル" Click="btnF12_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+            </StackPanel>            
+        </StackPanel>
+        <custom:ExUserControl x:Name="utlDummy" Visibility="Collapsed" />
+        <wintheme:Dlg_ThemeShinyBlue x:Name="dlgThemeShinyBlue" />
+        <wintheme:Dlg_ThemeTwilightBlue x:Name="dlgThemeTwilightBlue" />
+    </Grid>
+
+</custom:ExChildWindow>

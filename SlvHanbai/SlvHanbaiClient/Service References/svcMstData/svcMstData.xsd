@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcMstData.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+  <xs:element name="GetSupplier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSupplierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetSupplierResult" nillable="true" type="q1:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetCustomerResult" nillable="true" type="q2:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPersonResult" nillable="true" type="q3:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommodity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataGirdSelectedIndex" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommodityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetCommodityResult" nillable="true" type="q4:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetCompanyGroupResult" nillable="true" type="q5:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zipFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zipTo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetZipResult" nillable="true" type="q6:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCondition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kbn" type="xs:int" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetConditionResult" nillable="true" type="q7:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceitpDivision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataGirdSelectedIndex" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceitpDivisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetReceitpDivisionResult" nillable="true" type="q8:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kbn" type="xs:int" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetGroupResult" nillable="true" type="q9:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPurchaseResult" nillable="true" type="q10:EntityMstData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSupplierList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSupplierListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetSupplierListResult" nillable="true" type="q11:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GroupID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetCustomerListResult" nillable="true" type="q12:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPersonListResult" nillable="true" type="q13:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommodityList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GroupID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommodityListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetCommodityListResult" nillable="true" type="q14:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyGroupList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyGroupListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetCompanyGroupListResult" nillable="true" type="q15:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZipList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zipFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zipTo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZipListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetZipListResult" nillable="true" type="q16:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kbn" type="xs:int" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetConditionListResult" nillable="true" type="q17:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceitpDivisionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceitpDivisionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetReceitpDivisionListResult" nillable="true" type="q18:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kbn" type="xs:int" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetGroupListResult" nillable="true" type="q19:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GroupID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPurchaseListResult" nillable="true" type="q20:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Kana" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetUserListResult" nillable="true" type="q21:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInventoryList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInventoryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetInventoryListResult" nillable="true" type="q22:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalesBalanceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalesBalanceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetSalesBalanceListResult" nillable="true" type="q23:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentBalanceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentBalanceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetPaymentBalanceListResult" nillable="true" type="q24:ArrayOfEntityMstList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

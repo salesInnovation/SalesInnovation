@@ -1,0 +1,15 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Report.Utl_ReportView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+    xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+    mc:Ignorable="d"
+    Tag="Main" KeyUp="ExUserControl_KeyUp">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <WebBrowser Width="990" Height="687" HorizontalAlignment="Left" Name="webBrowser" VerticalAlignment="Top" Source="" KeyUp="webBrowser_KeyUp"></WebBrowser>
+    </Grid>
+</custom:ExUserControl>

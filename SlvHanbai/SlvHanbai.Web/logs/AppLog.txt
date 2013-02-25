@@ -1,0 +1,94 @@
+2013/02/08 15:55:56 >>>>>>>> log start  [COMPANY ID : ] [USER ID : ] -------------------- 
+2013/02/08 15:55:56 >>>>>>>> svcSySLogin.Login
+2013/02/08 15:55:56 >>>>>>>> log end    [COMPANY ID : ] [USER ID : ] -------------------- 
+
+2013/02/08 15:56:00 >>>>>>>> log start  [COMPANY ID : 1] [USER ID : 1] -------------------- 
+2013/02/08 15:56:00 >>>>>>>> ExMySQLData.ExecuteSQL 
+INSERT INTO H_PG_EXEC_HISTORY 
+       (COMPANY_ID
+       ,USER_ID
+       ,PG_ID
+       ,OPERATION_DATE
+       ,OPERATION_TIME
+       ,OPERATION_MILLISECOND
+       ,OPERATION_TYPE
+       ,PG_NAME
+       ,OPERATION_TYPE_NAME
+       ,MEMO
+       ,UPDATE_FLG
+       ,DELETE_FLG
+       ,CREATE_PG_ID
+       ,CREATE_ADRESS
+       ,CREATE_USER_ID
+       ,CREATE_DATE
+       ,CREATE_TIME
+       ,UPDATE_PG_ID
+       ,UPDATE_ADRESS
+       ,UPDATE_USER_ID
+       ,UPDATE_DATE
+       ,UPDATE_TIME
+)
+VALUES (1
+       ,1
+       ,'System'
+       ,'2013/02/08'
+       ,'15:55:59'
+       ,977
+       ,0
+       ,'販売管理システム'
+       ,'開始'
+       ,''
+       ,0
+       ,0
+       ,'SYSTEM'
+       ,'::1'
+       ,'1'
+       ,'2013/02/08'
+       ,'15:55:59'
+       ,'SYSTEM'
+       ,'::1'
+       ,'1'
+       ,'2013/02/08'
+       ,'15:55:59'
+)
+2013/02/08 15:56:00 >>>>>>>> --------------- Exception Message --------------------
+2013/02/08 15:56:00 >>>>>>>> Unknown column 'OPERATION_MILLISECOND' in 'field list'
+2013/02/08 15:56:00 >>>>>>>> --------------- Exception HelpLink -------------------
+2013/02/08 15:56:00 >>>>>>>> 
+2013/02/08 15:56:00 >>>>>>>> --------------- Exception Source ---------------------
+2013/02/08 15:56:00 >>>>>>>> MySql.Data
+2013/02/08 15:56:00 >>>>>>>> --------------- Exception StackTrace -----------------
+2013/02/08 15:56:00 >>>>>>>>    場所 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   場所 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   場所 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   場所 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   場所 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   場所 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   場所 SlvHanbai.Web.Class.DB.ExMySQLData.ExecuteSQL(String strSQL, Boolean blnTran) 場所 C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbai.Web\Class\DB\ExMySQLData.cs:行 156
+2013/02/08 15:56:00 >>>>>>>> --------------- Exception TargetSite -----------------
+2013/02/08 15:56:00 >>>>>>>> MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+2013/02/08 15:56:00 >>>>>>>> ------------------------------------------------------
+2013/02/08 15:56:00 >>>>>>>> log end    [COMPANY ID : 1] [USER ID : 1] -------------------- 
+
+2013/02/08 15:56:04 >>>>>>>> log start  [COMPANY ID : 1] [USER ID : 1] -------------------- 
+2013/02/08 15:56:04 >>>>>>>> svcPgEvidence.gAddEvidence(Insert)
+2013/02/08 15:56:04 >>>>>>>> --------------- Exception Message --------------------
+2013/02/08 15:56:04 >>>>>>>> Unknown column 'OPERATION_MILLISECOND' in 'field list'
+2013/02/08 15:56:04 >>>>>>>> --------------- Exception HelpLink -------------------
+2013/02/08 15:56:04 >>>>>>>> 
+2013/02/08 15:56:04 >>>>>>>> --------------- Exception Source ---------------------
+2013/02/08 15:56:04 >>>>>>>> MySql.Data
+2013/02/08 15:56:04 >>>>>>>> --------------- Exception StackTrace -----------------
+2013/02/08 15:56:04 >>>>>>>>    場所 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   場所 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   場所 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   場所 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   場所 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   場所 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   場所 SlvHanbai.Web.Class.DB.ExMySQLData.ExecuteSQL(String strSQL, Boolean blnTran) 場所 C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbai.Web\Class\DB\ExMySQLData.cs:行 177
+   場所 SlvHanbai.Web.WebService.svcPgEvidence.gAddEvidence(Int32 saveFlg, String companyId, String userId, String ipAdress, String sessionString, String pgId, geOperationType type, String memo) 場所 C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbai.Web\WebService\svcPgEvidence.svc.cs:行 132
+2013/02/08 15:56:04 >>>>>>>> --------------- Exception TargetSite -----------------
+2013/02/08 15:56:04 >>>>>>>> MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+2013/02/08 15:56:04 >>>>>>>> ------------------------------------------------------
+2013/02/08 15:56:04 >>>>>>>> log end    [COMPANY ID : 1] [USER ID : 1] -------------------- 
+

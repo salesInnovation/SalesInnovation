@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcReceipt.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcReceipt.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcReceipt.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcReceipt_GetReceiptH_InputMessage">
+    <wsdl:part name="parameters" element="GetReceiptH" />
+  </wsdl:message>
+  <wsdl:message name="svcReceipt_GetReceiptH_OutputMessage">
+    <wsdl:part name="parameters" element="GetReceiptHResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcReceipt_GetReceiptListD_InputMessage">
+    <wsdl:part name="parameters" element="GetReceiptListD" />
+  </wsdl:message>
+  <wsdl:message name="svcReceipt_GetReceiptListD_OutputMessage">
+    <wsdl:part name="parameters" element="GetReceiptListDResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcReceipt_GetReceiptList_InputMessage">
+    <wsdl:part name="parameters" element="GetReceiptList" />
+  </wsdl:message>
+  <wsdl:message name="svcReceipt_GetReceiptList_OutputMessage">
+    <wsdl:part name="parameters" element="GetReceiptListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcReceipt_UpdateReceipt_InputMessage">
+    <wsdl:part name="parameters" element="UpdateReceipt" />
+  </wsdl:message>
+  <wsdl:message name="svcReceipt_UpdateReceipt_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateReceiptResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcReceipt">
+    <wsdl:operation name="GetReceiptH">
+      <wsdl:input wsaw:Action="urn:svcReceipt/GetReceiptH" message="svcReceipt_GetReceiptH_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcReceipt/GetReceiptHResponse" message="svcReceipt_GetReceiptH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptListD">
+      <wsdl:input wsaw:Action="urn:svcReceipt/GetReceiptListD" message="svcReceipt_GetReceiptListD_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcReceipt/GetReceiptListDResponse" message="svcReceipt_GetReceiptListD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptList">
+      <wsdl:input wsaw:Action="urn:svcReceipt/GetReceiptList" message="svcReceipt_GetReceiptList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcReceipt/GetReceiptListResponse" message="svcReceipt_GetReceiptList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReceipt">
+      <wsdl:input wsaw:Action="urn:svcReceipt/UpdateReceipt" message="svcReceipt_UpdateReceipt_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcReceipt/UpdateReceiptResponse" message="svcReceipt_UpdateReceipt_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcReport.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+  <xs:element name="ReportOut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rptKbn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pgId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="parameters" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportOutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="ReportOutResult" nillable="true" type="q1:EntityReport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportSetting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportSettingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="GetReportSettingResult" nillable="true" type="q2:EntityReportSetting" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReportSetting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="random" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" minOccurs="0" name="entity" nillable="true" type="q3:EntityReportSetting" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReportSettingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateReportSettingResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="515577b4-f857-4fa5-ac50-6c1fc46c7d2d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcPerson.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcPerson.wsdl" MetadataType="Wsdl" ID="ef4bcc54-839f-4388-a171-6ee0fba78032" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPerson.svc?wsdl" />
+    <MetadataFile FileName="svcPerson.xsd" MetadataType="Schema" ID="5a94ab1d-a6f8-430e-b1cc-7bf205456b2f" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPerson.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcPerson1.xsd" MetadataType="Schema" ID="fb0d2ef7-42aa-4773-ae98-3b4b9d07ca2d" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPerson.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcPerson2.xsd" MetadataType="Schema" ID="9ca3811b-4942-4579-b597-c4393b5f9d7b" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPerson.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcPerson1.wsdl" MetadataType="Wsdl" ID="a3d06965-30a1-493f-b641-03d0d571ad6f" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPerson.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="svcPerson.disco" MetadataType="Disco" ID="d41d09b5-caff-45a2-9d8b-a5733ac0cb83" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPerson.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

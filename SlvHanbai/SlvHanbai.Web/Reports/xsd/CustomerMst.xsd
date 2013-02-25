@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerMst">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="KANA" type="xs:string" minOccurs="0" />
+              <xs:element name="ABOUT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ZIP_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PREFECTURE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CITY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TOWN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ADRESS_CITY" type="xs:string" minOccurs="0" />
+              <xs:element name="ADRESS_TOWN" type="xs:string" minOccurs="0" />
+              <xs:element name="ADRESS1" type="xs:string" minOccurs="0" />
+              <xs:element name="ADRESS2" type="xs:string" minOccurs="0" />
+              <xs:element name="STATION_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="POST_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PERSON_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TITLE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TITLE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="FAX" type="xs:string" minOccurs="0" />
+              <xs:element name="MAIL_ADRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="MOBILE_TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="MOBILE_ADRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="URL" type="xs:string" minOccurs="0" />
+              <xs:element name="INVOICE_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="INVOICE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BUSINESS_DIVISION_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="BUSINESS_DIVISION_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_KIND_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="UNIT_KIND_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_RATE" type="xs:short" minOccurs="0" />
+              <xs:element name="TAX_CHANGE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TAX_CHANGE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SUMMING_UP_GROUP_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="SUMMING_UP_GROUP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PRICE_FRACTION_PROC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRICE_FRACTION_PROC_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TAX_FRACTION_PROC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TAX_FRACTION_PROC_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_LIMIT_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="SALES_CREDIT_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="RECEIPT_DIVISION_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="RECEIPT_DIVISION_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="COLLECT_CYCLE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="COLLECT_CYCLE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="COLLECT_DAY" type="xs:byte" minOccurs="0" />
+              <xs:element name="BILL_SITE" type="xs:byte" minOccurs="0" />
+              <xs:element name="GROUP1_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="GROUP1_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="DISPLAY_FLG" type="xs:byte" minOccurs="0" />
+              <xs:element name="DISPLAY_DIVISION_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

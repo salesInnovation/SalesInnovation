@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityPurchaseOrderH">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_before_payment_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_business_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_business_division_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_credit_rate" type="xs:int" />
+          <xs:element minOccurs="0" name="_customer_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_customer_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_payment_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_price_fraction_proc_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_purchase_allocation_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_purchase_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_purchase_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_purchase_order_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_send_kbn_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_send_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_sum_case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_no_tax_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_purchase_order_cost" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_unit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_supplier_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_supplier_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_supply_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_change_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_tax_change_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_fraction_proc_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_kind_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_date" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityPurchaseOrderH" nillable="true" type="tns:EntityPurchaseOrderH" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="ArrayOfEntityPurchaseOrderD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityPurchaseOrderD" nillable="true" type="tns:EntityPurchaseOrderD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityPurchaseOrderD" nillable="true" type="tns:ArrayOfEntityPurchaseOrderD" />
+  <xs:complexType name="EntityPurchaseOrderD">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_breakdown_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_breakdown_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_commodity_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_commodity_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_deliver_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_deliver_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_inventory_management_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_inventory_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no_tax_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_number_decimal_digit" type="xs:int" />
+          <xs:element minOccurs="0" name="_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_purchase_cost" type="xs:double" />
+          <xs:element minOccurs="0" name="_purchase_unit_price_before_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_purchase_unit_price_skip_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="_retail_price_before_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_retail_price_skip_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_cost_price_before_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_cost_price_skip_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_unit_price_before_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_unit_price_skip_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_tax_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_tax_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_percent" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_decimal_digit" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_unit_price" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityPurchaseOrderD" nillable="true" type="tns:EntityPurchaseOrderD" />
+  <xs:complexType name="ArrayOfEntityPurchaseOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityPurchaseOrder" nillable="true" type="tns:EntityPurchaseOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityPurchaseOrder" nillable="true" type="tns:ArrayOfEntityPurchaseOrder" />
+  <xs:complexType name="EntityPurchaseOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="breakdown_id" type="xs:int" />
+          <xs:element minOccurs="0" name="breakdown_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="business_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="business_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commodity_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commodity_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="customer_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="customer_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="d_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="deliver_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="deliver_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="input_person" type="xs:int" />
+          <xs:element minOccurs="0" name="input_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="no" type="xs:long" />
+          <xs:element minOccurs="0" name="number" type="xs:double" />
+          <xs:element minOccurs="0" name="price" type="xs:double" />
+          <xs:element minOccurs="0" name="purchase_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purchase_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purchase_order_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="send_kbn_id" type="xs:int" />
+          <xs:element minOccurs="0" name="send_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="supplier_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="supplier_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="supply_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="tax_change_id" type="xs:int" />
+          <xs:element minOccurs="0" name="tax_change_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unit_id" type="xs:int" />
+          <xs:element minOccurs="0" name="unit_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="update_person_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityPurchaseOrder" nillable="true" type="tns:EntityPurchaseOrder" />
+</xs:schema>

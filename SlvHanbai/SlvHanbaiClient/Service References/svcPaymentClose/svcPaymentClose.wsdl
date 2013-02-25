@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcPaymentClose_GetPaymentTotal_InputMessage">
+    <wsdl:part name="parameters" element="GetPaymentTotal" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_GetPaymentTotal_OutputMessage">
+    <wsdl:part name="parameters" element="GetPaymentTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_GetPaymentList_InputMessage">
+    <wsdl:part name="parameters" element="GetPaymentList" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_GetPaymentList_OutputMessage">
+    <wsdl:part name="parameters" element="GetPaymentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_GetPaymentCashOut_InputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashOut" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_GetPaymentCashOut_OutputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_UpdatePayment_InputMessage">
+    <wsdl:part name="parameters" element="UpdatePayment" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_UpdatePayment_OutputMessage">
+    <wsdl:part name="parameters" element="UpdatePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_UpdatePaymentPrint_InputMessage">
+    <wsdl:part name="parameters" element="UpdatePaymentPrint" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentClose_UpdatePaymentPrint_OutputMessage">
+    <wsdl:part name="parameters" element="UpdatePaymentPrintResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcPaymentClose">
+    <wsdl:operation name="GetPaymentTotal">
+      <wsdl:input wsaw:Action="urn:svcPaymentClose/GetPaymentTotal" message="svcPaymentClose_GetPaymentTotal_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentClose/GetPaymentTotalResponse" message="svcPaymentClose_GetPaymentTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentList">
+      <wsdl:input wsaw:Action="urn:svcPaymentClose/GetPaymentList" message="svcPaymentClose_GetPaymentList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentClose/GetPaymentListResponse" message="svcPaymentClose_GetPaymentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentCashOut">
+      <wsdl:input wsaw:Action="urn:svcPaymentClose/GetPaymentCashOut" message="svcPaymentClose_GetPaymentCashOut_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentClose/GetPaymentCashOutResponse" message="svcPaymentClose_GetPaymentCashOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePayment">
+      <wsdl:input wsaw:Action="urn:svcPaymentClose/UpdatePayment" message="svcPaymentClose_UpdatePayment_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentClose/UpdatePaymentResponse" message="svcPaymentClose_UpdatePayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentPrint">
+      <wsdl:input wsaw:Action="urn:svcPaymentClose/UpdatePaymentPrint" message="svcPaymentClose_UpdatePaymentPrint_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentClose/UpdatePaymentPrintResponse" message="svcPaymentClose_UpdatePaymentPrint_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

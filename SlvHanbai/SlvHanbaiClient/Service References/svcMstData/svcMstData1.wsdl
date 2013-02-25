@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcMstData.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcMstData.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcMstData.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcMstData_GetSupplier_InputMessage">
+    <wsdl:part name="parameters" element="GetSupplier" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetSupplier_OutputMessage">
+    <wsdl:part name="parameters" element="GetSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCustomer_InputMessage">
+    <wsdl:part name="parameters" element="GetCustomer" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="GetCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPerson_InputMessage">
+    <wsdl:part name="parameters" element="GetPerson" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPerson_OutputMessage">
+    <wsdl:part name="parameters" element="GetPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCommodity_InputMessage">
+    <wsdl:part name="parameters" element="GetCommodity" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="GetCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCompanyGroup_InputMessage">
+    <wsdl:part name="parameters" element="GetCompanyGroup" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCompanyGroup_OutputMessage">
+    <wsdl:part name="parameters" element="GetCompanyGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetZip_InputMessage">
+    <wsdl:part name="parameters" element="GetZip" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetZip_OutputMessage">
+    <wsdl:part name="parameters" element="GetZipResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCondition_InputMessage">
+    <wsdl:part name="parameters" element="GetCondition" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCondition_OutputMessage">
+    <wsdl:part name="parameters" element="GetConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetReceitpDivision_InputMessage">
+    <wsdl:part name="parameters" element="GetReceitpDivision" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetReceitpDivision_OutputMessage">
+    <wsdl:part name="parameters" element="GetReceitpDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetGroup_InputMessage">
+    <wsdl:part name="parameters" element="GetGroup" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetGroup_OutputMessage">
+    <wsdl:part name="parameters" element="GetGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPurchase_InputMessage">
+    <wsdl:part name="parameters" element="GetPurchase" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPurchase_OutputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetSupplierList_InputMessage">
+    <wsdl:part name="parameters" element="GetSupplierList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetSupplierList_OutputMessage">
+    <wsdl:part name="parameters" element="GetSupplierListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPersonList_InputMessage">
+    <wsdl:part name="parameters" element="GetPersonList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPersonList_OutputMessage">
+    <wsdl:part name="parameters" element="GetPersonListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCommodityList_InputMessage">
+    <wsdl:part name="parameters" element="GetCommodityList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCommodityList_OutputMessage">
+    <wsdl:part name="parameters" element="GetCommodityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCompanyGroupList_InputMessage">
+    <wsdl:part name="parameters" element="GetCompanyGroupList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetCompanyGroupList_OutputMessage">
+    <wsdl:part name="parameters" element="GetCompanyGroupListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetZipList_InputMessage">
+    <wsdl:part name="parameters" element="GetZipList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetZipList_OutputMessage">
+    <wsdl:part name="parameters" element="GetZipListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetConditionList_InputMessage">
+    <wsdl:part name="parameters" element="GetConditionList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetConditionList_OutputMessage">
+    <wsdl:part name="parameters" element="GetConditionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetReceitpDivisionList_InputMessage">
+    <wsdl:part name="parameters" element="GetReceitpDivisionList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetReceitpDivisionList_OutputMessage">
+    <wsdl:part name="parameters" element="GetReceitpDivisionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetGroupList_InputMessage">
+    <wsdl:part name="parameters" element="GetGroupList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetGroupList_OutputMessage">
+    <wsdl:part name="parameters" element="GetGroupListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPurchaseList_InputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPurchaseList_OutputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetUserList_InputMessage">
+    <wsdl:part name="parameters" element="GetUserList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetUserList_OutputMessage">
+    <wsdl:part name="parameters" element="GetUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetInventoryList_InputMessage">
+    <wsdl:part name="parameters" element="GetInventoryList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetInventoryList_OutputMessage">
+    <wsdl:part name="parameters" element="GetInventoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetSalesBalanceList_InputMessage">
+    <wsdl:part name="parameters" element="GetSalesBalanceList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetSalesBalanceList_OutputMessage">
+    <wsdl:part name="parameters" element="GetSalesBalanceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPaymentBalanceList_InputMessage">
+    <wsdl:part name="parameters" element="GetPaymentBalanceList" />
+  </wsdl:message>
+  <wsdl:message name="svcMstData_GetPaymentBalanceList_OutputMessage">
+    <wsdl:part name="parameters" element="GetPaymentBalanceListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcMstData">
+    <wsdl:operation name="GetSupplier">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetSupplier" message="svcMstData_GetSupplier_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetSupplierResponse" message="svcMstData_GetSupplier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetCustomer" message="svcMstData_GetCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetCustomerResponse" message="svcMstData_GetCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetPerson" message="svcMstData_GetPerson_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetPersonResponse" message="svcMstData_GetPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommodity">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetCommodity" message="svcMstData_GetCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetCommodityResponse" message="svcMstData_GetCommodity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyGroup">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetCompanyGroup" message="svcMstData_GetCompanyGroup_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetCompanyGroupResponse" message="svcMstData_GetCompanyGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZip">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetZip" message="svcMstData_GetZip_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetZipResponse" message="svcMstData_GetZip_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCondition">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetCondition" message="svcMstData_GetCondition_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetConditionResponse" message="svcMstData_GetCondition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceitpDivision">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetReceitpDivision" message="svcMstData_GetReceitpDivision_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetReceitpDivisionResponse" message="svcMstData_GetReceitpDivision_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroup">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetGroup" message="svcMstData_GetGroup_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetGroupResponse" message="svcMstData_GetGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchase">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetPurchase" message="svcMstData_GetPurchase_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetPurchaseResponse" message="svcMstData_GetPurchase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetSupplierList" message="svcMstData_GetSupplierList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetSupplierListResponse" message="svcMstData_GetSupplierList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetCustomerList" message="svcMstData_GetCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetCustomerListResponse" message="svcMstData_GetCustomerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetPersonList" message="svcMstData_GetPersonList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetPersonListResponse" message="svcMstData_GetPersonList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommodityList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetCommodityList" message="svcMstData_GetCommodityList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetCommodityListResponse" message="svcMstData_GetCommodityList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyGroupList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetCompanyGroupList" message="svcMstData_GetCompanyGroupList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetCompanyGroupListResponse" message="svcMstData_GetCompanyGroupList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZipList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetZipList" message="svcMstData_GetZipList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetZipListResponse" message="svcMstData_GetZipList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConditionList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetConditionList" message="svcMstData_GetConditionList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetConditionListResponse" message="svcMstData_GetConditionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceitpDivisionList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetReceitpDivisionList" message="svcMstData_GetReceitpDivisionList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetReceitpDivisionListResponse" message="svcMstData_GetReceitpDivisionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetGroupList" message="svcMstData_GetGroupList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetGroupListResponse" message="svcMstData_GetGroupList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetPurchaseList" message="svcMstData_GetPurchaseList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetPurchaseListResponse" message="svcMstData_GetPurchaseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetUserList" message="svcMstData_GetUserList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetUserListResponse" message="svcMstData_GetUserList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInventoryList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetInventoryList" message="svcMstData_GetInventoryList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetInventoryListResponse" message="svcMstData_GetInventoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesBalanceList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetSalesBalanceList" message="svcMstData_GetSalesBalanceList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetSalesBalanceListResponse" message="svcMstData_GetSalesBalanceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentBalanceList">
+      <wsdl:input wsaw:Action="urn:svcMstData/GetPaymentBalanceList" message="svcMstData_GetPaymentBalanceList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcMstData/GetPaymentBalanceListResponse" message="svcMstData_GetPaymentBalanceList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

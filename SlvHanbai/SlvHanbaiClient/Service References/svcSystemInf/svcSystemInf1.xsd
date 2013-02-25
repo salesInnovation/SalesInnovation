@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfEntityDuties">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityDuties" nillable="true" type="tns:EntityDuties" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityDuties" nillable="true" type="tns:ArrayOfEntityDuties" />
+  <xs:complexType name="EntityDuties">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_company_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_company_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_content" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_duties_date_time" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_duties_level_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_duties_level_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_duties_state_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_duties_state_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_duties_time" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_duties_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_gropu_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_gropu_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_name1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_name2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_name3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_name4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_name5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_path1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_path2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_path3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_path4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_upload_file_path5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityDuties" nillable="true" type="tns:EntityDuties" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+</xs:schema>

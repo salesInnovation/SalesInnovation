@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityPaymentCashH">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_before_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_before_payment_cash_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_payment_cash_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_close_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_payment_division_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="_payment_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_payment_plan_day" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_payment_yyyymmdd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_person_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_purchase_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_purchase_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_sum_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_summing_up_day" type="xs:int" />
+          <xs:element minOccurs="0" name="_summing_up_group_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_summing_up_group_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_date" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityPaymentCashH" nillable="true" type="tns:EntityPaymentCashH" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="ArrayOfEntityPaymentCashD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityPaymentCashD" nillable="true" type="tns:EntityPaymentCashD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityPaymentCashD" nillable="true" type="tns:ArrayOfEntityPaymentCashD" />
+  <xs:complexType name="EntityPaymentCashD">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_bill_site_day" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_cash_division_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_payment_cash_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_rec_no" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityPaymentCashD" nillable="true" type="tns:EntityPaymentCashD" />
+  <xs:complexType name="ArrayOfEntityPaymentCash">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityPaymentCash" nillable="true" type="tns:EntityPaymentCash" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityPaymentCash" nillable="true" type="tns:ArrayOfEntityPaymentCash" />
+  <xs:complexType name="EntityPaymentCash">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bill_site_day" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="d_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="input_person" type="xs:int" />
+          <xs:element minOccurs="0" name="input_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="no" type="xs:long" />
+          <xs:element minOccurs="0" name="payment_cash_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="payment_cash_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="payment_cash_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="price" type="xs:double" />
+          <xs:element minOccurs="0" name="purchase_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purchase_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="sum_price" type="xs:double" />
+          <xs:element minOccurs="0" name="update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="update_person_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityPaymentCash" nillable="true" type="tns:EntityPaymentCash" />
+</xs:schema>

@@ -1,0 +1,142 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Master.Utl_MstUser" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           Height="700" 
+           Width="815"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:provider="clr-namespace:SlvHanbaiClient.Class.Provider"
+           xmlns:converter="clr-namespace:SlvHanbaiClient.Class.Converter"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           HorizontalContentAlignment="Left" 
+           VerticalContentAlignment="Top" 
+           Unloaded="ExUserControl_Unloaded" 
+           Loaded="ExUserControl_Loaded">
+
+    <custom:ExUserControl.Resources>
+        <provider:breakdownProvider x:Key="breakdownProvider"/>
+        <provider:unitProvider x:Key="unitProvider"/>
+        <provider:taxDivisionProvider x:Key="taxDivisionProvider"/>
+        <converter:NumberConverter x:Key="numberConverter"/>
+    </custom:ExUserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="34" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="200*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" />
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <UtlCustom:Utl_FunctionKey x:Name="utlFunctionKey" 
+                                       btnF1_Content="     F1     &#x0d;   保  存" 
+                                       btnF2_Content="     F2     &#x0d;   追  加" 
+                                       btnF3_Content="     F3     &#x0d;   削  除" 
+                                       btnF4_Content="     F4     &#x0d;  クリア" 
+                                       btnF5_Content="     F5     &#x0d;   参  照" 
+                                       btnF11_Content="     F11    &#x0d;   印  刷" 
+                                       btnF12_Content="    F12    &#x0d; クローズ" 
+                                       IsDataForm="False" />
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <!-- タイトル -->
+
+            <Border>
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" ShadowDepth="5" />
+                </Border.Effect>
+                <custom:ExLabel FontSize="14" Width="770" Height="30" Margin="1" HorizontalAlignment="Left" x:Name="lblTitle" Content="   [ユ ー ザ ー 登　録]" VerticalAlignment="Center" />
+            </Border>
+
+        </Grid>
+
+        <!-- メインー -->
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <!-- ID -->
+                        <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblId" Content="ログインID" VerticalAlignment="Center"  />
+                        <custom:ExComboBox x:Name="cmbLoginId" FontSize="12" Height="26" Tag="TabSearchOn" Width="100" GotFocus="txt_GotFocus" SelectionChanged="cmbLoginId_SelectionChanged" />
+                        <TextBlock Text="   ※ユーザーの追加を行いたい場合はサポートに問い合わせ下さい。" VerticalAlignment="Center" Foreground="White" />
+                        <TextBlock Width="10" />
+                        <UtlCustom:Utl_Mode x:Name="utlMode" HorizontalAlignment="Right" VerticalAlignment="Center" Tag="Mode" Mode="New" />
+                    </StackPanel>
+
+                    <StackPanel x:Name="stpInput" Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <!-- 変更ログインID -->
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblLoginId" Content="変更ログインID" VerticalAlignment="Center"  />
+                            <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtLoginId" Width="100" Text="ZZZZZZZZZZ" MaxLengthB="10" Tag="TabSearchOn" FormatString="" GotFocus="txt_GotFocus" InputMode="Alphanumeric" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <!-- ログインパスワード -->
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblLoginPassword" Content="ログインパスワード" VerticalAlignment="Center"  />
+                            <PasswordBox FontSize="12" Height="Auto" Margin="0" x:Name="txtLoginPassword" Width="200" MaxLength="20" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <!-- ログインパスワード -->
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblLoginPasswordConfirm" Content="ログインパスワード確認" VerticalAlignment="Center"  />
+                            <PasswordBox FontSize="12" Height="Auto" Margin="0" x:Name="txtLoginPasswordConfirm" Width="200" MaxLength="20" Tag="TabSearchOn" GotFocus="txt_GotFocus" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <!-- 名称 -->
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblName" Content="ユーザ名" VerticalAlignment="Center"  />
+                            <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtName" Width="200" Text="あいうえおかきくけこ" MaxLengthB="16" Tag="TabSearchOn" FormatString="" GotFocus="txt_GotFocus" InputMode="FullShapeNative" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <!-- 会社グループ -->
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblCompanyGroup" Content="会社グループ" VerticalAlignment="Center" Tag="TabSearchOn"  />
+                            <UtlCustom:Utl_MstText Height="26" x:Name="utlCompanyGroup" MstKbn="CompanyGroup" IsZeroNull="True" id_InputMode="Number" id_MinNumber="1" id_MaxNumber="999" id_FormatString="000" id_Width="50" nm_Width="150" GotFocus="txt_GotFocus" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <!-- デフォルト入力担当 -->
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblPerson" Content="デフォルト入力担当" VerticalAlignment="Center" Tag="TabSearchOn"  />
+                            <UtlCustom:Utl_MstText Height="26" Width="130" id_Width="50" nm_Width="150" x:Name="utlPerson" GotFocus="txt_GotFocus" MstKbn="Person" id_InputMode="Number" id_FormatString="000" id_MinNumber="1" id_MaxNumber="999" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Visibility="Collapsed">
+                            <!-- 表示区分 -->
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblDisplay" Content="表示区分" VerticalAlignment="Center" Tag="TabSearchOn" />
+                            <UtlCustom:Utl_MeiText Height="26" x:Name="utlDisplay" NameKbn="DISPLAY_DIVISION_ID" id_Width="50" nm_Width="150" GotFocus="txt_GotFocus" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+
+                            <custom:ExLabel FontSize="12" Width="140" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblRemark" Content="備考" VerticalAlignment="Center"  />
+                            <custom:ExTextBox FontSize="12" Height="Auto" Margin="0" x:Name="txtMemo" Width="380" Text="あいうえお" TextAlignment="Left" InputMode="FullShapeNative" MaxLengthB="60" GotFocus="txt_GotFocus" Tag="TabSearchOn" />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <custom:ExUserControl x:Name="utlDummy" Visibility="Collapsed" />
+            </Grid>
+        </Grid>
+
+    </Grid>
+    </custom:ExUserControl>
+

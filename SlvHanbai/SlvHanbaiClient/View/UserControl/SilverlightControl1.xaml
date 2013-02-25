@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="SlvHanbaiClient.View.UserControl.SilverlightControl1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="Auto"
+    Width="Auto"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <sdk:Label Visibility="Collapsed" Height="28" HorizontalAlignment="Left" Margin="68,54,0,0" Content="" VerticalAlignment="Top" Width="120" Background="#FFBAE4FF" />
+        <sdk:Label Visibility="Collapsed" Background="#FF398FDF" Content="" Height="28" HorizontalAlignment="Left" Margin="68,96,0,0" VerticalAlignment="Top" Width="120" />
+        <sdk:Label Visibility="Collapsed" Background="#FF006DD4" Content="" Height="28" HorizontalAlignment="Left" Margin="68,138,0,0" VerticalAlignment="Top" Width="120" />
+        <sdk:Label Visibility="Collapsed" Background="#FF0A3E69" Content="" Height="28" HorizontalAlignment="Left" Margin="68,181,0,0" VerticalAlignment="Top" Width="120" />
+
+        <sdk:Label Visibility="Collapsed" Height="28" HorizontalAlignment="Left" Margin="268,54,0,0" Content="" VerticalAlignment="Top" Width="120" Background="#FFBAE4FF" />
+        <sdk:Label Visibility="Collapsed" Background="#FF8DD2FF" Content="" Height="28" HorizontalAlignment="Left" Margin="268,96,0,0" VerticalAlignment="Top" Width="120" />
+        <sdk:Label Visibility="Collapsed" Background="#FF52BBFF" Content="" Height="28" HorizontalAlignment="Left" Margin="268,138,0,0" VerticalAlignment="Top" Width="120" />
+        <sdk:Label Visibility="Collapsed" Background="#FF27A8FC" Content="" Height="28" HorizontalAlignment="Left" Margin="268,181,0,0" VerticalAlignment="Top" Width="120" />
+        <Button Content="インストール画面起動" FontSize="13" Height="53" Name="btnInstall" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityMstData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="attribute1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute10" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute11" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute12" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute13" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute14" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute15" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute16" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute17" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute18" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute19" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute20" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute6" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute7" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute8" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute9" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityMstData" nillable="true" type="tns:EntityMstData" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="ArrayOfEntityMstList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityMstList" nillable="true" type="tns:EntityMstList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityMstList" nillable="true" type="tns:ArrayOfEntityMstList" />
+  <xs:complexType name="EntityMstList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="attribute1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="attribute3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityMstList" nillable="true" type="tns:EntityMstList" />
+</xs:schema>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityReport">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_downLoadFileName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_downLoadFilePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_downLoadFileSize" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_downLoadUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_ret" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityReport" nillable="true" type="tns:EntityReport" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="EntityReportSetting">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_bottom_margin" type="xs:double" />
+          <xs:element minOccurs="0" name="_group_id_from" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group_id_to" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group_nm_from" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group_nm_to" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group_total" type="xs:int" />
+          <xs:element minOccurs="0" name="_left_margin" type="xs:double" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_orientation" type="xs:int" />
+          <xs:element minOccurs="0" name="_pg_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_right_margin" type="xs:double" />
+          <xs:element minOccurs="0" name="_size" type="xs:int" />
+          <xs:element minOccurs="0" name="_top_margin" type="xs:double" />
+          <xs:element minOccurs="0" name="_total_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="_user_id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityReportSetting" nillable="true" type="tns:EntityReportSetting" />
+</xs:schema>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PurchaseChangePrint" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PurchaseChangePrint" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="_PurchaseChangePrint" msprop:Generator_UserDSName="PurchaseChangePrint">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PurchaseChangePrint" msprop:Generator_TableClassName="PurchaseChangePrintDataTable" msprop:Generator_TableVarName="tablePurchaseChangePrint" msprop:Generator_TablePropName="PurchaseChangePrint" msprop:Generator_RowDeletingName="PurchaseChangePrintRowDeleting" msprop:Generator_UserTableName="PurchaseChangePrint" msprop:Generator_RowChangingName="PurchaseChangePrintRowChanging" msprop:Generator_RowEvHandlerName="PurchaseChangePrintRowChangeEventHandler" msprop:Generator_RowDeletedName="PurchaseChangePrintRowDeleted" msprop:Generator_RowEvArgName="PurchaseChangePrintRowChangeEvent" msprop:Generator_RowChangedName="PurchaseChangePrintRowChanged" msprop:Generator_RowClassName="PurchaseChangePrintRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GROUP_ID" msprop:Generator_ColumnVarNameInTable="columnGROUP_ID" msprop:Generator_ColumnPropNameInRow="GROUP_ID" msprop:Generator_ColumnPropNameInTable="GROUP_IDColumn" msprop:Generator_UserColumnName="GROUP_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="GROUP_NAME" msprop:Generator_ColumnVarNameInTable="columnGROUP_NAME" msprop:Generator_ColumnPropNameInRow="GROUP_NAME" msprop:Generator_ColumnPropNameInTable="GROUP_NAMEColumn" msprop:Generator_UserColumnName="GROUP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="GROUP_RANGE" msprop:Generator_ColumnVarNameInTable="columnGROUP_RANGE" msprop:Generator_ColumnPropNameInRow="GROUP_RANGE" msprop:Generator_ColumnPropNameInTable="GROUP_RANGEColumn" msprop:Generator_UserColumnName="GROUP_RANGE" type="xs:string" minOccurs="0" />
+              <xs:element name="TITEL_NM" msprop:Generator_ColumnVarNameInTable="columnTITEL_NM" msprop:Generator_ColumnPropNameInRow="TITEL_NM" msprop:Generator_ColumnPropNameInTable="TITEL_NMColumn" msprop:Generator_UserColumnName="TITEL_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="GROUP_SUM" msprop:Generator_ColumnVarNameInTable="columnGROUP_SUM" msprop:Generator_ColumnPropNameInRow="GROUP_SUM" msprop:Generator_ColumnPropNameInTable="GROUP_SUMColumn" msprop:Generator_UserColumnName="GROUP_SUM" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_KBN" msprop:Generator_ColumnVarNameInTable="columnTOTAL_KBN" msprop:Generator_ColumnPropNameInRow="TOTAL_KBN" msprop:Generator_ColumnPropNameInTable="TOTAL_KBNColumn" msprop:Generator_UserColumnName="TOTAL_KBN" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_KBN_NM" msprop:Generator_ColumnVarNameInTable="columnTOTAL_KBN_NM" msprop:Generator_ColumnPropNameInRow="TOTAL_KBN_NM" msprop:Generator_ColumnPropNameInTable="TOTAL_KBN_NMColumn" msprop:Generator_UserColumnName="TOTAL_KBN_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_KBN_SUM_NM" msprop:Generator_ColumnVarNameInTable="columnTOTAL_KBN_SUM_NM" msprop:Generator_ColumnPropNameInRow="TOTAL_KBN_SUM_NM" msprop:Generator_ColumnPropNameInTable="TOTAL_KBN_SUM_NMColumn" msprop:Generator_UserColumnName="TOTAL_KBN_SUM_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="JANUARY_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnJANUARY_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="JANUARY_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="JANUARY_SUM_PRICEColumn" msprop:Generator_UserColumnName="JANUARY_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="FEBRUARY_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnFEBRUARY_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="FEBRUARY_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="FEBRUARY_SUM_PRICEColumn" msprop:Generator_UserColumnName="FEBRUARY_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="MARCH_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnMARCH_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="MARCH_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="MARCH_SUM_PRICEColumn" msprop:Generator_UserColumnName="MARCH_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="APRIL_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnAPRIL_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="APRIL_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="APRIL_SUM_PRICEColumn" msprop:Generator_UserColumnName="APRIL_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="MAY_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnMAY_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="MAY_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="MAY_SUM_PRICEColumn" msprop:Generator_UserColumnName="MAY_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="JUNE_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnJUNE_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="JUNE_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="JUNE_SUM_PRICEColumn" msprop:Generator_UserColumnName="JUNE_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="JULY_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnJULY_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="JULY_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="JULY_SUM_PRICEColumn" msprop:Generator_UserColumnName="JULY_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="AUGUST_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnAUGUST_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="AUGUST_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="AUGUST_SUM_PRICEColumn" msprop:Generator_UserColumnName="AUGUST_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="SEPTEMBER_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnSEPTEMBER_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="SEPTEMBER_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="SEPTEMBER_SUM_PRICEColumn" msprop:Generator_UserColumnName="SEPTEMBER_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="OCTOBER_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnOCTOBER_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="OCTOBER_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="OCTOBER_SUM_PRICEColumn" msprop:Generator_UserColumnName="OCTOBER_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="NOVEMBER_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnNOVEMBER_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="NOVEMBER_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="NOVEMBER_SUM_PRICEColumn" msprop:Generator_UserColumnName="NOVEMBER_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="DECEMBER_SUM_PRICE" msprop:Generator_ColumnVarNameInTable="columnDECEMBER_SUM_PRICE" msprop:Generator_ColumnPropNameInRow="DECEMBER_SUM_PRICE" msprop:Generator_ColumnPropNameInTable="DECEMBER_SUM_PRICEColumn" msprop:Generator_UserColumnName="DECEMBER_SUM_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTAL_PRICE" msprop:Generator_ColumnVarNameInTable="columnTOTAL_PRICE" msprop:Generator_ColumnPropNameInRow="TOTAL_PRICE" msprop:Generator_ColumnPropNameInTable="TOTAL_PRICEColumn" msprop:Generator_UserColumnName="TOTAL_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="STRING_WHERE1" msprop:Generator_ColumnVarNameInTable="columnSTRING_WHERE1" msprop:Generator_ColumnPropNameInRow="STRING_WHERE1" msprop:Generator_ColumnPropNameInTable="STRING_WHERE1Column" msprop:Generator_UserColumnName="STRING_WHERE1" type="xs:string" minOccurs="0" />
+              <xs:element name="STRING_WHERE2" msprop:Generator_ColumnVarNameInTable="columnSTRING_WHERE2" msprop:Generator_ColumnPropNameInRow="STRING_WHERE2" msprop:Generator_ColumnPropNameInTable="STRING_WHERE2Column" msprop:Generator_UserColumnName="STRING_WHERE2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

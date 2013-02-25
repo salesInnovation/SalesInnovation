@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a527c47a-11ef-4ba3-917f-f751a8c3f2d4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcPaymentClose.xsd" MetadataType="Schema" ID="82497e42-a9e8-4a25-a4f4-81148d745ecf" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcPaymentClose1.xsd" MetadataType="Schema" ID="99a884da-d4e1-4577-be5e-30b79ddd870a" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcPaymentClose.wsdl" MetadataType="Wsdl" ID="8b0cecb1-0ea0-48db-9c74-6c15799738e3" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="svcPaymentClose2.xsd" MetadataType="Schema" ID="d997c202-e480-4203-99bd-9db33edae224" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcPaymentClose1.wsdl" MetadataType="Wsdl" ID="6860be04-d4ee-4a92-ad99-e9030d73be88" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?wsdl" />
+    <MetadataFile FileName="svcPaymentClose.disco" MetadataType="Disco" ID="c043922e-e578-4e97-bbce-45a48bcaecf5" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentClose.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

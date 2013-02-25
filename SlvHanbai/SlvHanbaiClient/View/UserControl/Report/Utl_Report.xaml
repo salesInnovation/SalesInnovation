@@ -1,0 +1,80 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Report.Utl_Report"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+    xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+    mc:Ignorable="d"
+    Tag="Main"
+    GotFocus="ExUserControl_GotFocus" 
+    Loaded="ExUserControl_Loaded" Unloaded="ExUserControl_Unloaded">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" />
+        <Grid x:Name="Main" Margin="10">
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        <StackPanel Orientation="Vertical" Margin="15">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Width="100" Text="＜出力条件＞" FontSize="12" TextAlignment="Left" VerticalAlignment="Center" Margin="5" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblID" Content="得意先" VerticalAlignment="Center" />
+                                <UtlCustom:Utl_MstText Height="26" x:Name="utlID_F" MstKbn="Customer" nm_Width="150" GotFocus="utlID_F_GotFocus" />
+                                <TextBlock Width="40" Text="から  " FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Width="122" Text="" FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                                <UtlCustom:Utl_MstText Height="26" x:Name="utlID_T" MstKbn="Customer" nm_Width="150" GotFocus="utlID_T_GotFocus" />
+                                <TextBlock Width="40" Text="まで  " FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <TextBlock Height="10" />
+                            <StackPanel Orientation="Horizontal">
+                                <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblOrderYmd" Content="更新日" VerticalAlignment="Center" />
+                                <custom:ExDatePicker x:Name="datUpdateYmd" Height="26" Width="128" FontSize="12" GotFocus="datUpdateYmd_GotFocus" />
+                                <TextBlock Width="40" Text="以降  " FontSize="12" TextAlignment="Center" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+
+                <TextBlock Height="20" />
+
+                <Grid>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        <StackPanel Orientation="Vertical" Margin="15">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Width="100" Text="＜出力順＞" FontSize="12" TextAlignment="Left" VerticalAlignment="Center" Margin="5" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <custom:ExLabel FontSize="12" Width="120" Height="26" Margin="1" HorizontalAlignment="Center" Content="順序" VerticalAlignment="Center" />
+                                <custom:ExComboBox x:Name="cmbOrder" FontSize="12" Width="130" Height="26" Margin="1" HorizontalAlignment="Center" VerticalAlignment="Center" GotFocus="cmbOrder_GotFocus" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+
+                <TextBlock Height="20" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="120" />
+                    <UtlCustom:Utl_FunctionKey Height="58" HorizontalAlignment="Left"  x:Name="utlFunctionKey" VerticalAlignment="Top"  
+                                   btnF1_Content="     F1     &#x0d;   出  力" 
+                                   btnF2_Content="     F2     &#x0d;  ﾀﾞｳﾝﾛｰﾄﾞ" 
+                                   btnF3_Content="     F3     &#x0d;  ＣＳＶ" 
+                                   btnF5_Content="     F5     &#x0d;   参  照" 
+                                   btnF11_Content="    F11     &#x0d;  出力設定" 
+                                   btnF12_Content="    F12    &#x0d;  Cancel" 
+                                   btnF4_Visibility="Collapsed"
+                                   btnF6_Visibility="Collapsed"
+                                   btnF7_Visibility="Collapsed"
+                                   btnF8_Visibility="Collapsed"
+                                   btnF9_Visibility="Collapsed" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</custom:ExUserControl>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityInOutDeliveryH">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_cause_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_customer_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_customer_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group_id_to" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group_id_to_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_in_out_delivery_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="_in_out_delivery_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_in_out_delivery_proc_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="_in_out_delivery_proc_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_in_out_delivery_to_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="_in_out_delivery_to_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_in_out_delivery_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_purchase_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_purchase_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_sum_case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_update_date" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityInOutDeliveryH" nillable="true" type="tns:EntityInOutDeliveryH" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="ArrayOfEntityInOutDeliveryD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityInOutDeliveryD" nillable="true" type="tns:EntityInOutDeliveryD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityInOutDeliveryD" nillable="true" type="tns:ArrayOfEntityInOutDeliveryD" />
+  <xs:complexType name="EntityInOutDeliveryD">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_commodity_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_commodity_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_inventory_management_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_inventory_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_number_decimal_digit" type="xs:int" />
+          <xs:element minOccurs="0" name="_rec_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_unit_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityInOutDeliveryD" nillable="true" type="tns:EntityInOutDeliveryD" />
+  <xs:complexType name="ArrayOfEntityInOutDelivery">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityInOutDelivery" nillable="true" type="tns:EntityInOutDelivery" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityInOutDelivery" nillable="true" type="tns:ArrayOfEntityInOutDelivery" />
+  <xs:complexType name="EntityInOutDelivery">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="cause_no" type="xs:long" />
+          <xs:element minOccurs="0" name="commodity_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commodity_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="customer_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="customer_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="d_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="group_id_to" type="xs:int" />
+          <xs:element minOccurs="0" name="group_id_to_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="in_out_delivery_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="in_out_delivery_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="in_out_delivery_proc_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="in_out_delivery_proc_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="in_out_delivery_to_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="in_out_delivery_to_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="in_out_delivery_to_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="in_out_delivery_to_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="in_out_delivery_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="input_person" type="xs:int" />
+          <xs:element minOccurs="0" name="input_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="no" type="xs:long" />
+          <xs:element minOccurs="0" name="number" type="xs:double" />
+          <xs:element minOccurs="0" name="purchase_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purchase_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="sum_case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="sum_enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="sum_number" type="xs:double" />
+          <xs:element minOccurs="0" name="unit_id" type="xs:int" />
+          <xs:element minOccurs="0" name="unit_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="update_person_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityInOutDelivery" nillable="true" type="tns:EntityInOutDelivery" />
+</xs:schema>

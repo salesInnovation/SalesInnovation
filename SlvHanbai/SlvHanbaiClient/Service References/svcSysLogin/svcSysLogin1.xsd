@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntitySysLogin">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_company_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_company_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_defult_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_defult_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_demo_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_estimate_approval_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_evidence_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_group_display_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_group_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_group_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_idFigureCustomer" type="xs:int" />
+          <xs:element minOccurs="0" name="_idFigureGoods" type="xs:int" />
+          <xs:element minOccurs="0" name="_idFigurePurchase" type="xs:int" />
+          <xs:element minOccurs="0" name="_idFigureSlipNo" type="xs:int" />
+          <xs:element minOccurs="0" name="_login_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_login_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_receipt_account_invoice_print_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_session_string" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_sys_ver" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_user_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_user_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntitySysLogin" nillable="true" type="tns:EntitySysLogin" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+</xs:schema>

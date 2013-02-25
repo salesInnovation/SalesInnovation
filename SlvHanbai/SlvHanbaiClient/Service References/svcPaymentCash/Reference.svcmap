@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bd50bc95-ee2e-473c-9bca-99e31533ba59" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcPaymentCash.xsd" MetadataType="Schema" ID="c42c33b7-e3b9-47c2-83b8-d18f76c39af7" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcPaymentCash1.xsd" MetadataType="Schema" ID="660452fa-8ab4-4c05-82f8-98e2af5093d2" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcPaymentCash.disco" MetadataType="Disco" ID="038eee3e-1ec5-4489-b675-c557b2707cd6" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?disco" />
+    <MetadataFile FileName="svcPaymentCash2.xsd" MetadataType="Schema" ID="c4b7ecc5-a87b-442a-ba08-439a6c2c3720" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcPaymentCash.wsdl" MetadataType="Wsdl" ID="29cc19f3-c9d0-4883-b689-e942e7f72d40" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?wsdl" />
+    <MetadataFile FileName="svcPaymentCash1.wsdl" MetadataType="Wsdl" ID="7621f0de-4e14-4b40-b796-87dc49451599" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

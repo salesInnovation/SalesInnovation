@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPurchaseMst.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPurchaseMst.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPurchaseMst.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcPurchaseMst_GetPurchaseMst_InputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseMst" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseMst_GetPurchaseMst_OutputMessage">
+    <wsdl:part name="parameters" element="GetPurchaseMstResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseMst_UpdatePurchaseMst_InputMessage">
+    <wsdl:part name="parameters" element="UpdatePurchaseMst" />
+  </wsdl:message>
+  <wsdl:message name="svcPurchaseMst_UpdatePurchaseMst_OutputMessage">
+    <wsdl:part name="parameters" element="UpdatePurchaseMstResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcPurchaseMst">
+    <wsdl:operation name="GetPurchaseMst">
+      <wsdl:input wsaw:Action="urn:svcPurchaseMst/GetPurchaseMst" message="svcPurchaseMst_GetPurchaseMst_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPurchaseMst/GetPurchaseMstResponse" message="svcPurchaseMst_GetPurchaseMst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchaseMst">
+      <wsdl:input wsaw:Action="urn:svcPurchaseMst/UpdatePurchaseMst" message="svcPurchaseMst_UpdatePurchaseMst_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPurchaseMst/UpdatePurchaseMstResponse" message="svcPurchaseMst_UpdatePurchaseMst_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

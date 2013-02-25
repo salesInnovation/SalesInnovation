@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntitySalesH">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_before_sales_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_business_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_business_division_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_collect_cycle_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_collect_day" type="xs:int" />
+          <xs:element minOccurs="0" name="_credit_limit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_credit_rate" type="xs:int" />
+          <xs:element minOccurs="0" name="_customer_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_customer_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_estimateno" type="xs:long" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_invoice_close_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_invoice_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_invoice_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_invoice_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_invoice_state" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_invoice_yyyymmdd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_order_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_price_fraction_proc_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_profits_percent" type="xs:double" />
+          <xs:element minOccurs="0" name="_receipt_receivable_kbn" type="xs:int" />
+          <xs:element minOccurs="0" name="_receipt_receivable_kbn_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_red_before_no" type="xs:long" />
+          <xs:element minOccurs="0" name="_sales_credit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_sum_case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_no_tax_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_profits" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_sales_cost" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sum_unit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_supplier_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_supplier_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_supply_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_change_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_tax_change_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_fraction_proc_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_kind_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_date" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_update_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_update_time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntitySalesH" nillable="true" type="tns:EntitySalesH" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="ArrayOfEntitySalesD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntitySalesD" nillable="true" type="tns:EntitySalesD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntitySalesD" nillable="true" type="tns:ArrayOfEntitySalesD" />
+  <xs:complexType name="EntitySalesD">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_breakdown_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_breakdown_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_case_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_commodity_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_commodity_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_deliver_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_deliver_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_id" type="xs:long" />
+          <xs:element minOccurs="0" name="_inventory_management_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_inventory_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_lock_flg" type="xs:int" />
+          <xs:element minOccurs="0" name="_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_no_tax_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_number_decimal_digit" type="xs:int" />
+          <xs:element minOccurs="0" name="_order_id" type="xs:double" />
+          <xs:element minOccurs="0" name="_order_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_order_stay_number" type="xs:double" />
+          <xs:element minOccurs="0" name="_price" type="xs:double" />
+          <xs:element minOccurs="0" name="_profits" type="xs:double" />
+          <xs:element minOccurs="0" name="_profits_percent" type="xs:double" />
+          <xs:element minOccurs="0" name="_rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="_retail_price_before_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_retail_price_skip_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_cost" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_cost_price_before_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_cost_price_skip_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_unit_price_before_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_sales_unit_price_skip_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_tax" type="xs:double" />
+          <xs:element minOccurs="0" name="_tax_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_tax_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_tax_percent" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_decimal_digit" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_id" type="xs:int" />
+          <xs:element minOccurs="0" name="_unit_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_unit_price" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntitySalesD" nillable="true" type="tns:EntitySalesD" />
+  <xs:complexType name="ArrayOfEntitySales">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntitySales" nillable="true" type="tns:EntitySales" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntitySales" nillable="true" type="tns:ArrayOfEntitySales" />
+  <xs:complexType name="EntitySales">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="breakdown_id" type="xs:int" />
+          <xs:element minOccurs="0" name="breakdown_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="business_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="business_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commodity_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commodity_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="customer_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="customer_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="d_memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="deliver_division_id" type="xs:int" />
+          <xs:element minOccurs="0" name="deliver_division_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="enter_number" type="xs:double" />
+          <xs:element minOccurs="0" name="estimateno" type="xs:long" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="input_person" type="xs:int" />
+          <xs:element minOccurs="0" name="input_person_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="no" type="xs:long" />
+          <xs:element minOccurs="0" name="number" type="xs:double" />
+          <xs:element minOccurs="0" name="order_no" type="xs:long" />
+          <xs:element minOccurs="0" name="price" type="xs:double" />
+          <xs:element minOccurs="0" name="rec_no" type="xs:int" />
+          <xs:element minOccurs="0" name="sales_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="supplier_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="supplier_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="supply_ymd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="tax_change_id" type="xs:int" />
+          <xs:element minOccurs="0" name="tax_change_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unit_id" type="xs:int" />
+          <xs:element minOccurs="0" name="unit_nm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unit_price" type="xs:double" />
+          <xs:element minOccurs="0" name="update_person_id" type="xs:int" />
+          <xs:element minOccurs="0" name="update_person_nm" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntitySales" nillable="true" type="tns:EntitySales" />
+</xs:schema>

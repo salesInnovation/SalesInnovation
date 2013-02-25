@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcEstimate.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcEstimate.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcEstimate.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcEstimate_GetEstimateH_InputMessage">
+    <wsdl:part name="parameters" element="GetEstimateH" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_GetEstimateH_OutputMessage">
+    <wsdl:part name="parameters" element="GetEstimateHResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_GetEstimateListD_InputMessage">
+    <wsdl:part name="parameters" element="GetEstimateListD" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_GetEstimateListD_OutputMessage">
+    <wsdl:part name="parameters" element="GetEstimateListDResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_GetEstimateList_InputMessage">
+    <wsdl:part name="parameters" element="GetEstimateList" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_GetEstimateList_OutputMessage">
+    <wsdl:part name="parameters" element="GetEstimateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_UpdateEstimate_InputMessage">
+    <wsdl:part name="parameters" element="UpdateEstimate" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_UpdateEstimate_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateEstimateResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_UpdateEstimatePrint_InputMessage">
+    <wsdl:part name="parameters" element="UpdateEstimatePrint" />
+  </wsdl:message>
+  <wsdl:message name="svcEstimate_UpdateEstimatePrint_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateEstimatePrintResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcEstimate">
+    <wsdl:operation name="GetEstimateH">
+      <wsdl:input wsaw:Action="urn:svcEstimate/GetEstimateH" message="svcEstimate_GetEstimateH_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcEstimate/GetEstimateHResponse" message="svcEstimate_GetEstimateH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEstimateListD">
+      <wsdl:input wsaw:Action="urn:svcEstimate/GetEstimateListD" message="svcEstimate_GetEstimateListD_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcEstimate/GetEstimateListDResponse" message="svcEstimate_GetEstimateListD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEstimateList">
+      <wsdl:input wsaw:Action="urn:svcEstimate/GetEstimateList" message="svcEstimate_GetEstimateList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcEstimate/GetEstimateListResponse" message="svcEstimate_GetEstimateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEstimate">
+      <wsdl:input wsaw:Action="urn:svcEstimate/UpdateEstimate" message="svcEstimate_UpdateEstimate_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcEstimate/UpdateEstimateResponse" message="svcEstimate_UpdateEstimate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEstimatePrint">
+      <wsdl:input wsaw:Action="urn:svcEstimate/UpdateEstimatePrint" message="svcEstimate_UpdateEstimatePrint_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcEstimate/UpdateEstimatePrintResponse" message="svcEstimate_UpdateEstimatePrint_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,44 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SlvHanbaiClient" EntryPointType="SlvHanbaiClient.App" RuntimeVersion="4.0.60310.0">
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="Sales Innovation" EnableGPUAcceleration="False" ShowInstallMenuItem="False">
+      <OutOfBrowserSettings.Blurb>デスクトップの販売管理アプリケーションを、自宅でも、職場でも、外出先でも利用できます。</OutOfBrowserSettings.Blurb>
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="販売管理 アプリケーション" Height="728" Width="1024" WindowStyle="None" />
+      </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.SecuritySettings>
+        <SecuritySettings ElevatedPermissions="Required" />
+      </OutOfBrowserSettings.SecuritySettings>
+      <OutOfBrowserSettings.Icons />
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SlvHanbaiClient" Source="SlvHanbaiClient.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client" Source="System.ServiceModel.DomainServices.Client.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client.Web" Source="System.ServiceModel.DomainServices.Client.Web.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.Web.Extensions" Source="System.ServiceModel.Web.Extensions.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.DataForm.Toolkit" Source="System.Windows.Controls.Data.DataForm.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.DataVisualization.Toolkit" Source="System.Windows.Controls.DataVisualization.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input" Source="System.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input.Toolkit" Source="System.Windows.Controls.Input.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Layout.Toolkit" Source="System.Windows.Controls.Layout.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Theming.Toolkit" Source="System.Windows.Controls.Theming.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit.Internals" Source="System.Windows.Controls.Toolkit.Internals.dll" />
+    <AssemblyPart Source="ja/System.ComponentModel.DataAnnotations.resources.dll" />
+    <AssemblyPart Source="ja/System.ServiceModel.DomainServices.Client.resources.dll" />
+    <AssemblyPart Source="ja/System.ServiceModel.DomainServices.Client.Web.resources.dll" />
+    <AssemblyPart Source="ja/System.ServiceModel.Web.Extensions.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Data.Input.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Input.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Data.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

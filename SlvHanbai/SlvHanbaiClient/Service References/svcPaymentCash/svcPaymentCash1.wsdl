@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCash.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcPaymentCash_GetPaymentCashH_InputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashH" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentCash_GetPaymentCashH_OutputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashHResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentCash_GetPaymentCashD_InputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashD" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentCash_GetPaymentCashD_OutputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashDResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentCash_GetPaymentCashList_InputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashList" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentCash_GetPaymentCashList_OutputMessage">
+    <wsdl:part name="parameters" element="GetPaymentCashListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentCash_UpdatePaymentCash_InputMessage">
+    <wsdl:part name="parameters" element="UpdatePaymentCash" />
+  </wsdl:message>
+  <wsdl:message name="svcPaymentCash_UpdatePaymentCash_OutputMessage">
+    <wsdl:part name="parameters" element="UpdatePaymentCashResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcPaymentCash">
+    <wsdl:operation name="GetPaymentCashH">
+      <wsdl:input wsaw:Action="urn:svcPaymentCash/GetPaymentCashH" message="svcPaymentCash_GetPaymentCashH_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentCash/GetPaymentCashHResponse" message="svcPaymentCash_GetPaymentCashH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentCashD">
+      <wsdl:input wsaw:Action="urn:svcPaymentCash/GetPaymentCashD" message="svcPaymentCash_GetPaymentCashD_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentCash/GetPaymentCashDResponse" message="svcPaymentCash_GetPaymentCashD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentCashList">
+      <wsdl:input wsaw:Action="urn:svcPaymentCash/GetPaymentCashList" message="svcPaymentCash_GetPaymentCashList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentCash/GetPaymentCashListResponse" message="svcPaymentCash_GetPaymentCashList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentCash">
+      <wsdl:input wsaw:Action="urn:svcPaymentCash/UpdatePaymentCash" message="svcPaymentCash_UpdatePaymentCash_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcPaymentCash/UpdatePaymentCashResponse" message="svcPaymentCash_UpdatePaymentCash_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

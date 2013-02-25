@@ -1,0 +1,303 @@
+﻿<configuration>
+	<system.serviceModel>
+		<bindings>
+   <basicHttpBinding>
+    <binding name="BasicHttpBinding_svcClass" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+     <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcCommodity" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcCondition" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcCopying" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcCustomer" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcEstimate" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcInvoiceClose" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcMstData" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPerson" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPgEvidence" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPgLock" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcReceipt" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcReport" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcSales" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcSupplier" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcSysLogin" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcSysName" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcOrder" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcInquiry" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcAuthority" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcCompany" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcCompanyGroup" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcUser" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcDuties" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcSystemInf" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcSalesCreditBalance" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcInvoiceBalance" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPurchaseOrder" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPurchaseMst" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPurchase" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPaymentClose" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPaymentCash" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPaymentCreditBalance" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcPaymentBalance" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcInOutDelivery" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+    <binding name="BasicHttpBinding_svcStockInventory" maxBufferSize="2147483647"
+     maxReceivedMessageSize="2147483647">
+      <security mode="None" />
+      <!-- <security mode="Transport" /> -->
+    </binding>
+   </basicHttpBinding>
+  </bindings>
+
+
+    <client>
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcClass.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcClass"
+       contract="svcClass.svcClass" name="BasicHttpBinding_svcClass" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcCommodity.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcCommodity"
+       contract="svcCommodity.svcCommodity" name="BasicHttpBinding_svcCommodity" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcCondition.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcCondition"
+       contract="svcCondition.svcCondition" name="BasicHttpBinding_svcCondition" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcCopying.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcCopying"
+       contract="svcCopying.svcCopying" name="BasicHttpBinding_svcCopying" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcCustomer.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcCustomer"
+       contract="svcCustomer.svcCustomer" name="BasicHttpBinding_svcCustomer" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcEstimate.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcEstimate"
+       contract="svcEstimate.svcEstimate" name="BasicHttpBinding_svcEstimate" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcInvoiceClose.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcInvoiceClose"
+       contract="svcInvoiceClose.svcInvoiceClose" name="BasicHttpBinding_svcInvoiceClose" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcMstData.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcMstData"
+       contract="svcMstData.svcMstData" name="BasicHttpBinding_svcMstData" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPerson.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPerson"
+       contract="svcPerson.svcPerson" name="BasicHttpBinding_svcPerson" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPgEvidence.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPgEvidence"
+       contract="svcPgEvidence.svcPgEvidence" name="BasicHttpBinding_svcPgEvidence" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPgLock.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPgLock"
+       contract="svcPgLock.svcPgLock" name="BasicHttpBinding_svcPgLock" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcReceipt.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcReceipt"
+       contract="svcReceipt.svcReceipt" name="BasicHttpBinding_svcReceipt" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcReport.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcReport"
+       contract="svcReport.svcReport" name="BasicHttpBinding_svcReport" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcSales.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcSales"
+       contract="svcSales.svcSales" name="BasicHttpBinding_svcSales" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcSupplier.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcSupplier"
+       contract="svcSupplier.svcSupplier" name="BasicHttpBinding_svcSupplier" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcSysName.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcSysName"
+       contract="svcSysName.svcSysName" name="BasicHttpBinding_svcSysName" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcOrder.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcOrder"
+       contract="svcOrder.svcOrder" name="BasicHttpBinding_svcOrder" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcInquiry.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcInquiry"
+       contract="svcInquiry.svcInquiry" name="BasicHttpBinding_svcInquiry" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcAuthority.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcAuthority"
+       contract="svcAuthority.svcAuthority" name="BasicHttpBinding_svcAuthority" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcCompany.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcCompany"
+       contract="svcCompany.svcCompany" name="BasicHttpBinding_svcCompany" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcCompanyGroup.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcCompanyGroup"
+       contract="svcCompanyGroup.svcCompanyGroup" name="BasicHttpBinding_svcCompanyGroup" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcUser.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcUser"
+       contract="svcUser.svcUser" name="BasicHttpBinding_svcUser" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcDuties.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcDuties"
+       contract="svcDuties.svcDuties" name="BasicHttpBinding_svcDuties" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcSystemInf.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcSystemInf"
+       contract="svcSystemInf.svcSystemInf" name="BasicHttpBinding_svcSystemInf" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcSalesCreditBalance.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcSalesCreditBalance"
+       contract="svcSalesCreditBalance.svcSalesCreditBalance" name="BasicHttpBinding_svcSalesCreditBalance" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcInvoiceBalance.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcInvoiceBalance"
+       contract="svcInvoiceBalance.svcInvoiceBalance" name="BasicHttpBinding_svcInvoiceBalance" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPurchaseOrder.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPurchaseOrder"
+       contract="svcPurchaseOrder.svcPurchaseOrder" name="BasicHttpBinding_svcPurchaseOrder" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPurchaseMst.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPurchaseMst"
+       contract="svcPurchaseMst.svcPurchaseMst" name="BasicHttpBinding_svcPurchaseMst" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPurchase.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPurchase"
+       contract="svcPurchase.svcPurchase" name="BasicHttpBinding_svcPurchase" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPaymentClose.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPaymentClose"
+       contract="svcPaymentClose.svcPaymentClose" name="BasicHttpBinding_svcPaymentClose" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPaymentCash.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPaymentCash"
+       contract="svcPaymentCash.svcPaymentCash" name="BasicHttpBinding_svcPaymentCash" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPaymentCreditBalance.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPaymentCreditBalance"
+       contract="svcPaymentCreditBalance.svcPaymentCreditBalance" name="BasicHttpBinding_svcPaymentCreditBalance" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcPaymentBalance.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcPaymentBalance"
+       contract="svcPaymentBalance.svcPaymentBalance" name="BasicHttpBinding_svcPaymentBalance" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcInOutDelivery.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcInOutDelivery"
+       contract="svcInOutDelivery.svcInOutDelivery" name="BasicHttpBinding_svcInOutDelivery" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcStockInventory.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcStockInventory"
+       contract="svcStockInventory.svcStockInventory" name="BasicHttpBinding_svcStockInventory" />
+      <endpoint address="http://localhost/SlvHanbai_demo/WebService/svcSysLogin.svc"
+       binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_svcSysLogin"
+       contract="svcSysLogin.svcSysLogin" name="BasicHttpBinding_svcSysLogin" />
+    </client>
+    
+    
+		
+	</system.serviceModel>
+</configuration>

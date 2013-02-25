@@ -1,0 +1,204 @@
+﻿<custom:ExUserControl x:Class="SlvHanbaiClient.View.UserControl.Input.Purchase.Utl_InpPaymentClose" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           Height="600" 
+           Width="1024"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:provider="clr-namespace:SlvHanbaiClient.Class.Provider"
+           xmlns:converter="clr-namespace:SlvHanbaiClient.Class.Converter"
+           xmlns:UtlCustom="clr-namespace:SlvHanbaiClient.View.UserControl.Custom"
+           HorizontalContentAlignment="Left" 
+           VerticalContentAlignment="Top" 
+           Unloaded="ExUserControl_Unloaded" 
+           Loaded="ExUserControl_Loaded">
+
+    <custom:ExUserControl.Resources>
+        <converter:NumberConverter x:Key="numberConverter" />
+    </custom:ExUserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="34" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="200*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="txtDummy" Height="0" Width="0" Background="Transparent" BorderThickness="0" Foreground="Transparent" IsTabStop="False" />
+
+
+        <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+            <!-- タイトル -->
+            <Border>
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" ShadowDepth="5" />
+                </Border.Effect>
+                <custom:ExLabel FontSize="14" Width="983" Height="30" Margin="1" HorizontalAlignment="Left" x:Name="lblTitle" Content="   [支　払　締　処　理]" VerticalAlignment="Center" />
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="4" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <!-- 仕入先 -->
+                        <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblCustomer" Content="仕入先" VerticalAlignment="Center"  />
+                        <UtlCustom:Utl_MstText Height="26" Width="352" x:Name="utlPurchase" MstKbn="Purchase" GotFocus="txt_GotFocus" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <!-- 締区分 -->
+                        <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblSummingUp" Content="締区分" VerticalAlignment="Center"  />
+                        <UtlCustom:Utl_MstText Height="26" x:Name="utlSummingUp" MstKbn="Condition" id_InputMode="Number" id_MaxNumber="99" id_FormatString="00" id_Width="30" nm_Width="100" Tag="TabSearchOn" GotFocus="txt_GotFocus" LostFocus="utlSummingUp_LostFocus" />
+                        <TextBlock Width="10" />
+                        <UtlCustom:Utl_Mode x:Name="utlMode" HorizontalAlignment="Left" VerticalAlignment="Center" Tag="Mode" Mode="New" IsAutoNumMode="False" PageType="InpInvoiceClose" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <!-- 支払締日 -->
+                        <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblInvoiceYm" Content="支払締日" VerticalAlignment="Center"  />
+                        <custom:ExDatePicker x:Name="datPaymentYmd" Height="26" Width="123" FontSize="12" GotFocus="txt_GotFocus" FontWeight="Normal" FirstDayOfWeek="Sunday" SelectedDateFormat="Short" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <!-- 支払予定日 -->
+                        <custom:ExLabel FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" x:Name="lblCollectPlanDay" Content="支払予定日" VerticalAlignment="Center"  />
+                        <custom:ExDatePicker x:Name="datPaymentPlanDay" Height="26" Width="123" FontSize="12" GotFocus="txt_GotFocus" FontWeight="Normal" FirstDayOfWeek="Sunday" />
+                    </StackPanel>
+                    
+                    <TextBlock Height="10" />
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" />
+                        <Button FontSize="11" Name="btnSelectAll" Margin="0" Content=" すべて選択 " HorizontalAlignment="Left" Height="20" Width="70" Click="btnSelectAll_Click">
+                            <Button.Effect>
+                                <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                            </Button.Effect>
+                        </Button>
+                        <TextBlock Width="10" />
+                        <Button FontSize="11" Name="btnNoSelectAll" Margin="0" Content=" すべて解除 " HorizontalAlignment="Left" Height="20" Width="70" Click="btnNoSelectAll_Click">
+                            <Button.Effect>
+                                <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                            </Button.Effect>
+                        </Button>
+                    </StackPanel>
+
+                    <TextBlock Height="10" />
+
+                    <custom:ExDataGrid AutoGenerateColumns="False" 
+                                       FontSize="12" 
+                                       Height="357" 
+                                       HorizontalAlignment="Left" 
+                                       VerticalAlignment="Top" 
+                                       x:Name="dg" 
+                                       RowBackground="White" 
+                                       Width="970" 
+                                       enterKeyDown="Off" 
+                                       GotFocus="txt_GotFocus">
+                        <custom:ExDataGrid.Columns>
+                            <data:DataGridCheckBoxColumn x:Name="dataG_HeaderSelect" Header="対象" Binding="{Binding _exec_flg,Mode=TwoWay}" CanUserResize="False" CanUserSort="False" IsReadOnly="False">
+                            </data:DataGridCheckBoxColumn>
+
+
+                            <sdk:DataGridTextColumn Binding="{Binding _purchase_id}" FontSize="12" Header="仕入先ID" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _purchase_nm}" FontSize="12" Header="仕入先名" IsReadOnly="True" Width="223">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _no}" FontSize="12" Header="支払書番号" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _before_payment_price, Converter={StaticResource numberConverter}}" FontSize="12" Header="前回支払額" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _payment_cash_price, Converter={StaticResource numberConverter}}" FontSize="12" Header="出金額" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _transfer_price, Converter={StaticResource numberConverter}}" FontSize="12" Header="繰越金額" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _no_tax_purchase_price, Converter={StaticResource numberConverter}}" FontSize="12" Header="今回仕入額" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _tax, Converter={StaticResource numberConverter}}" FontSize="12" Header="消費税額" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _payment_price, Converter={StaticResource numberConverter}}" FontSize="12" Header="今回支払額" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn Binding="{Binding _before_payment_yyyymmdd}" FontSize="12" Header="前回締日" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>                            
+                            <sdk:DataGridTextColumn Binding="{Binding _payment_plan_day}" FontSize="12" Header="支払予定日" IsReadOnly="True" Width="100">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+
+                        </custom:ExDataGrid.Columns>
+                    </custom:ExDataGrid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</custom:ExUserControl>
+

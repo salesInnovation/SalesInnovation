@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7cb849b4-82a1-4557-a65c-b1eb1b396476" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcInvoiceBalance.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcInvoiceBalance.wsdl" MetadataType="Wsdl" ID="3263cf4d-8634-40fb-8c7c-a90870a3952c" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcInvoiceBalance.svc?wsdl" />
+    <MetadataFile FileName="svcInvoiceBalance.xsd" MetadataType="Schema" ID="c0dc0dee-ea92-4a6a-bb1d-24db744c6bd1" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcInvoiceBalance.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcInvoiceBalance1.xsd" MetadataType="Schema" ID="19799d76-0604-4c99-bc07-1877e4f2d831" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcInvoiceBalance.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcInvoiceBalance2.xsd" MetadataType="Schema" ID="122ae7cd-4bb5-45ad-88a4-2f53d898aa9b" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcInvoiceBalance.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcInvoiceBalance1.wsdl" MetadataType="Wsdl" ID="72de3fe3-6880-4dbf-afcb-95c42009f07c" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcInvoiceBalance.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="svcInvoiceBalance.disco" MetadataType="Disco" ID="59172707-b440-4ea2-ab03-49600840b3a5" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcInvoiceBalance.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

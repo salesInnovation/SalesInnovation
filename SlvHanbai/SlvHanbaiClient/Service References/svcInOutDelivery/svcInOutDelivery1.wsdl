@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcInOutDelivery.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcInOutDelivery.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://system-innovation.biz/SlvHanbai/WebService/svcInOutDelivery.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcInOutDelivery_GetInOutDeliveryH_InputMessage">
+    <wsdl:part name="parameters" element="GetInOutDeliveryH" />
+  </wsdl:message>
+  <wsdl:message name="svcInOutDelivery_GetInOutDeliveryH_OutputMessage">
+    <wsdl:part name="parameters" element="GetInOutDeliveryHResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcInOutDelivery_GetInOutDeliveryListD_InputMessage">
+    <wsdl:part name="parameters" element="GetInOutDeliveryListD" />
+  </wsdl:message>
+  <wsdl:message name="svcInOutDelivery_GetInOutDeliveryListD_OutputMessage">
+    <wsdl:part name="parameters" element="GetInOutDeliveryListDResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcInOutDelivery_GetInOutDeliveryList_InputMessage">
+    <wsdl:part name="parameters" element="GetInOutDeliveryList" />
+  </wsdl:message>
+  <wsdl:message name="svcInOutDelivery_GetInOutDeliveryList_OutputMessage">
+    <wsdl:part name="parameters" element="GetInOutDeliveryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcInOutDelivery_UpdateInOutDelivery_InputMessage">
+    <wsdl:part name="parameters" element="UpdateInOutDelivery" />
+  </wsdl:message>
+  <wsdl:message name="svcInOutDelivery_UpdateInOutDelivery_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateInOutDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcInOutDelivery">
+    <wsdl:operation name="GetInOutDeliveryH">
+      <wsdl:input wsaw:Action="urn:svcInOutDelivery/GetInOutDeliveryH" message="svcInOutDelivery_GetInOutDeliveryH_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcInOutDelivery/GetInOutDeliveryHResponse" message="svcInOutDelivery_GetInOutDeliveryH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInOutDeliveryListD">
+      <wsdl:input wsaw:Action="urn:svcInOutDelivery/GetInOutDeliveryListD" message="svcInOutDelivery_GetInOutDeliveryListD_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcInOutDelivery/GetInOutDeliveryListDResponse" message="svcInOutDelivery_GetInOutDeliveryListD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInOutDeliveryList">
+      <wsdl:input wsaw:Action="urn:svcInOutDelivery/GetInOutDeliveryList" message="svcInOutDelivery_GetInOutDeliveryList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcInOutDelivery/GetInOutDeliveryListResponse" message="svcInOutDelivery_GetInOutDeliveryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInOutDelivery">
+      <wsdl:input wsaw:Action="urn:svcInOutDelivery/UpdateInOutDelivery" message="svcInOutDelivery_UpdateInOutDelivery_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcInOutDelivery/UpdateInOutDeliveryResponse" message="svcInOutDelivery_UpdateInOutDelivery_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="85e47ec3-0d57-4ef3-addf-fd8f161b817c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcStockInventory.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcStockInventory.xsd" MetadataType="Schema" ID="a1a17c79-a045-4da0-835a-231cd7227be8" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcStockInventory.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcStockInventory.wsdl" MetadataType="Wsdl" ID="0c6f7905-0b16-40aa-b3f0-276c2a0f010d" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcStockInventory.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="svcStockInventory.disco" MetadataType="Disco" ID="d1da1c8b-0807-4cc6-b22d-d8ece73f682f" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcStockInventory.svc?disco" />
+    <MetadataFile FileName="svcStockInventory1.wsdl" MetadataType="Wsdl" ID="58e9fdca-cb6d-49cd-982b-427f5d1c4416" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcStockInventory.svc?wsdl" />
+    <MetadataFile FileName="svcStockInventory1.xsd" MetadataType="Schema" ID="f8521dd6-10ef-4b0b-96f9-d687df807ce3" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcStockInventory.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcStockInventory2.xsd" MetadataType="Schema" ID="a5e7d8ef-9f10-4a6a-9147-4b82d556bec0" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcStockInventory.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

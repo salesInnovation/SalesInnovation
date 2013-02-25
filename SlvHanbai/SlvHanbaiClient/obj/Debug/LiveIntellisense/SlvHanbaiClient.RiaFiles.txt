@@ -1,0 +1,2 @@
+C:\Users\chikugo\Documents\Visual Studio 2010\Projects\SlvHanbai\SlvHanbaiClient
+Generated_Code\SlvHanbai.Web.g.cs

@@ -1,0 +1,33 @@
+﻿<custom:ExChildWindow x:Class="SlvHanbaiClient.View.Dlg.Report.Dlg_ReportView"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:wintheme="clr-namespace:SlvHanbaiClient.View.Dlg.Theme"
+           xmlns:Utl="clr-namespace:SlvHanbaiClient.View.UserControl.Report"
+           mc:Ignorable="d" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+           xmlns:UtlReport="clr-namespace:SlvHanbaiClient.View.UserControl.Report"
+           Height="720" 
+           Width="1000"
+           Loaded="ExChildWindow_Loaded" 
+           Closed="ExChildWindow_Closed" 
+           Title="  "
+           FontSize="12">
+    <custom:ExGridLayoutRoot x:Name="LayoutRoot" Margin="0">
+        <UtlReport:Utl_ReportView x:Name="utlReortView" HorizontalAlignment="Left" Visibility="Collapsed" />
+        <StackPanel x:Name="stlProcess" VerticalAlignment="Center">
+            <TextBlock x:Name="tbkMsg" Text="表示処理中です。" HorizontalAlignment="Center" FontSize="16" />
+            <TextBlock x:Name="tbkMsg2" Text="しばらくお待ちください・・・" HorizontalAlignment="Center" FontSize="16" />
+            <ProgressBar x:Name="prgBar" Height="20" Width="300" IsIndeterminate="True" Margin="5" />
+        </StackPanel>
+        <wintheme:Dlg_ThemeShinyBlue x:Name="dlgThemeShinyBlue" />
+        <wintheme:Dlg_ThemeTwilightBlue x:Name="dlgThemeTwilightBlue" />
+    </custom:ExGridLayoutRoot>
+</custom:ExChildWindow>

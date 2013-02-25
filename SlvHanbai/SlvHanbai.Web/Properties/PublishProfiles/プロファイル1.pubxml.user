@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+このファイルは、Web プロジェクトの発行/パッケージ処理で使用されます。この MSBuild ファイルを編集することによって、
+この処理の動作をカスタマイズできます。詳細については、http://go.microsoft.com/fwlink/?LinkID=208121 を参照してください。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2013-02-19T15:13:51.6684382+09:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX42VPsBGUE222O6ntuh1AAAAAAACAAAAAAAQZgAAAAEAACAAAACrpY9OFlqtKZflwMyI9NfQ39N+8qbTdpTSp1qWKY606AAAAAAOgAAAAAIAACAAAACKSqYcEZ7MPJAwwuB00EY6O0EvvNbSeXfmeXt7EW/RASAAAACXYZtUqxW8IfZFwZhNnG83WcNQeYH62i0wDCYnndU9NUAAAACHscJDWJVperO6r7IV7hEf/9yXcXD2z9B7CV1mg1TjublShhGVWwNvNilTPi7qaFZHBcd3WvxEXlGn7wBNv8FM</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app.config">
+      <publishTime>05/29/2011 23:46:17</publishTime>
+    </File>
+    <File Include="clientaccesspolicy.xml">
+      <publishTime>03/24/2011 11:38:05</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>03/12/2011 17:38:22</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/20/2011 12:46:56</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>05/28/2011 14:49:07</publishTime>
+    </File>
+    <File Include="log4net.dll">
+      <publishTime>06/09/2009 14:55:14</publishTime>
+    </File>
+    <File Include="log4net.xml">
+      <publishTime>05/30/2011 00:22:44</publishTime>
+    </File>
+    <File Include="Silverlight.js">
+      <publishTime>03/14/2011 19:05:12</publishTime>
+    </File>
+    <File Include="SlvHanbaiClientTestPage.aspx">
+      <publishTime>05/27/2011 02:03:45</publishTime>
+    </File>
+    <File Include="SlvHanbaiClientTestPage.html">
+      <publishTime>03/20/2011 09:41:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/01/2011 22:13:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

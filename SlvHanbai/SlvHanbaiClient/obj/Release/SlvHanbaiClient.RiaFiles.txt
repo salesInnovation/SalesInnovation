@@ -1,0 +1,2 @@
+C:\Users\Owner\SkyDrive\SlvHanbai\SlvHanbaiClient
+Generated_Code\SlvHanbai.Web.g.cs

@@ -1,0 +1,50 @@
+﻿<custom:ExChildWindow x:Class="SlvHanbaiClient.View.Dlg.Theme.Dlg_ThemeChange"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.View.Dlg.Theme"
+           Width="300" 
+           Height="160" 
+           Title="" 
+           Loaded="ExChildWindow_Loaded" 
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" FontSize="13" FontWeight="Normal">
+    <Grid x:Name="LayoutRoot" Margin="2">
+
+        <Grid Grid.Row="0" Height="110" HorizontalAlignment="Center"  Name="grid2" VerticalAlignment="Center" Width="250" Background="#FFE7E7E7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="50*" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Name="textBlock1" Text="変更するテーマ色を選択してください" Width="220" Foreground="#FF2E2A2A" FontSize="12" FontFamily="Trebuchet MS" TextAlignment="Center" Grid.RowSpan="2" />
+            <Grid Grid.Row="2" Height="81" Width="250" HorizontalAlignment="Left" Name="grid3" VerticalAlignment="Top" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <Border Name="borBureauBlack"><Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left"  Name="imgBureauBlack"    Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/bureauBlack.png" ToolTipService.ToolTip="Bureau Black" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand" />
+                        </Border>
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Right" Name="imgShinyRed"       Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/shinyRed.png" ToolTipService.ToolTip="Shiny Red" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand" />
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left"  Name="imgDefault"        Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/default.png" ToolTipService.ToolTip="Default State" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand" />
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Right" Name="imgWhistlerBlue"   Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/whistlerBlue.png" ToolTipService.ToolTip="Whistler Blue" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand" />
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Right" Name="imgTwilightBlue"   Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/twilightBlue.png" ToolTipService.ToolTip="Twilight Blue" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand"/>
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left"  Name="imgExpressionDark" Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/expressionDark.png" ToolTipService.ToolTip="Expression Dark" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left" Name="imgBubbleCreme"     Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/bubbleCreme.png" ToolTipService.ToolTip="Bubble Creme" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand"/>
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left" Name="imgBureauBlue"      Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/bureauBlue.png" ToolTipService.ToolTip="Bureau Blue" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand"/>
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left" Name="imgExpressionLight" Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/expressionLight.png" ToolTipService.ToolTip="Expression Light" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand"/>
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left" Name="imgRainerOrange"    Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/rainerOrange.png" ToolTipService.ToolTip="Rainier Orange" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand"/>
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left" Name="imgRainerPurple"    Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/rainerPurple.png" ToolTipService.ToolTip="Rainier Purple" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand" />
+                        <Image Height="37" Width="37" Margin="2" HorizontalAlignment="Left" Name="imgShinyBlue"       Stretch="Fill" VerticalAlignment="Top" Source="/SlvHanbaiClient;component/Image/Theme/shinyBlue.png" ToolTipService.ToolTip="Shiny Blue" MouseLeftButtonDown="img_MouseLeftButtonDown" Cursor="Hand"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+        <theme:Dlg_ThemeShinyBlue x:Name="dlgThemeShinyBlue" />
+        <theme:Dlg_ThemeTwilightBlue x:Name="dlgThemeTwilightBlue" />
+    </Grid>
+</custom:ExChildWindow>

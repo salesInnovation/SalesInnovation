@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a6e52958-5586-40d5-9703-6f50417c3464" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai_demo/WebService/svcSysLogin.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcSysLogin.xsd" MetadataType="Schema" ID="749fd864-9da1-4b1e-b785-97128fd0cbcb" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai_demo/WebService/svcSysLogin.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcSysLogin.wsdl" MetadataType="Wsdl" ID="4366e521-eb1c-4bd8-8980-c092d99e083c" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai_demo/WebService/svcSysLogin.svc?wsdl" />
+    <MetadataFile FileName="svcSysLogin1.wsdl" MetadataType="Wsdl" ID="1d2070be-5c6f-44c9-bfaf-42d37fdffbf0" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai_demo/WebService/svcSysLogin.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="svcSysLogin1.xsd" MetadataType="Schema" ID="3f82dcd0-dcf4-48af-b495-40b867e823f6" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai_demo/WebService/svcSysLogin.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcSysLogin2.xsd" MetadataType="Schema" ID="e310e10a-55ea-42dd-9b95-c50c2e1e73a5" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai_demo/WebService/svcSysLogin.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcSysLogin.disco" MetadataType="Disco" ID="2bd5d95a-d858-4c75-8fdb-6a2be0c6f58a" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai_demo/WebService/svcSysLogin.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,134 @@
+﻿<custom:ExChildWindow x:Class="SlvHanbaiClient.View.Dlg.Dlg_MstSearchBank"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:custom="clr-namespace:SlvHanbaiClient.Class.UI"
+           xmlns:theme="clr-namespace:SlvHanbaiClient.Themes"
+           xmlns:Utl="clr-namespace:SlvHanbaiClient.View.UserControl.Master"
+           Width="687" 
+           Height="700" 
+           Title="＊＊一覧" 
+           Loaded="ExChildWindow_Loaded" 
+           HasCloseButton="False"
+           FontSize="13" 
+           FontWeight="Normal" Closed="ExChildWindow_Closed">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid Margin="0" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1" BorderThickness="1" BorderBrush="Gray" >
+                <Grid Margin="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <!-- ＊＊コード -->
+                        <custom:ExLabel x:Name="lblCode" FontSize="12" Width="90" Height="26" Margin="1" HorizontalAlignment="Center" Content="銀行コード" VerticalAlignment="Center" />
+                        <custom:ExTextBox Height="26" Width="100" x:Name="txtCode" TextAlignment="Left" InputMode="Alphanumeric" TextChanged="txtCode_TextChanged" />
+                        <TextBlock Width="5" />
+                        <!-- ＊＊名 -->
+                        <custom:ExLabel x:Name="lblName" FontSize="12" Width="80" Height="26" Margin="1" HorizontalAlignment="Center" Content="得意先名" VerticalAlignment="Center" />
+                        <custom:ExTextBox Height="26" Width="280" x:Name="txtName" TextAlignment="Left" InputMode="FullShapeNative" Text="" TextChanged="txtName_TextChanged" />
+                        <Button FontSize="11" Name="btnF5" Margin="5" Content=" F5:検索 " Click="btnF5_Click">
+                            <Button.Effect>
+                                <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                            </Button.Effect>
+                        </Button>
+
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="1" BorderThickness="1" BorderBrush="Gray" >
+                <Grid Margin="7">
+                    <custom:ExDataGrid AutoGenerateColumns="False" 
+                                       FontSize="12" 
+                                       Height="500" 
+                                       HorizontalAlignment="Left" 
+                                       VerticalAlignment="Top" 
+                                       x:Name="dg" 
+                                       RowBackground="White" 
+                                       Width="635" 
+                                       enterKeyDown="Off" 
+                                       DoubleClick="dg_DoubleClick" 
+                                       KeyUp="dg_KeyUp">
+                        <custom:ExDataGrid.Columns>
+                            <sdk:DataGridTextColumn x:Name="dgHeadCd" Binding="{Binding id}" FontSize="12" Header="銀行コード" IsReadOnly="True" Width="214">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Right" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                            <sdk:DataGridTextColumn x:Name="dgHeadNm" Binding="{Binding name}" FontSize="12" Header="{StaticResource ColumnString2}" IsReadOnly="True" Width="402">
+                                <sdk:DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Left" />
+                                    </Style>
+                                </sdk:DataGridTextColumn.ElementStyle>
+                            </sdk:DataGridTextColumn>
+                        </custom:ExDataGrid.Columns>
+                    </custom:ExDataGrid>
+                </Grid>
+            </Border>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15*" />
+                <RowDefinition Height="100*" />
+                <RowDefinition Height="15*" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <TextBlock x:Name="tblbtnF1" Width="440" />
+                <Button Name="btnF1" Width="70" FontSize="11" Margin="3" Content="    F1     &#x0d;   O K" Click="btnF1_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+                <TextBlock Width="40" />
+                <Button Name="btnF2" Visibility="Collapsed" Width="70" Margin="3" FontSize="11" Content="    F2     &#x0d;   追 加" Click="btnF2_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+                <TextBlock x:Name="tblbtnF2" Visibility="Collapsed" Width="20" />
+                <Button Name="btnF3" Visibility="Collapsed" Width="70" Margin="3" FontSize="11" Content="    F3     &#x0d;   更 新" Click="btnF3_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+                <TextBlock x:Name="tblbtnF3" Visibility="Collapsed" Width="20" />
+                <Button Name="btnF4" Visibility="Collapsed" Width="70" Margin="3" FontSize="11" Content="    F4     &#x0d;   参 照" Click="btnF4_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+                <TextBlock x:Name="tblbtnF4" Visibility="Collapsed" Width="20" />
+                <Button Name="btnF12" Width="70" Margin="3" FontSize="11" Content="    F12   &#x0d;キャンセル" Click="btnF12_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="2" />
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <custom:ExUserControl x:Name="utlDummy" Visibility="Collapsed" />
+    </Grid>
+
+</custom:ExChildWindow>

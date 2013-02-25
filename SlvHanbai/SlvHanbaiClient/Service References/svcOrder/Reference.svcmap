@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a5f6aa66-d7c8-45bc-b467-c49c0e0dfad2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcOrder.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="915bf3f8-d960-4b7c-9f89-9b460a3b97bc" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcOrder.svc/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="bd1970de-063d-4f90-9886-26ba824020c5" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcOrder.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="663f4ca6-b274-45c8-9956-93109d86f126" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcOrder.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="ee1ee229-d958-4432-a441-5732e4d4630f" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcOrder.svc/mex" />
+    <MetadataFile FileName="SlvHanbai.Web.Class.Entity.xsd" MetadataType="Schema" ID="9702a6f1-f5cc-4b80-af1b-0c4aa7150937" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcOrder.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

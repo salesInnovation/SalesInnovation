@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/SlvHanbai.Web.Class.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="svcOrder_GetOrderH_InputMessage">
+    <wsdl:part name="parameters" element="GetOrderH" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_GetOrderH_OutputMessage">
+    <wsdl:part name="parameters" element="GetOrderHResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_GetOrderListD_InputMessage">
+    <wsdl:part name="parameters" element="GetOrderListD" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_GetOrderListD_OutputMessage">
+    <wsdl:part name="parameters" element="GetOrderListDResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_GetOrderList_InputMessage">
+    <wsdl:part name="parameters" element="GetOrderList" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_GetOrderList_OutputMessage">
+    <wsdl:part name="parameters" element="GetOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_UpdateOrder_InputMessage">
+    <wsdl:part name="parameters" element="UpdateOrder" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_UpdateOrder_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_UpdateOrderPrint_InputMessage">
+    <wsdl:part name="parameters" element="UpdateOrderPrint" />
+  </wsdl:message>
+  <wsdl:message name="svcOrder_UpdateOrderPrint_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateOrderPrintResponse" />
+  </wsdl:message>
+  <wsdl:portType name="svcOrder">
+    <wsdl:operation name="GetOrderH">
+      <wsdl:input wsaw:Action="urn:svcOrder/GetOrderH" message="svcOrder_GetOrderH_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcOrder/GetOrderHResponse" message="svcOrder_GetOrderH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderListD">
+      <wsdl:input wsaw:Action="urn:svcOrder/GetOrderListD" message="svcOrder_GetOrderListD_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcOrder/GetOrderListDResponse" message="svcOrder_GetOrderListD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <wsdl:input wsaw:Action="urn:svcOrder/GetOrderList" message="svcOrder_GetOrderList_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcOrder/GetOrderListResponse" message="svcOrder_GetOrderList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <wsdl:input wsaw:Action="urn:svcOrder/UpdateOrder" message="svcOrder_UpdateOrder_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcOrder/UpdateOrderResponse" message="svcOrder_UpdateOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderPrint">
+      <wsdl:input wsaw:Action="urn:svcOrder/UpdateOrderPrint" message="svcOrder_UpdateOrderPrint_InputMessage" />
+      <wsdl:output wsaw:Action="urn:svcOrder/UpdateOrderPrintResponse" message="svcOrder_UpdateOrderPrint_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7b559322-2471-4190-8ee2-4da4d2a77ac2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCreditBalance.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcPaymentCreditBalance.wsdl" MetadataType="Wsdl" ID="6aa58b43-f91e-4e1a-be5d-7746eaf4bbc0" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCreditBalance.svc?wsdl" />
+    <MetadataFile FileName="svcPaymentCreditBalance.xsd" MetadataType="Schema" ID="21b9f454-eccb-44c6-aec0-13a82f5c2f85" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCreditBalance.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcPaymentCreditBalance1.xsd" MetadataType="Schema" ID="a296ffde-a4ca-4639-ab8b-3f109ae445d5" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCreditBalance.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcPaymentCreditBalance.disco" MetadataType="Disco" ID="c7d311e1-9319-47df-ab8a-b751239ccf74" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCreditBalance.svc?disco" />
+    <MetadataFile FileName="svcPaymentCreditBalance1.wsdl" MetadataType="Wsdl" ID="d31d644b-0beb-4d61-8aae-ed41ffc6eb6b" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCreditBalance.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="svcPaymentCreditBalance2.xsd" MetadataType="Schema" ID="1b7ce903-d190-4427-b514-9472cbef2a84" SourceId="1" SourceUrl="https://system-innovation.biz/SlvHanbai/WebService/svcPaymentCreditBalance.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
